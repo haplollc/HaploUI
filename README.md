@@ -1,16 +1,14 @@
 # HaploUI
 
 <p align="center">
-  <img src="docs/images/catalog_home.png" width="300" alt="HaploUI Component Catalog">
+  <img src="docs/videos/catalog_home.gif" width="280" alt="HaploUI Component Catalog">
 </p>
 
-A beautiful, consistent SwiftUI component library for all Haplo apps. Features animated controls, glass effects, haptic feedback, and a built-in component catalog for browsing everything.
+A beautiful, consistent SwiftUI component library for all Haplo apps. Features animated controls, glass effects, haptic feedback, and a built-in component catalog.
 
 ## Installation
 
 ### Swift Package Manager
-
-Add to your `Package.swift`:
 
 ```swift
 dependencies: [
@@ -19,34 +17,6 @@ dependencies: [
 ```
 
 Or in Xcode: **File → Add Package Dependencies → `https://github.com/haplollc/HaploUI`**
-
-## Quick Start
-
-```swift
-import SwiftUI
-import HaploUI
-
-struct ContentView: View {
-    @State private var email = ""
-    @State private var isLoading = false
-    
-    var body: some View {
-        VStack(spacing: 16) {
-            HaploTextField(
-                text: $email,
-                placeholder: "Email",
-                icon: "envelope"
-            )
-            
-            HaploButton("Sign In", icon: "arrow.right", isLoading: isLoading) {
-                isLoading = true
-            }
-            .haptic(.medium)
-        }
-        .padding()
-    }
-}
-```
 
 ## Component Catalog
 
@@ -69,406 +39,277 @@ struct MyApp: App {
 
 ## Components
 
-### Buttons
-
-#### HaploButton
-Standard button with multiple styles, sizes, icons, and loading state.
+<table>
+<tr>
+<td width="300" align="center">
+<img src="docs/videos/buttons.gif" width="280"><br>
+<b>Buttons</b>
+</td>
+<td>
 
 ```swift
-// Basic
-HaploButton("Save") { }
-
-// With icon
-HaploButton("Download", icon: "arrow.down.circle") { }
-
-// Styles: .primary, .secondary, .tertiary, .destructive, .ghost, .outline
-HaploButton("Delete", style: .destructive) { }
+// Styles: .primary, .secondary, .tertiary, 
+//         .destructive, .ghost, .outline
+HaploButton("Save", style: .primary) { }
+HaploButton("Delete", icon: "trash", style: .destructive) { }
 
 // Sizes: .small, .medium, .large
-HaploButton("Small", size: .small) { }
+HaploButton("Submit", size: .large, isFullWidth: true) { }
 
-// Full width with loading
-HaploButton("Submit", isFullWidth: true, isLoading: isLoading) { }
+// Icon buttons
+HaploIconButton(icon: "heart.fill") { }
 ```
 
-#### HaploIconButton
-Circular icon button.
+</td>
+</tr>
+<tr>
+<td align="center">
+<img src="docs/videos/sheets.gif" width="280"><br>
+<b>Sheets</b>
+</td>
+<td>
 
 ```swift
-HaploIconButton(icon: "heart.fill", style: .primary) { }
-HaploIconButton(icon: "ellipsis", size: .large) { }
-```
-
----
-
-### Sheets
-
-#### HaploSheet
-Standard sheet container with title, subtitle, and drag indicator.
-
-```swift
-.sheet(isPresented: $showSheet) {
-    HaploSheet(title: "Settings", subtitle: "Configure your preferences") {
-        // Content
-    }
+// Standard sheet
+HaploSheet(title: "Settings", subtitle: "Configure") {
+    // content
 }
-```
 
-#### HaploActionSheet
-Action menu with icons and destructive options.
+// Action sheet
+HaploActionSheet(actions: [
+    .init(title: "Edit", icon: "pencil") { },
+    .init(title: "Delete", style: .destructive) { }
+])
 
-```swift
-HaploActionSheet(
-    title: "Actions",
-    actions: [
-        .init(title: "Share", icon: "square.and.arrow.up") { },
-        .init(title: "Edit", icon: "pencil") { },
-        .init(title: "Delete", icon: "trash", style: .destructive) { }
-    ]
-)
-```
-
-#### HaploConfirmationSheet
-Confirmation dialog with cancel/confirm buttons.
-
-```swift
+// Confirmation
 HaploConfirmationSheet(
-    title: "Delete Item?",
-    message: "This action cannot be undone.",
-    confirmTitle: "Delete",
-    confirmStyle: .destructive,
-    onConfirm: { },
-    onCancel: { }
+    title: "Delete?",
+    message: "Cannot be undone",
+    onConfirm: { }, onCancel: { }
 )
 ```
 
----
-
-### Inputs
-
-#### HaploTextField
-Text field with label, icon, and error state.
+</td>
+</tr>
+<tr>
+<td align="center">
+<img src="docs/videos/inputs.gif" width="280"><br>
+<b>Inputs</b>
+</td>
+<td>
 
 ```swift
+// Text field with icon & validation
 HaploTextField(
     text: $email,
-    placeholder: "you@example.com",
-    label: "Email",
+    placeholder: "Email",
     icon: "envelope",
-    errorMessage: emailError
+    errorMessage: error
 )
 
-// Secure field
-HaploTextField(text: $password, placeholder: "Password", isSecure: true)
+// Text area
+HaploTextArea(text: $notes, placeholder: "Notes...")
+
+// Search
+HaploSearchField(text: $query)
+
+// Toggle with subtitle
+HaploToggle(isOn: $enabled, label: "Notifications", 
+            subtitle: "Get alerts", icon: "bell")
 ```
 
-#### HaploTextArea
-Multi-line text input.
+</td>
+</tr>
+<tr>
+<td align="center">
+<img src="docs/videos/sliders.gif" width="280"><br>
+<b>Sliders</b>
+</td>
+<td>
 
 ```swift
-HaploTextArea(
-    text: $notes,
-    placeholder: "Write your notes...",
-    label: "Notes",
-    minHeight: 100,
-    maxHeight: 200
-)
-```
+// Standard slider
+HaploSlider(value: $volume, in: 0...100, label: "Volume")
 
-#### HaploSearchField
-Search bar with clear button.
+// With step & formatter
+HaploSlider(value: $brightness, in: 0...100, step: 5,
+            valueFormatter: { "\(Int($0))%" })
 
-```swift
-HaploSearchField(text: $searchText, placeholder: "Search workouts")
-```
-
-#### HaploToggle
-Toggle with label, subtitle, and icon.
-
-```swift
-HaploToggle(
-    isOn: $enableNotifications,
-    label: "Notifications",
-    subtitle: "Receive push notifications",
-    icon: "bell.fill"
-)
-```
-
----
-
-### Sliders
-
-#### HaploSlider
-Slider with label, value display, and custom formatting.
-
-```swift
-HaploSlider(
-    value: $volume,
-    in: 0...100,
-    step: 5,
-    label: "Volume",
-    valueFormatter: { "\(Int($0))%" }
-)
-```
-
-#### HaploRangeSlider
-Dual-thumb range slider.
-
-```swift
+// Range slider
 HaploRangeSlider(
-    lowerValue: $minPrice,
-    upperValue: $maxPrice,
-    in: 0...1000,
-    label: "Price Range",
-    valueFormatter: { "$\(Int($0)) - $\(Int($1))" }
+    lowerValue: $min, upperValue: $max,
+    in: 0...1000, label: "Price Range"
 )
 ```
 
----
-
-### Steppers
-
-#### HaploStepper
-Standard stepper with label and custom formatting.
-
-```swift
-HaploStepper(
-    value: $quantity,
-    in: 0...99,
-    step: 1,
-    label: "Quantity"
-)
-```
-
-#### HaploCompactStepper
-Compact plus/minus buttons.
+</td>
+</tr>
+<tr>
+<td align="center">
+<img src="docs/videos/steppers.gif" width="280"><br>
+<b>Steppers</b>
+</td>
+<td>
 
 ```swift
+// Standard stepper
+HaploStepper(value: $qty, in: 0...99, label: "Quantity")
+
+// Compact +/- buttons
 HaploCompactStepper(value: $sets, in: 1...20)
+
+// Wheel picker style
+HaploWheelStepper(value: $mins, in: 1...60)
 ```
 
-#### HaploWheelStepper
-Wheel picker style stepper.
+</td>
+</tr>
+<tr>
+<td align="center">
+<img src="docs/videos/controls.gif" width="280"><br>
+<b>Controls</b>
+</td>
+<td>
 
 ```swift
-HaploWheelStepper(value: $timer, in: 1...60, label: "Minutes")
-```
-
----
-
-### Controls
-
-#### HaploSegmentedControl
-Animated pill-style segmented control.
-
-```swift
+// Animated segmented control
 HaploSegmentedControl(
     options: ["Day", "Week", "Month"],
-    selection: $selectedPeriod
+    selection: $period
 )
+
+// Duration picker (h:m:s)
+HaploDurationPicker(totalSeconds: $duration)
+
+// Time picker
+HaploTimePicker(hour: $h, minute: $m)
 ```
 
-#### HaploDurationPicker
-Hours, minutes, seconds picker.
+</td>
+</tr>
+<tr>
+<td align="center">
+<img src="docs/videos/text.gif" width="280"><br>
+<b>Text & Labels</b>
+</td>
+<td>
 
 ```swift
-HaploDurationPicker(
-    totalSeconds: $duration,
-    showHours: true,
-    showSeconds: true
-)
-```
-
-#### HaploTimePicker
-Simple time picker.
-
-```swift
-HaploTimePicker(hour: $hour, minute: $minute, is24Hour: false)
-```
-
----
-
-### Text & Labels
-
-#### HaploText
-Styled text with predefined styles.
-
-```swift
+// Styled text
 HaploText("Title", style: .title)
-HaploText("Secondary", style: .body, color: .secondary)
+HaploText("Body", style: .body, color: .secondary)
+
+// Label with icon
+HaploLabel("Settings", icon: "gear")
+
+// Badge
+HaploBadge("New", color: .green)
+
+// Selectable chip
+HaploChip("Running", isSelected: true) { }
 ```
 
-#### HaploLabel
-Label with icon.
+</td>
+</tr>
+<tr>
+<td align="center">
+<img src="docs/videos/cards.gif" width="280"><br>
+<b>Cards</b>
+</td>
+<td>
 
 ```swift
-HaploLabel("Settings", icon: "gear", iconColor: .blue)
-```
+// Basic card
+HaploCard { Text("Content") }
 
-#### HaploBadge
-Colored badge.
-
-```swift
-HaploBadge("New", color: .green, size: .small)
-HaploBadge("Featured", size: .large)
-```
-
-#### HaploChip
-Selectable chip/tag.
-
-```swift
-HaploChip("Running", icon: "figure.run", isSelected: isSelected) {
-    isSelected.toggle()
-}
-```
-
----
-
-### Cards
-
-#### HaploCard
-Generic card container.
-
-```swift
-HaploCard(padding: 16, cornerRadius: 12, hasShadow: true) {
-    Text("Card content")
-}
-```
-
-#### HaploInfoCard
-Info row with icon and chevron.
-
-```swift
+// Info card with navigation
 HaploInfoCard(
     title: "Settings",
-    subtitle: "Configure preferences",
-    icon: "gear",
-    iconColor: .blue
-) {
-    // Navigate to settings
-}
-```
+    subtitle: "Configure",
+    icon: "gear"
+) { }
 
-#### HaploStatCard
-Statistics card with trend indicator.
-
-```swift
+// Stats card with trend
 HaploStatCard(
-    title: "Workouts",
-    value: "24",
-    subtitle: "This week",
-    icon: "flame.fill",
-    trend: .up("+12%"),
-    accentColor: .orange
+    title: "Workouts", value: "24",
+    trend: .up("+12%")
 )
 ```
 
----
-
-### Progress
-
-#### HaploRadialProgress
-Circular progress indicator.
+</td>
+</tr>
+<tr>
+<td align="center">
+<img src="docs/videos/progress.gif" width="280"><br>
+<b>Progress</b>
+</td>
+<td>
 
 ```swift
-// Percentage
+// Radial progress
 HaploRadialProgress(progress: 0.65, size: 80)
+HaploRadialProgress(progress: 0.7, currentStep: 7, 
+                    totalSteps: 10)
 
-// With steps
-HaploRadialProgress(
-    progress: 0.7,
-    currentStep: 7,
-    totalSteps: 10,
-    accentColor: .green
-)
-```
-
-#### HaploLinearProgress
-Horizontal progress bar.
-
-```swift
+// Linear progress
 HaploLinearProgress(progress: 0.5, showLabel: true)
+
+// Indeterminate
+HaploIndeterminateProgress()
+
+// Loading indicators
+HaploPulsingIndicator()
+HaploDotsLoading()
 ```
 
-#### HaploIndeterminateProgress
-Animated loading bar.
+</td>
+</tr>
+<tr>
+<td align="center">
+<img src="docs/videos/effects.gif" width="280"><br>
+<b>Effects</b>
+</td>
+<td>
 
 ```swift
-HaploIndeterminateProgress(height: 4, accentColor: .blue)
-```
+// Glass effects (iOS 26+ with fallback)
+Text("Glass").glassCapsule()
+Icon().glassCircle(tint: .blue)
+VStack { }.glassCard()
 
-#### Loading Indicators
-
-```swift
-HaploPulsingIndicator(size: 12, color: .blue)
-HaploDotsLoading(size: 8, color: .gray)
-```
-
----
-
-## Effects
-
-### Glass Effects
-iOS 26+ glass effects with fallback for older versions.
-
-```swift
-Text("Glass")
-    .padding()
-    .glassCapsule()
-    
-Image(systemName: "star")
-    .frame(width: 50, height: 50)
-    .glassCircle(tint: .blue)
-    
-VStack { ... }
-    .glassCard(cornerRadius: 16)
-```
-
-### Shimmer & Skeleton
-
-```swift
-// Shimmer effect
-Text("Loading...")
-    .shimmer()
-
-// Skeleton placeholder
+// Shimmer loading
+Text("Loading").shimmer()
 HaploSkeleton(width: 200, height: 20)
-HaploSkeleton(width: 60, height: 60, cornerRadius: 30)
+
+// Haptic feedback
+Button("Tap") { }.haptic(.medium)
+Button("Done") { }.hapticNotification(.success)
 ```
 
-### Haptic Feedback
-
-```swift
-// Impact
-Button("Tap") { }
-    .haptic(.light)   // .light, .medium, .heavy, .rigid, .soft
-
-// Selection
-Button("Select") { }
-    .hapticSelection()
-
-// Notification
-Button("Success") { }
-    .hapticNotification(.success)  // .success, .warning, .error
-```
+</td>
+</tr>
+</table>
 
 ---
 
 ## Theme
 
-Access consistent design tokens via `HaploTheme`:
+Access consistent design tokens:
 
 ```swift
 // Colors
-HaploTheme.Colors.primary
-HaploTheme.Colors.secondaryBackground
-HaploTheme.Colors.success
-HaploTheme.Colors.error
+HaploTheme.Colors.primary       // Blue
+HaploTheme.Colors.secondary     // Purple
+HaploTheme.Colors.success       // Green
+HaploTheme.Colors.warning       // Yellow
+HaploTheme.Colors.error         // Red
 
-// Spacing (2, 4, 8, 12, 16, 24, 32, 48)
+// Spacing (in points)
+HaploTheme.Spacing.xs   // 4
 HaploTheme.Spacing.sm   // 8
 HaploTheme.Spacing.md   // 12
 HaploTheme.Spacing.lg   // 16
+HaploTheme.Spacing.xl   // 24
 
 // Corner Radius
 HaploTheme.CornerRadius.sm   // 6
@@ -476,6 +317,7 @@ HaploTheme.CornerRadius.md   // 10
 HaploTheme.CornerRadius.lg   // 16
 
 // Typography
+HaploTheme.Typography.largeTitle
 HaploTheme.Typography.headline
 HaploTheme.Typography.body
 HaploTheme.Typography.caption
@@ -492,8 +334,7 @@ view.haploShadow(HaploTheme.Shadows.md)
 
 ## Requirements
 
-- iOS 17.0+
-- macOS 14.0+
+- iOS 17.0+ / macOS 14.0+
 - Swift 5.9+
 
 ## License
