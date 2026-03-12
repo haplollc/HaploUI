@@ -34,6 +34,12 @@ public struct ComponentCatalog: View {
                     }
                     
                     NavigationLink {
+                        ControlsCatalog()
+                    } label: {
+                        CatalogRow(icon: "dial.medium", title: "Controls", count: 4)
+                    }
+                    
+                    NavigationLink {
                         TextCatalog()
                     } label: {
                         CatalogRow(icon: "textformat", title: "Text & Labels", count: 4)
@@ -49,6 +55,20 @@ public struct ComponentCatalog: View {
                         CardsCatalog()
                     } label: {
                         CatalogRow(icon: "rectangle.on.rectangle", title: "Cards", count: 3)
+                    }
+                    
+                    NavigationLink {
+                        ProgressCatalog()
+                    } label: {
+                        CatalogRow(icon: "circle.dotted", title: "Progress", count: 5)
+                    }
+                }
+                
+                Section("Effects") {
+                    NavigationLink {
+                        EffectsCatalog()
+                    } label: {
+                        CatalogRow(icon: "sparkles", title: "Effects & Haptics", count: 6)
                     }
                 }
                 
