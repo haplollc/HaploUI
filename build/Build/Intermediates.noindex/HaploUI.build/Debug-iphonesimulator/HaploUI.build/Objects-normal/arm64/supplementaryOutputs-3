@@ -1,0 +1,23 @@
+{
+  "/Users/jaredsopenclaw/code/haplollc/HaploUI/Sources/HaploUI/Catalog/ProgressCatalog.swift" : {
+    "const-values" : "/Users/jaredsopenclaw/code/haplollc/HaploUI/build/Build/Intermediates.noindex/HaploUI.build/Debug-iphonesimulator/HaploUI.build/Objects-normal/arm64/ProgressCatalog.swiftconstvalues",
+    "dependencies" : "/Users/jaredsopenclaw/code/haplollc/HaploUI/build/Build/Intermediates.noindex/HaploUI.build/Debug-iphonesimulator/HaploUI.build/Objects-normal/arm64/ProgressCatalog.d",
+    "diagnostics" : "/Users/jaredsopenclaw/code/haplollc/HaploUI/build/Build/Intermediates.noindex/HaploUI.build/Debug-iphonesimulator/HaploUI.build/Objects-normal/arm64/ProgressCatalog.dia",
+    "object" : "/Users/jaredsopenclaw/code/haplollc/HaploUI/build/Build/Intermediates.noindex/HaploUI.build/Debug-iphonesimulator/HaploUI.build/Objects-normal/arm64/ProgressCatalog.o",
+    "swift-dependencies" : "/Users/jaredsopenclaw/code/haplollc/HaploUI/build/Build/Intermediates.noindex/HaploUI.build/Debug-iphonesimulator/HaploUI.build/Objects-normal/arm64/ProgressCatalog.swiftdeps"
+  },
+  "/Users/jaredsopenclaw/code/haplollc/HaploUI/Sources/HaploUI/Catalog/SheetsCatalog.swift" : {
+    "const-values" : "/Users/jaredsopenclaw/code/haplollc/HaploUI/build/Build/Intermediates.noindex/HaploUI.build/Debug-iphonesimulator/HaploUI.build/Objects-normal/arm64/SheetsCatalog.swiftconstvalues",
+    "dependencies" : "/Users/jaredsopenclaw/code/haplollc/HaploUI/build/Build/Intermediates.noindex/HaploUI.build/Debug-iphonesimulator/HaploUI.build/Objects-normal/arm64/SheetsCatalog.d",
+    "diagnostics" : "/Users/jaredsopenclaw/code/haplollc/HaploUI/build/Build/Intermediates.noindex/HaploUI.build/Debug-iphonesimulator/HaploUI.build/Objects-normal/arm64/SheetsCatalog.dia",
+    "object" : "/Users/jaredsopenclaw/code/haplollc/HaploUI/build/Build/Intermediates.noindex/HaploUI.build/Debug-iphonesimulator/HaploUI.build/Objects-normal/arm64/SheetsCatalog.o",
+    "swift-dependencies" : "/Users/jaredsopenclaw/code/haplollc/HaploUI/build/Build/Intermediates.noindex/HaploUI.build/Debug-iphonesimulator/HaploUI.build/Objects-normal/arm64/SheetsCatalog.swiftdeps"
+  },
+  "/Users/jaredsopenclaw/code/haplollc/HaploUI/Sources/HaploUI/Catalog/SlidersCatalog.swift" : {
+    "const-values" : "/Users/jaredsopenclaw/code/haplollc/HaploUI/build/Build/Intermediates.noindex/HaploUI.build/Debug-iphonesimulator/HaploUI.build/Objects-normal/arm64/SlidersCatalog.swiftconstvalues",
+    "dependencies" : "/Users/jaredsopenclaw/code/haplollc/HaploUI/build/Build/Intermediates.noindex/HaploUI.build/Debug-iphonesimulator/HaploUI.build/Objects-normal/arm64/SlidersCatalog.d",
+    "diagnostics" : "/Users/jaredsopenclaw/code/haplollc/HaploUI/build/Build/Intermediates.noindex/HaploUI.build/Debug-iphonesimulator/HaploUI.build/Objects-normal/arm64/SlidersCatalog.dia",
+    "object" : "/Users/jaredsopenclaw/code/haplollc/HaploUI/build/Build/Intermediates.noindex/HaploUI.build/Debug-iphonesimulator/HaploUI.build/Objects-normal/arm64/SlidersCatalog.o",
+    "swift-dependencies" : "/Users/jaredsopenclaw/code/haplollc/HaploUI/build/Build/Intermediates.noindex/HaploUI.build/Debug-iphonesimulator/HaploUI.build/Objects-normal/arm64/SlidersCatalog.swiftdeps"
+  }
+}

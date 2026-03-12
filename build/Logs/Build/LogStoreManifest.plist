@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>logFormatVersion</key>
+	<integer>12</integer>
+	<key>logs</key>
+	<dict>
+		<key>69CCAA1C-9D0A-428F-B65F-349D00549D6F</key>
+		<dict>
+			<key>className</key>
+			<string>IDECommandLineBuildLog</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>69CCAA1C-9D0A-428F-B65F-349D00549D6F.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>E</string>
+				<key>totalNumberOfAnalyzerIssues</key>
+				<integer>0</integer>
+				<key>totalNumberOfErrors</key>
+				<integer>2</integer>
+				<key>totalNumberOfTestFailures</key>
+				<integer>0</integer>
+				<key>totalNumberOfWarnings</key>
+				<integer>0</integer>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>HaploUIDemo project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>HaploUIDemo</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Building project HaploUIDemo with scheme HaploUIDemo</string>
+			<key>timeStartedRecording</key>
+			<real>794977355.47002697</real>
+			<key>timeStoppedRecording</key>
+			<real>794977359.79811203</real>
+			<key>title</key>
+			<string>Building project HaploUIDemo with scheme HaploUIDemo</string>
+			<key>uniqueIdentifier</key>
+			<string>69CCAA1C-9D0A-428F-B65F-349D00549D6F</string>
+		</dict>
+	</dict>
+</dict>
+</plist>

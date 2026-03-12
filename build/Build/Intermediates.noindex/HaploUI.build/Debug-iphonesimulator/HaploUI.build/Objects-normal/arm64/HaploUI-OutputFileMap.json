@@ -1,0 +1,259 @@
+{
+  "" : {
+    "diagnostics" : "/Users/jaredsopenclaw/code/haplollc/HaploUI/build/Build/Intermediates.noindex/HaploUI.build/Debug-iphonesimulator/HaploUI.build/Objects-normal/arm64/HaploUI-primary.dia",
+    "emit-module-dependencies" : "/Users/jaredsopenclaw/code/haplollc/HaploUI/build/Build/Intermediates.noindex/HaploUI.build/Debug-iphonesimulator/HaploUI.build/Objects-normal/arm64/HaploUI-primary-emit-module.d",
+    "emit-module-diagnostics" : "/Users/jaredsopenclaw/code/haplollc/HaploUI/build/Build/Intermediates.noindex/HaploUI.build/Debug-iphonesimulator/HaploUI.build/Objects-normal/arm64/HaploUI-primary-emit-module.dia",
+    "pch" : "/Users/jaredsopenclaw/code/haplollc/HaploUI/build/Build/Intermediates.noindex/HaploUI.build/Debug-iphonesimulator/HaploUI.build/Objects-normal/arm64/HaploUI-primary-Bridging-header.pch",
+    "swift-dependencies" : "/Users/jaredsopenclaw/code/haplollc/HaploUI/build/Build/Intermediates.noindex/HaploUI.build/Debug-iphonesimulator/HaploUI.build/Objects-normal/arm64/HaploUI-primary.swiftdeps"
+  },
+  "/Users/jaredsopenclaw/code/haplollc/HaploUI/Sources/HaploUI/Catalog/ButtonsCatalog.swift" : {
+    "const-values" : "/Users/jaredsopenclaw/code/haplollc/HaploUI/build/Build/Intermediates.noindex/HaploUI.build/Debug-iphonesimulator/HaploUI.build/Objects-normal/arm64/ButtonsCatalog.swiftconstvalues",
+    "dependencies" : "/Users/jaredsopenclaw/code/haplollc/HaploUI/build/Build/Intermediates.noindex/HaploUI.build/Debug-iphonesimulator/HaploUI.build/Objects-normal/arm64/ButtonsCatalog.d",
+    "diagnostics" : "/Users/jaredsopenclaw/code/haplollc/HaploUI/build/Build/Intermediates.noindex/HaploUI.build/Debug-iphonesimulator/HaploUI.build/Objects-normal/arm64/ButtonsCatalog.dia",
+    "index-unit-output-path" : "/HaploUI.build/Debug-iphonesimulator/HaploUI.build/Objects-normal/arm64/ButtonsCatalog.o",
+    "llvm-bc" : "/Users/jaredsopenclaw/code/haplollc/HaploUI/build/Build/Intermediates.noindex/HaploUI.build/Debug-iphonesimulator/HaploUI.build/Objects-normal/arm64/ButtonsCatalog.bc",
+    "object" : "/Users/jaredsopenclaw/code/haplollc/HaploUI/build/Build/Intermediates.noindex/HaploUI.build/Debug-iphonesimulator/HaploUI.build/Objects-normal/arm64/ButtonsCatalog.o",
+    "swift-dependencies" : "/Users/jaredsopenclaw/code/haplollc/HaploUI/build/Build/Intermediates.noindex/HaploUI.build/Debug-iphonesimulator/HaploUI.build/Objects-normal/arm64/ButtonsCatalog.swiftdeps",
+    "swiftmodule" : "/Users/jaredsopenclaw/code/haplollc/HaploUI/build/Build/Intermediates.noindex/HaploUI.build/Debug-iphonesimulator/HaploUI.build/Objects-normal/arm64/ButtonsCatalog~partial.swiftmodule"
+  },
+  "/Users/jaredsopenclaw/code/haplollc/HaploUI/Sources/HaploUI/Catalog/CardsCatalog.swift" : {
+    "const-values" : "/Users/jaredsopenclaw/code/haplollc/HaploUI/build/Build/Intermediates.noindex/HaploUI.build/Debug-iphonesimulator/HaploUI.build/Objects-normal/arm64/CardsCatalog.swiftconstvalues",
+    "dependencies" : "/Users/jaredsopenclaw/code/haplollc/HaploUI/build/Build/Intermediates.noindex/HaploUI.build/Debug-iphonesimulator/HaploUI.build/Objects-normal/arm64/CardsCatalog.d",
+    "diagnostics" : "/Users/jaredsopenclaw/code/haplollc/HaploUI/build/Build/Intermediates.noindex/HaploUI.build/Debug-iphonesimulator/HaploUI.build/Objects-normal/arm64/CardsCatalog.dia",
+    "index-unit-output-path" : "/HaploUI.build/Debug-iphonesimulator/HaploUI.build/Objects-normal/arm64/CardsCatalog.o",
+    "llvm-bc" : "/Users/jaredsopenclaw/code/haplollc/HaploUI/build/Build/Intermediates.noindex/HaploUI.build/Debug-iphonesimulator/HaploUI.build/Objects-normal/arm64/CardsCatalog.bc",
+    "object" : "/Users/jaredsopenclaw/code/haplollc/HaploUI/build/Build/Intermediates.noindex/HaploUI.build/Debug-iphonesimulator/HaploUI.build/Objects-normal/arm64/CardsCatalog.o",
+    "swift-dependencies" : "/Users/jaredsopenclaw/code/haplollc/HaploUI/build/Build/Intermediates.noindex/HaploUI.build/Debug-iphonesimulator/HaploUI.build/Objects-normal/arm64/CardsCatalog.swiftdeps",
+    "swiftmodule" : "/Users/jaredsopenclaw/code/haplollc/HaploUI/build/Build/Intermediates.noindex/HaploUI.build/Debug-iphonesimulator/HaploUI.build/Objects-normal/arm64/CardsCatalog~partial.swiftmodule"
+  },
+  "/Users/jaredsopenclaw/code/haplollc/HaploUI/Sources/HaploUI/Catalog/ComponentCatalog.swift" : {
+    "const-values" : "/Users/jaredsopenclaw/code/haplollc/HaploUI/build/Build/Intermediates.noindex/HaploUI.build/Debug-iphonesimulator/HaploUI.build/Objects-normal/arm64/ComponentCatalog.swiftconstvalues",
+    "dependencies" : "/Users/jaredsopenclaw/code/haplollc/HaploUI/build/Build/Intermediates.noindex/HaploUI.build/Debug-iphonesimulator/HaploUI.build/Objects-normal/arm64/ComponentCatalog.d",
+    "diagnostics" : "/Users/jaredsopenclaw/code/haplollc/HaploUI/build/Build/Intermediates.noindex/HaploUI.build/Debug-iphonesimulator/HaploUI.build/Objects-normal/arm64/ComponentCatalog.dia",
+    "index-unit-output-path" : "/HaploUI.build/Debug-iphonesimulator/HaploUI.build/Objects-normal/arm64/ComponentCatalog.o",
+    "llvm-bc" : "/Users/jaredsopenclaw/code/haplollc/HaploUI/build/Build/Intermediates.noindex/HaploUI.build/Debug-iphonesimulator/HaploUI.build/Objects-normal/arm64/ComponentCatalog.bc",
+    "object" : "/Users/jaredsopenclaw/code/haplollc/HaploUI/build/Build/Intermediates.noindex/HaploUI.build/Debug-iphonesimulator/HaploUI.build/Objects-normal/arm64/ComponentCatalog.o",
+    "swift-dependencies" : "/Users/jaredsopenclaw/code/haplollc/HaploUI/build/Build/Intermediates.noindex/HaploUI.build/Debug-iphonesimulator/HaploUI.build/Objects-normal/arm64/ComponentCatalog.swiftdeps",
+    "swiftmodule" : "/Users/jaredsopenclaw/code/haplollc/HaploUI/build/Build/Intermediates.noindex/HaploUI.build/Debug-iphonesimulator/HaploUI.build/Objects-normal/arm64/ComponentCatalog~partial.swiftmodule"
+  },
+  "/Users/jaredsopenclaw/code/haplollc/HaploUI/Sources/HaploUI/Catalog/ControlsCatalog.swift" : {
+    "const-values" : "/Users/jaredsopenclaw/code/haplollc/HaploUI/build/Build/Intermediates.noindex/HaploUI.build/Debug-iphonesimulator/HaploUI.build/Objects-normal/arm64/ControlsCatalog.swiftconstvalues",
+    "dependencies" : "/Users/jaredsopenclaw/code/haplollc/HaploUI/build/Build/Intermediates.noindex/HaploUI.build/Debug-iphonesimulator/HaploUI.build/Objects-normal/arm64/ControlsCatalog.d",
+    "diagnostics" : "/Users/jaredsopenclaw/code/haplollc/HaploUI/build/Build/Intermediates.noindex/HaploUI.build/Debug-iphonesimulator/HaploUI.build/Objects-normal/arm64/ControlsCatalog.dia",
+    "index-unit-output-path" : "/HaploUI.build/Debug-iphonesimulator/HaploUI.build/Objects-normal/arm64/ControlsCatalog.o",
+    "llvm-bc" : "/Users/jaredsopenclaw/code/haplollc/HaploUI/build/Build/Intermediates.noindex/HaploUI.build/Debug-iphonesimulator/HaploUI.build/Objects-normal/arm64/ControlsCatalog.bc",
+    "object" : "/Users/jaredsopenclaw/code/haplollc/HaploUI/build/Build/Intermediates.noindex/HaploUI.build/Debug-iphonesimulator/HaploUI.build/Objects-normal/arm64/ControlsCatalog.o",
+    "swift-dependencies" : "/Users/jaredsopenclaw/code/haplollc/HaploUI/build/Build/Intermediates.noindex/HaploUI.build/Debug-iphonesimulator/HaploUI.build/Objects-normal/arm64/ControlsCatalog.swiftdeps",
+    "swiftmodule" : "/Users/jaredsopenclaw/code/haplollc/HaploUI/build/Build/Intermediates.noindex/HaploUI.build/Debug-iphonesimulator/HaploUI.build/Objects-normal/arm64/ControlsCatalog~partial.swiftmodule"
+  },
+  "/Users/jaredsopenclaw/code/haplollc/HaploUI/Sources/HaploUI/Catalog/EffectsCatalog.swift" : {
+    "const-values" : "/Users/jaredsopenclaw/code/haplollc/HaploUI/build/Build/Intermediates.noindex/HaploUI.build/Debug-iphonesimulator/HaploUI.build/Objects-normal/arm64/EffectsCatalog.swiftconstvalues",
+    "dependencies" : "/Users/jaredsopenclaw/code/haplollc/HaploUI/build/Build/Intermediates.noindex/HaploUI.build/Debug-iphonesimulator/HaploUI.build/Objects-normal/arm64/EffectsCatalog.d",
+    "diagnostics" : "/Users/jaredsopenclaw/code/haplollc/HaploUI/build/Build/Intermediates.noindex/HaploUI.build/Debug-iphonesimulator/HaploUI.build/Objects-normal/arm64/EffectsCatalog.dia",
+    "index-unit-output-path" : "/HaploUI.build/Debug-iphonesimulator/HaploUI.build/Objects-normal/arm64/EffectsCatalog.o",
+    "llvm-bc" : "/Users/jaredsopenclaw/code/haplollc/HaploUI/build/Build/Intermediates.noindex/HaploUI.build/Debug-iphonesimulator/HaploUI.build/Objects-normal/arm64/EffectsCatalog.bc",
+    "object" : "/Users/jaredsopenclaw/code/haplollc/HaploUI/build/Build/Intermediates.noindex/HaploUI.build/Debug-iphonesimulator/HaploUI.build/Objects-normal/arm64/EffectsCatalog.o",
+    "swift-dependencies" : "/Users/jaredsopenclaw/code/haplollc/HaploUI/build/Build/Intermediates.noindex/HaploUI.build/Debug-iphonesimulator/HaploUI.build/Objects-normal/arm64/EffectsCatalog.swiftdeps",
+    "swiftmodule" : "/Users/jaredsopenclaw/code/haplollc/HaploUI/build/Build/Intermediates.noindex/HaploUI.build/Debug-iphonesimulator/HaploUI.build/Objects-normal/arm64/EffectsCatalog~partial.swiftmodule"
+  },
+  "/Users/jaredsopenclaw/code/haplollc/HaploUI/Sources/HaploUI/Catalog/InputsCatalog.swift" : {
+    "const-values" : "/Users/jaredsopenclaw/code/haplollc/HaploUI/build/Build/Intermediates.noindex/HaploUI.build/Debug-iphonesimulator/HaploUI.build/Objects-normal/arm64/InputsCatalog.swiftconstvalues",
+    "dependencies" : "/Users/jaredsopenclaw/code/haplollc/HaploUI/build/Build/Intermediates.noindex/HaploUI.build/Debug-iphonesimulator/HaploUI.build/Objects-normal/arm64/InputsCatalog.d",
+    "diagnostics" : "/Users/jaredsopenclaw/code/haplollc/HaploUI/build/Build/Intermediates.noindex/HaploUI.build/Debug-iphonesimulator/HaploUI.build/Objects-normal/arm64/InputsCatalog.dia",
+    "index-unit-output-path" : "/HaploUI.build/Debug-iphonesimulator/HaploUI.build/Objects-normal/arm64/InputsCatalog.o",
+    "llvm-bc" : "/Users/jaredsopenclaw/code/haplollc/HaploUI/build/Build/Intermediates.noindex/HaploUI.build/Debug-iphonesimulator/HaploUI.build/Objects-normal/arm64/InputsCatalog.bc",
+    "object" : "/Users/jaredsopenclaw/code/haplollc/HaploUI/build/Build/Intermediates.noindex/HaploUI.build/Debug-iphonesimulator/HaploUI.build/Objects-normal/arm64/InputsCatalog.o",
+    "swift-dependencies" : "/Users/jaredsopenclaw/code/haplollc/HaploUI/build/Build/Intermediates.noindex/HaploUI.build/Debug-iphonesimulator/HaploUI.build/Objects-normal/arm64/InputsCatalog.swiftdeps",
+    "swiftmodule" : "/Users/jaredsopenclaw/code/haplollc/HaploUI/build/Build/Intermediates.noindex/HaploUI.build/Debug-iphonesimulator/HaploUI.build/Objects-normal/arm64/InputsCatalog~partial.swiftmodule"
+  },
+  "/Users/jaredsopenclaw/code/haplollc/HaploUI/Sources/HaploUI/Catalog/ProgressCatalog.swift" : {
+    "const-values" : "/Users/jaredsopenclaw/code/haplollc/HaploUI/build/Build/Intermediates.noindex/HaploUI.build/Debug-iphonesimulator/HaploUI.build/Objects-normal/arm64/ProgressCatalog.swiftconstvalues",
+    "dependencies" : "/Users/jaredsopenclaw/code/haplollc/HaploUI/build/Build/Intermediates.noindex/HaploUI.build/Debug-iphonesimulator/HaploUI.build/Objects-normal/arm64/ProgressCatalog.d",
+    "diagnostics" : "/Users/jaredsopenclaw/code/haplollc/HaploUI/build/Build/Intermediates.noindex/HaploUI.build/Debug-iphonesimulator/HaploUI.build/Objects-normal/arm64/ProgressCatalog.dia",
+    "index-unit-output-path" : "/HaploUI.build/Debug-iphonesimulator/HaploUI.build/Objects-normal/arm64/ProgressCatalog.o",
+    "llvm-bc" : "/Users/jaredsopenclaw/code/haplollc/HaploUI/build/Build/Intermediates.noindex/HaploUI.build/Debug-iphonesimulator/HaploUI.build/Objects-normal/arm64/ProgressCatalog.bc",
+    "object" : "/Users/jaredsopenclaw/code/haplollc/HaploUI/build/Build/Intermediates.noindex/HaploUI.build/Debug-iphonesimulator/HaploUI.build/Objects-normal/arm64/ProgressCatalog.o",
+    "swift-dependencies" : "/Users/jaredsopenclaw/code/haplollc/HaploUI/build/Build/Intermediates.noindex/HaploUI.build/Debug-iphonesimulator/HaploUI.build/Objects-normal/arm64/ProgressCatalog.swiftdeps",
+    "swiftmodule" : "/Users/jaredsopenclaw/code/haplollc/HaploUI/build/Build/Intermediates.noindex/HaploUI.build/Debug-iphonesimulator/HaploUI.build/Objects-normal/arm64/ProgressCatalog~partial.swiftmodule"
+  },
+  "/Users/jaredsopenclaw/code/haplollc/HaploUI/Sources/HaploUI/Catalog/SheetsCatalog.swift" : {
+    "const-values" : "/Users/jaredsopenclaw/code/haplollc/HaploUI/build/Build/Intermediates.noindex/HaploUI.build/Debug-iphonesimulator/HaploUI.build/Objects-normal/arm64/SheetsCatalog.swiftconstvalues",
+    "dependencies" : "/Users/jaredsopenclaw/code/haplollc/HaploUI/build/Build/Intermediates.noindex/HaploUI.build/Debug-iphonesimulator/HaploUI.build/Objects-normal/arm64/SheetsCatalog.d",
+    "diagnostics" : "/Users/jaredsopenclaw/code/haplollc/HaploUI/build/Build/Intermediates.noindex/HaploUI.build/Debug-iphonesimulator/HaploUI.build/Objects-normal/arm64/SheetsCatalog.dia",
+    "index-unit-output-path" : "/HaploUI.build/Debug-iphonesimulator/HaploUI.build/Objects-normal/arm64/SheetsCatalog.o",
+    "llvm-bc" : "/Users/jaredsopenclaw/code/haplollc/HaploUI/build/Build/Intermediates.noindex/HaploUI.build/Debug-iphonesimulator/HaploUI.build/Objects-normal/arm64/SheetsCatalog.bc",
+    "object" : "/Users/jaredsopenclaw/code/haplollc/HaploUI/build/Build/Intermediates.noindex/HaploUI.build/Debug-iphonesimulator/HaploUI.build/Objects-normal/arm64/SheetsCatalog.o",
+    "swift-dependencies" : "/Users/jaredsopenclaw/code/haplollc/HaploUI/build/Build/Intermediates.noindex/HaploUI.build/Debug-iphonesimulator/HaploUI.build/Objects-normal/arm64/SheetsCatalog.swiftdeps",
+    "swiftmodule" : "/Users/jaredsopenclaw/code/haplollc/HaploUI/build/Build/Intermediates.noindex/HaploUI.build/Debug-iphonesimulator/HaploUI.build/Objects-normal/arm64/SheetsCatalog~partial.swiftmodule"
+  },
+  "/Users/jaredsopenclaw/code/haplollc/HaploUI/Sources/HaploUI/Catalog/SlidersCatalog.swift" : {
+    "const-values" : "/Users/jaredsopenclaw/code/haplollc/HaploUI/build/Build/Intermediates.noindex/HaploUI.build/Debug-iphonesimulator/HaploUI.build/Objects-normal/arm64/SlidersCatalog.swiftconstvalues",
+    "dependencies" : "/Users/jaredsopenclaw/code/haplollc/HaploUI/build/Build/Intermediates.noindex/HaploUI.build/Debug-iphonesimulator/HaploUI.build/Objects-normal/arm64/SlidersCatalog.d",
+    "diagnostics" : "/Users/jaredsopenclaw/code/haplollc/HaploUI/build/Build/Intermediates.noindex/HaploUI.build/Debug-iphonesimulator/HaploUI.build/Objects-normal/arm64/SlidersCatalog.dia",
+    "index-unit-output-path" : "/HaploUI.build/Debug-iphonesimulator/HaploUI.build/Objects-normal/arm64/SlidersCatalog.o",
+    "llvm-bc" : "/Users/jaredsopenclaw/code/haplollc/HaploUI/build/Build/Intermediates.noindex/HaploUI.build/Debug-iphonesimulator/HaploUI.build/Objects-normal/arm64/SlidersCatalog.bc",
+    "object" : "/Users/jaredsopenclaw/code/haplollc/HaploUI/build/Build/Intermediates.noindex/HaploUI.build/Debug-iphonesimulator/HaploUI.build/Objects-normal/arm64/SlidersCatalog.o",
+    "swift-dependencies" : "/Users/jaredsopenclaw/code/haplollc/HaploUI/build/Build/Intermediates.noindex/HaploUI.build/Debug-iphonesimulator/HaploUI.build/Objects-normal/arm64/SlidersCatalog.swiftdeps",
+    "swiftmodule" : "/Users/jaredsopenclaw/code/haplollc/HaploUI/build/Build/Intermediates.noindex/HaploUI.build/Debug-iphonesimulator/HaploUI.build/Objects-normal/arm64/SlidersCatalog~partial.swiftmodule"
+  },
+  "/Users/jaredsopenclaw/code/haplollc/HaploUI/Sources/HaploUI/Catalog/SteppersCatalog.swift" : {
+    "const-values" : "/Users/jaredsopenclaw/code/haplollc/HaploUI/build/Build/Intermediates.noindex/HaploUI.build/Debug-iphonesimulator/HaploUI.build/Objects-normal/arm64/SteppersCatalog.swiftconstvalues",
+    "dependencies" : "/Users/jaredsopenclaw/code/haplollc/HaploUI/build/Build/Intermediates.noindex/HaploUI.build/Debug-iphonesimulator/HaploUI.build/Objects-normal/arm64/SteppersCatalog.d",
+    "diagnostics" : "/Users/jaredsopenclaw/code/haplollc/HaploUI/build/Build/Intermediates.noindex/HaploUI.build/Debug-iphonesimulator/HaploUI.build/Objects-normal/arm64/SteppersCatalog.dia",
+    "index-unit-output-path" : "/HaploUI.build/Debug-iphonesimulator/HaploUI.build/Objects-normal/arm64/SteppersCatalog.o",
+    "llvm-bc" : "/Users/jaredsopenclaw/code/haplollc/HaploUI/build/Build/Intermediates.noindex/HaploUI.build/Debug-iphonesimulator/HaploUI.build/Objects-normal/arm64/SteppersCatalog.bc",
+    "object" : "/Users/jaredsopenclaw/code/haplollc/HaploUI/build/Build/Intermediates.noindex/HaploUI.build/Debug-iphonesimulator/HaploUI.build/Objects-normal/arm64/SteppersCatalog.o",
+    "swift-dependencies" : "/Users/jaredsopenclaw/code/haplollc/HaploUI/build/Build/Intermediates.noindex/HaploUI.build/Debug-iphonesimulator/HaploUI.build/Objects-normal/arm64/SteppersCatalog.swiftdeps",
+    "swiftmodule" : "/Users/jaredsopenclaw/code/haplollc/HaploUI/build/Build/Intermediates.noindex/HaploUI.build/Debug-iphonesimulator/HaploUI.build/Objects-normal/arm64/SteppersCatalog~partial.swiftmodule"
+  },
+  "/Users/jaredsopenclaw/code/haplollc/HaploUI/Sources/HaploUI/Catalog/TextCatalog.swift" : {
+    "const-values" : "/Users/jaredsopenclaw/code/haplollc/HaploUI/build/Build/Intermediates.noindex/HaploUI.build/Debug-iphonesimulator/HaploUI.build/Objects-normal/arm64/TextCatalog.swiftconstvalues",
+    "dependencies" : "/Users/jaredsopenclaw/code/haplollc/HaploUI/build/Build/Intermediates.noindex/HaploUI.build/Debug-iphonesimulator/HaploUI.build/Objects-normal/arm64/TextCatalog.d",
+    "diagnostics" : "/Users/jaredsopenclaw/code/haplollc/HaploUI/build/Build/Intermediates.noindex/HaploUI.build/Debug-iphonesimulator/HaploUI.build/Objects-normal/arm64/TextCatalog.dia",
+    "index-unit-output-path" : "/HaploUI.build/Debug-iphonesimulator/HaploUI.build/Objects-normal/arm64/TextCatalog.o",
+    "llvm-bc" : "/Users/jaredsopenclaw/code/haplollc/HaploUI/build/Build/Intermediates.noindex/HaploUI.build/Debug-iphonesimulator/HaploUI.build/Objects-normal/arm64/TextCatalog.bc",
+    "object" : "/Users/jaredsopenclaw/code/haplollc/HaploUI/build/Build/Intermediates.noindex/HaploUI.build/Debug-iphonesimulator/HaploUI.build/Objects-normal/arm64/TextCatalog.o",
+    "swift-dependencies" : "/Users/jaredsopenclaw/code/haplollc/HaploUI/build/Build/Intermediates.noindex/HaploUI.build/Debug-iphonesimulator/HaploUI.build/Objects-normal/arm64/TextCatalog.swiftdeps",
+    "swiftmodule" : "/Users/jaredsopenclaw/code/haplollc/HaploUI/build/Build/Intermediates.noindex/HaploUI.build/Debug-iphonesimulator/HaploUI.build/Objects-normal/arm64/TextCatalog~partial.swiftmodule"
+  },
+  "/Users/jaredsopenclaw/code/haplollc/HaploUI/Sources/HaploUI/Catalog/ThemeCatalogs.swift" : {
+    "const-values" : "/Users/jaredsopenclaw/code/haplollc/HaploUI/build/Build/Intermediates.noindex/HaploUI.build/Debug-iphonesimulator/HaploUI.build/Objects-normal/arm64/ThemeCatalogs.swiftconstvalues",
+    "dependencies" : "/Users/jaredsopenclaw/code/haplollc/HaploUI/build/Build/Intermediates.noindex/HaploUI.build/Debug-iphonesimulator/HaploUI.build/Objects-normal/arm64/ThemeCatalogs.d",
+    "diagnostics" : "/Users/jaredsopenclaw/code/haplollc/HaploUI/build/Build/Intermediates.noindex/HaploUI.build/Debug-iphonesimulator/HaploUI.build/Objects-normal/arm64/ThemeCatalogs.dia",
+    "index-unit-output-path" : "/HaploUI.build/Debug-iphonesimulator/HaploUI.build/Objects-normal/arm64/ThemeCatalogs.o",
+    "llvm-bc" : "/Users/jaredsopenclaw/code/haplollc/HaploUI/build/Build/Intermediates.noindex/HaploUI.build/Debug-iphonesimulator/HaploUI.build/Objects-normal/arm64/ThemeCatalogs.bc",
+    "object" : "/Users/jaredsopenclaw/code/haplollc/HaploUI/build/Build/Intermediates.noindex/HaploUI.build/Debug-iphonesimulator/HaploUI.build/Objects-normal/arm64/ThemeCatalogs.o",
+    "swift-dependencies" : "/Users/jaredsopenclaw/code/haplollc/HaploUI/build/Build/Intermediates.noindex/HaploUI.build/Debug-iphonesimulator/HaploUI.build/Objects-normal/arm64/ThemeCatalogs.swiftdeps",
+    "swiftmodule" : "/Users/jaredsopenclaw/code/haplollc/HaploUI/build/Build/Intermediates.noindex/HaploUI.build/Debug-iphonesimulator/HaploUI.build/Objects-normal/arm64/ThemeCatalogs~partial.swiftmodule"
+  },
+  "/Users/jaredsopenclaw/code/haplollc/HaploUI/Sources/HaploUI/Components/Buttons/HaploButton.swift" : {
+    "const-values" : "/Users/jaredsopenclaw/code/haplollc/HaploUI/build/Build/Intermediates.noindex/HaploUI.build/Debug-iphonesimulator/HaploUI.build/Objects-normal/arm64/HaploButton.swiftconstvalues",
+    "dependencies" : "/Users/jaredsopenclaw/code/haplollc/HaploUI/build/Build/Intermediates.noindex/HaploUI.build/Debug-iphonesimulator/HaploUI.build/Objects-normal/arm64/HaploButton.d",
+    "diagnostics" : "/Users/jaredsopenclaw/code/haplollc/HaploUI/build/Build/Intermediates.noindex/HaploUI.build/Debug-iphonesimulator/HaploUI.build/Objects-normal/arm64/HaploButton.dia",
+    "index-unit-output-path" : "/HaploUI.build/Debug-iphonesimulator/HaploUI.build/Objects-normal/arm64/HaploButton.o",
+    "llvm-bc" : "/Users/jaredsopenclaw/code/haplollc/HaploUI/build/Build/Intermediates.noindex/HaploUI.build/Debug-iphonesimulator/HaploUI.build/Objects-normal/arm64/HaploButton.bc",
+    "object" : "/Users/jaredsopenclaw/code/haplollc/HaploUI/build/Build/Intermediates.noindex/HaploUI.build/Debug-iphonesimulator/HaploUI.build/Objects-normal/arm64/HaploButton.o",
+    "swift-dependencies" : "/Users/jaredsopenclaw/code/haplollc/HaploUI/build/Build/Intermediates.noindex/HaploUI.build/Debug-iphonesimulator/HaploUI.build/Objects-normal/arm64/HaploButton.swiftdeps",
+    "swiftmodule" : "/Users/jaredsopenclaw/code/haplollc/HaploUI/build/Build/Intermediates.noindex/HaploUI.build/Debug-iphonesimulator/HaploUI.build/Objects-normal/arm64/HaploButton~partial.swiftmodule"
+  },
+  "/Users/jaredsopenclaw/code/haplollc/HaploUI/Sources/HaploUI/Components/Cards/HaploCard.swift" : {
+    "const-values" : "/Users/jaredsopenclaw/code/haplollc/HaploUI/build/Build/Intermediates.noindex/HaploUI.build/Debug-iphonesimulator/HaploUI.build/Objects-normal/arm64/HaploCard.swiftconstvalues",
+    "dependencies" : "/Users/jaredsopenclaw/code/haplollc/HaploUI/build/Build/Intermediates.noindex/HaploUI.build/Debug-iphonesimulator/HaploUI.build/Objects-normal/arm64/HaploCard.d",
+    "diagnostics" : "/Users/jaredsopenclaw/code/haplollc/HaploUI/build/Build/Intermediates.noindex/HaploUI.build/Debug-iphonesimulator/HaploUI.build/Objects-normal/arm64/HaploCard.dia",
+    "index-unit-output-path" : "/HaploUI.build/Debug-iphonesimulator/HaploUI.build/Objects-normal/arm64/HaploCard.o",
+    "llvm-bc" : "/Users/jaredsopenclaw/code/haplollc/HaploUI/build/Build/Intermediates.noindex/HaploUI.build/Debug-iphonesimulator/HaploUI.build/Objects-normal/arm64/HaploCard.bc",
+    "object" : "/Users/jaredsopenclaw/code/haplollc/HaploUI/build/Build/Intermediates.noindex/HaploUI.build/Debug-iphonesimulator/HaploUI.build/Objects-normal/arm64/HaploCard.o",
+    "swift-dependencies" : "/Users/jaredsopenclaw/code/haplollc/HaploUI/build/Build/Intermediates.noindex/HaploUI.build/Debug-iphonesimulator/HaploUI.build/Objects-normal/arm64/HaploCard.swiftdeps",
+    "swiftmodule" : "/Users/jaredsopenclaw/code/haplollc/HaploUI/build/Build/Intermediates.noindex/HaploUI.build/Debug-iphonesimulator/HaploUI.build/Objects-normal/arm64/HaploCard~partial.swiftmodule"
+  },
+  "/Users/jaredsopenclaw/code/haplollc/HaploUI/Sources/HaploUI/Components/Controls/HaploDurationPicker.swift" : {
+    "const-values" : "/Users/jaredsopenclaw/code/haplollc/HaploUI/build/Build/Intermediates.noindex/HaploUI.build/Debug-iphonesimulator/HaploUI.build/Objects-normal/arm64/HaploDurationPicker.swiftconstvalues",
+    "dependencies" : "/Users/jaredsopenclaw/code/haplollc/HaploUI/build/Build/Intermediates.noindex/HaploUI.build/Debug-iphonesimulator/HaploUI.build/Objects-normal/arm64/HaploDurationPicker.d",
+    "diagnostics" : "/Users/jaredsopenclaw/code/haplollc/HaploUI/build/Build/Intermediates.noindex/HaploUI.build/Debug-iphonesimulator/HaploUI.build/Objects-normal/arm64/HaploDurationPicker.dia",
+    "index-unit-output-path" : "/HaploUI.build/Debug-iphonesimulator/HaploUI.build/Objects-normal/arm64/HaploDurationPicker.o",
+    "llvm-bc" : "/Users/jaredsopenclaw/code/haplollc/HaploUI/build/Build/Intermediates.noindex/HaploUI.build/Debug-iphonesimulator/HaploUI.build/Objects-normal/arm64/HaploDurationPicker.bc",
+    "object" : "/Users/jaredsopenclaw/code/haplollc/HaploUI/build/Build/Intermediates.noindex/HaploUI.build/Debug-iphonesimulator/HaploUI.build/Objects-normal/arm64/HaploDurationPicker.o",
+    "swift-dependencies" : "/Users/jaredsopenclaw/code/haplollc/HaploUI/build/Build/Intermediates.noindex/HaploUI.build/Debug-iphonesimulator/HaploUI.build/Objects-normal/arm64/HaploDurationPicker.swiftdeps",
+    "swiftmodule" : "/Users/jaredsopenclaw/code/haplollc/HaploUI/build/Build/Intermediates.noindex/HaploUI.build/Debug-iphonesimulator/HaploUI.build/Objects-normal/arm64/HaploDurationPicker~partial.swiftmodule"
+  },
+  "/Users/jaredsopenclaw/code/haplollc/HaploUI/Sources/HaploUI/Components/Controls/HaploSegmentedControl.swift" : {
+    "const-values" : "/Users/jaredsopenclaw/code/haplollc/HaploUI/build/Build/Intermediates.noindex/HaploUI.build/Debug-iphonesimulator/HaploUI.build/Objects-normal/arm64/HaploSegmentedControl.swiftconstvalues",
+    "dependencies" : "/Users/jaredsopenclaw/code/haplollc/HaploUI/build/Build/Intermediates.noindex/HaploUI.build/Debug-iphonesimulator/HaploUI.build/Objects-normal/arm64/HaploSegmentedControl.d",
+    "diagnostics" : "/Users/jaredsopenclaw/code/haplollc/HaploUI/build/Build/Intermediates.noindex/HaploUI.build/Debug-iphonesimulator/HaploUI.build/Objects-normal/arm64/HaploSegmentedControl.dia",
+    "index-unit-output-path" : "/HaploUI.build/Debug-iphonesimulator/HaploUI.build/Objects-normal/arm64/HaploSegmentedControl.o",
+    "llvm-bc" : "/Users/jaredsopenclaw/code/haplollc/HaploUI/build/Build/Intermediates.noindex/HaploUI.build/Debug-iphonesimulator/HaploUI.build/Objects-normal/arm64/HaploSegmentedControl.bc",
+    "object" : "/Users/jaredsopenclaw/code/haplollc/HaploUI/build/Build/Intermediates.noindex/HaploUI.build/Debug-iphonesimulator/HaploUI.build/Objects-normal/arm64/HaploSegmentedControl.o",
+    "swift-dependencies" : "/Users/jaredsopenclaw/code/haplollc/HaploUI/build/Build/Intermediates.noindex/HaploUI.build/Debug-iphonesimulator/HaploUI.build/Objects-normal/arm64/HaploSegmentedControl.swiftdeps",
+    "swiftmodule" : "/Users/jaredsopenclaw/code/haplollc/HaploUI/build/Build/Intermediates.noindex/HaploUI.build/Debug-iphonesimulator/HaploUI.build/Objects-normal/arm64/HaploSegmentedControl~partial.swiftmodule"
+  },
+  "/Users/jaredsopenclaw/code/haplollc/HaploUI/Sources/HaploUI/Components/Inputs/HaploInput.swift" : {
+    "const-values" : "/Users/jaredsopenclaw/code/haplollc/HaploUI/build/Build/Intermediates.noindex/HaploUI.build/Debug-iphonesimulator/HaploUI.build/Objects-normal/arm64/HaploInput.swiftconstvalues",
+    "dependencies" : "/Users/jaredsopenclaw/code/haplollc/HaploUI/build/Build/Intermediates.noindex/HaploUI.build/Debug-iphonesimulator/HaploUI.build/Objects-normal/arm64/HaploInput.d",
+    "diagnostics" : "/Users/jaredsopenclaw/code/haplollc/HaploUI/build/Build/Intermediates.noindex/HaploUI.build/Debug-iphonesimulator/HaploUI.build/Objects-normal/arm64/HaploInput.dia",
+    "index-unit-output-path" : "/HaploUI.build/Debug-iphonesimulator/HaploUI.build/Objects-normal/arm64/HaploInput.o",
+    "llvm-bc" : "/Users/jaredsopenclaw/code/haplollc/HaploUI/build/Build/Intermediates.noindex/HaploUI.build/Debug-iphonesimulator/HaploUI.build/Objects-normal/arm64/HaploInput.bc",
+    "object" : "/Users/jaredsopenclaw/code/haplollc/HaploUI/build/Build/Intermediates.noindex/HaploUI.build/Debug-iphonesimulator/HaploUI.build/Objects-normal/arm64/HaploInput.o",
+    "swift-dependencies" : "/Users/jaredsopenclaw/code/haplollc/HaploUI/build/Build/Intermediates.noindex/HaploUI.build/Debug-iphonesimulator/HaploUI.build/Objects-normal/arm64/HaploInput.swiftdeps",
+    "swiftmodule" : "/Users/jaredsopenclaw/code/haplollc/HaploUI/build/Build/Intermediates.noindex/HaploUI.build/Debug-iphonesimulator/HaploUI.build/Objects-normal/arm64/HaploInput~partial.swiftmodule"
+  },
+  "/Users/jaredsopenclaw/code/haplollc/HaploUI/Sources/HaploUI/Components/Progress/HaploProgress.swift" : {
+    "const-values" : "/Users/jaredsopenclaw/code/haplollc/HaploUI/build/Build/Intermediates.noindex/HaploUI.build/Debug-iphonesimulator/HaploUI.build/Objects-normal/arm64/HaploProgress.swiftconstvalues",
+    "dependencies" : "/Users/jaredsopenclaw/code/haplollc/HaploUI/build/Build/Intermediates.noindex/HaploUI.build/Debug-iphonesimulator/HaploUI.build/Objects-normal/arm64/HaploProgress.d",
+    "diagnostics" : "/Users/jaredsopenclaw/code/haplollc/HaploUI/build/Build/Intermediates.noindex/HaploUI.build/Debug-iphonesimulator/HaploUI.build/Objects-normal/arm64/HaploProgress.dia",
+    "index-unit-output-path" : "/HaploUI.build/Debug-iphonesimulator/HaploUI.build/Objects-normal/arm64/HaploProgress.o",
+    "llvm-bc" : "/Users/jaredsopenclaw/code/haplollc/HaploUI/build/Build/Intermediates.noindex/HaploUI.build/Debug-iphonesimulator/HaploUI.build/Objects-normal/arm64/HaploProgress.bc",
+    "object" : "/Users/jaredsopenclaw/code/haplollc/HaploUI/build/Build/Intermediates.noindex/HaploUI.build/Debug-iphonesimulator/HaploUI.build/Objects-normal/arm64/HaploProgress.o",
+    "swift-dependencies" : "/Users/jaredsopenclaw/code/haplollc/HaploUI/build/Build/Intermediates.noindex/HaploUI.build/Debug-iphonesimulator/HaploUI.build/Objects-normal/arm64/HaploProgress.swiftdeps",
+    "swiftmodule" : "/Users/jaredsopenclaw/code/haplollc/HaploUI/build/Build/Intermediates.noindex/HaploUI.build/Debug-iphonesimulator/HaploUI.build/Objects-normal/arm64/HaploProgress~partial.swiftmodule"
+  },
+  "/Users/jaredsopenclaw/code/haplollc/HaploUI/Sources/HaploUI/Components/Sheets/HaploSheet.swift" : {
+    "const-values" : "/Users/jaredsopenclaw/code/haplollc/HaploUI/build/Build/Intermediates.noindex/HaploUI.build/Debug-iphonesimulator/HaploUI.build/Objects-normal/arm64/HaploSheet.swiftconstvalues",
+    "dependencies" : "/Users/jaredsopenclaw/code/haplollc/HaploUI/build/Build/Intermediates.noindex/HaploUI.build/Debug-iphonesimulator/HaploUI.build/Objects-normal/arm64/HaploSheet.d",
+    "diagnostics" : "/Users/jaredsopenclaw/code/haplollc/HaploUI/build/Build/Intermediates.noindex/HaploUI.build/Debug-iphonesimulator/HaploUI.build/Objects-normal/arm64/HaploSheet.dia",
+    "index-unit-output-path" : "/HaploUI.build/Debug-iphonesimulator/HaploUI.build/Objects-normal/arm64/HaploSheet.o",
+    "llvm-bc" : "/Users/jaredsopenclaw/code/haplollc/HaploUI/build/Build/Intermediates.noindex/HaploUI.build/Debug-iphonesimulator/HaploUI.build/Objects-normal/arm64/HaploSheet.bc",
+    "object" : "/Users/jaredsopenclaw/code/haplollc/HaploUI/build/Build/Intermediates.noindex/HaploUI.build/Debug-iphonesimulator/HaploUI.build/Objects-normal/arm64/HaploSheet.o",
+    "swift-dependencies" : "/Users/jaredsopenclaw/code/haplollc/HaploUI/build/Build/Intermediates.noindex/HaploUI.build/Debug-iphonesimulator/HaploUI.build/Objects-normal/arm64/HaploSheet.swiftdeps",
+    "swiftmodule" : "/Users/jaredsopenclaw/code/haplollc/HaploUI/build/Build/Intermediates.noindex/HaploUI.build/Debug-iphonesimulator/HaploUI.build/Objects-normal/arm64/HaploSheet~partial.swiftmodule"
+  },
+  "/Users/jaredsopenclaw/code/haplollc/HaploUI/Sources/HaploUI/Components/Sliders/HaploSlider.swift" : {
+    "const-values" : "/Users/jaredsopenclaw/code/haplollc/HaploUI/build/Build/Intermediates.noindex/HaploUI.build/Debug-iphonesimulator/HaploUI.build/Objects-normal/arm64/HaploSlider.swiftconstvalues",
+    "dependencies" : "/Users/jaredsopenclaw/code/haplollc/HaploUI/build/Build/Intermediates.noindex/HaploUI.build/Debug-iphonesimulator/HaploUI.build/Objects-normal/arm64/HaploSlider.d",
+    "diagnostics" : "/Users/jaredsopenclaw/code/haplollc/HaploUI/build/Build/Intermediates.noindex/HaploUI.build/Debug-iphonesimulator/HaploUI.build/Objects-normal/arm64/HaploSlider.dia",
+    "index-unit-output-path" : "/HaploUI.build/Debug-iphonesimulator/HaploUI.build/Objects-normal/arm64/HaploSlider.o",
+    "llvm-bc" : "/Users/jaredsopenclaw/code/haplollc/HaploUI/build/Build/Intermediates.noindex/HaploUI.build/Debug-iphonesimulator/HaploUI.build/Objects-normal/arm64/HaploSlider.bc",
+    "object" : "/Users/jaredsopenclaw/code/haplollc/HaploUI/build/Build/Intermediates.noindex/HaploUI.build/Debug-iphonesimulator/HaploUI.build/Objects-normal/arm64/HaploSlider.o",
+    "swift-dependencies" : "/Users/jaredsopenclaw/code/haplollc/HaploUI/build/Build/Intermediates.noindex/HaploUI.build/Debug-iphonesimulator/HaploUI.build/Objects-normal/arm64/HaploSlider.swiftdeps",
+    "swiftmodule" : "/Users/jaredsopenclaw/code/haplollc/HaploUI/build/Build/Intermediates.noindex/HaploUI.build/Debug-iphonesimulator/HaploUI.build/Objects-normal/arm64/HaploSlider~partial.swiftmodule"
+  },
+  "/Users/jaredsopenclaw/code/haplollc/HaploUI/Sources/HaploUI/Components/Steppers/HaploStepper.swift" : {
+    "const-values" : "/Users/jaredsopenclaw/code/haplollc/HaploUI/build/Build/Intermediates.noindex/HaploUI.build/Debug-iphonesimulator/HaploUI.build/Objects-normal/arm64/HaploStepper.swiftconstvalues",
+    "dependencies" : "/Users/jaredsopenclaw/code/haplollc/HaploUI/build/Build/Intermediates.noindex/HaploUI.build/Debug-iphonesimulator/HaploUI.build/Objects-normal/arm64/HaploStepper.d",
+    "diagnostics" : "/Users/jaredsopenclaw/code/haplollc/HaploUI/build/Build/Intermediates.noindex/HaploUI.build/Debug-iphonesimulator/HaploUI.build/Objects-normal/arm64/HaploStepper.dia",
+    "index-unit-output-path" : "/HaploUI.build/Debug-iphonesimulator/HaploUI.build/Objects-normal/arm64/HaploStepper.o",
+    "llvm-bc" : "/Users/jaredsopenclaw/code/haplollc/HaploUI/build/Build/Intermediates.noindex/HaploUI.build/Debug-iphonesimulator/HaploUI.build/Objects-normal/arm64/HaploStepper.bc",
+    "object" : "/Users/jaredsopenclaw/code/haplollc/HaploUI/build/Build/Intermediates.noindex/HaploUI.build/Debug-iphonesimulator/HaploUI.build/Objects-normal/arm64/HaploStepper.o",
+    "swift-dependencies" : "/Users/jaredsopenclaw/code/haplollc/HaploUI/build/Build/Intermediates.noindex/HaploUI.build/Debug-iphonesimulator/HaploUI.build/Objects-normal/arm64/HaploStepper.swiftdeps",
+    "swiftmodule" : "/Users/jaredsopenclaw/code/haplollc/HaploUI/build/Build/Intermediates.noindex/HaploUI.build/Debug-iphonesimulator/HaploUI.build/Objects-normal/arm64/HaploStepper~partial.swiftmodule"
+  },
+  "/Users/jaredsopenclaw/code/haplollc/HaploUI/Sources/HaploUI/Components/Text/HaploText.swift" : {
+    "const-values" : "/Users/jaredsopenclaw/code/haplollc/HaploUI/build/Build/Intermediates.noindex/HaploUI.build/Debug-iphonesimulator/HaploUI.build/Objects-normal/arm64/HaploText.swiftconstvalues",
+    "dependencies" : "/Users/jaredsopenclaw/code/haplollc/HaploUI/build/Build/Intermediates.noindex/HaploUI.build/Debug-iphonesimulator/HaploUI.build/Objects-normal/arm64/HaploText.d",
+    "diagnostics" : "/Users/jaredsopenclaw/code/haplollc/HaploUI/build/Build/Intermediates.noindex/HaploUI.build/Debug-iphonesimulator/HaploUI.build/Objects-normal/arm64/HaploText.dia",
+    "index-unit-output-path" : "/HaploUI.build/Debug-iphonesimulator/HaploUI.build/Objects-normal/arm64/HaploText.o",
+    "llvm-bc" : "/Users/jaredsopenclaw/code/haplollc/HaploUI/build/Build/Intermediates.noindex/HaploUI.build/Debug-iphonesimulator/HaploUI.build/Objects-normal/arm64/HaploText.bc",
+    "object" : "/Users/jaredsopenclaw/code/haplollc/HaploUI/build/Build/Intermediates.noindex/HaploUI.build/Debug-iphonesimulator/HaploUI.build/Objects-normal/arm64/HaploText.o",
+    "swift-dependencies" : "/Users/jaredsopenclaw/code/haplollc/HaploUI/build/Build/Intermediates.noindex/HaploUI.build/Debug-iphonesimulator/HaploUI.build/Objects-normal/arm64/HaploText.swiftdeps",
+    "swiftmodule" : "/Users/jaredsopenclaw/code/haplollc/HaploUI/build/Build/Intermediates.noindex/HaploUI.build/Debug-iphonesimulator/HaploUI.build/Objects-normal/arm64/HaploText~partial.swiftmodule"
+  },
+  "/Users/jaredsopenclaw/code/haplollc/HaploUI/Sources/HaploUI/HaploUI.swift" : {
+    "const-values" : "/Users/jaredsopenclaw/code/haplollc/HaploUI/build/Build/Intermediates.noindex/HaploUI.build/Debug-iphonesimulator/HaploUI.build/Objects-normal/arm64/HaploUI.swiftconstvalues",
+    "dependencies" : "/Users/jaredsopenclaw/code/haplollc/HaploUI/build/Build/Intermediates.noindex/HaploUI.build/Debug-iphonesimulator/HaploUI.build/Objects-normal/arm64/HaploUI.d",
+    "diagnostics" : "/Users/jaredsopenclaw/code/haplollc/HaploUI/build/Build/Intermediates.noindex/HaploUI.build/Debug-iphonesimulator/HaploUI.build/Objects-normal/arm64/HaploUI.dia",
+    "index-unit-output-path" : "/HaploUI.build/Debug-iphonesimulator/HaploUI.build/Objects-normal/arm64/HaploUI.o",
+    "llvm-bc" : "/Users/jaredsopenclaw/code/haplollc/HaploUI/build/Build/Intermediates.noindex/HaploUI.build/Debug-iphonesimulator/HaploUI.build/Objects-normal/arm64/HaploUI.bc",
+    "object" : "/Users/jaredsopenclaw/code/haplollc/HaploUI/build/Build/Intermediates.noindex/HaploUI.build/Debug-iphonesimulator/HaploUI.build/Objects-normal/arm64/HaploUI.o",
+    "swift-dependencies" : "/Users/jaredsopenclaw/code/haplollc/HaploUI/build/Build/Intermediates.noindex/HaploUI.build/Debug-iphonesimulator/HaploUI.build/Objects-normal/arm64/HaploUI.swiftdeps",
+    "swiftmodule" : "/Users/jaredsopenclaw/code/haplollc/HaploUI/build/Build/Intermediates.noindex/HaploUI.build/Debug-iphonesimulator/HaploUI.build/Objects-normal/arm64/HaploUI~partial.swiftmodule"
+  },
+  "/Users/jaredsopenclaw/code/haplollc/HaploUI/Sources/HaploUI/Theme/HaploEffects.swift" : {
+    "const-values" : "/Users/jaredsopenclaw/code/haplollc/HaploUI/build/Build/Intermediates.noindex/HaploUI.build/Debug-iphonesimulator/HaploUI.build/Objects-normal/arm64/HaploEffects.swiftconstvalues",
+    "dependencies" : "/Users/jaredsopenclaw/code/haplollc/HaploUI/build/Build/Intermediates.noindex/HaploUI.build/Debug-iphonesimulator/HaploUI.build/Objects-normal/arm64/HaploEffects.d",
+    "diagnostics" : "/Users/jaredsopenclaw/code/haplollc/HaploUI/build/Build/Intermediates.noindex/HaploUI.build/Debug-iphonesimulator/HaploUI.build/Objects-normal/arm64/HaploEffects.dia",
+    "index-unit-output-path" : "/HaploUI.build/Debug-iphonesimulator/HaploUI.build/Objects-normal/arm64/HaploEffects.o",
+    "llvm-bc" : "/Users/jaredsopenclaw/code/haplollc/HaploUI/build/Build/Intermediates.noindex/HaploUI.build/Debug-iphonesimulator/HaploUI.build/Objects-normal/arm64/HaploEffects.bc",
+    "object" : "/Users/jaredsopenclaw/code/haplollc/HaploUI/build/Build/Intermediates.noindex/HaploUI.build/Debug-iphonesimulator/HaploUI.build/Objects-normal/arm64/HaploEffects.o",
+    "swift-dependencies" : "/Users/jaredsopenclaw/code/haplollc/HaploUI/build/Build/Intermediates.noindex/HaploUI.build/Debug-iphonesimulator/HaploUI.build/Objects-normal/arm64/HaploEffects.swiftdeps",
+    "swiftmodule" : "/Users/jaredsopenclaw/code/haplollc/HaploUI/build/Build/Intermediates.noindex/HaploUI.build/Debug-iphonesimulator/HaploUI.build/Objects-normal/arm64/HaploEffects~partial.swiftmodule"
+  },
+  "/Users/jaredsopenclaw/code/haplollc/HaploUI/Sources/HaploUI/Theme/HaploTheme.swift" : {
+    "const-values" : "/Users/jaredsopenclaw/code/haplollc/HaploUI/build/Build/Intermediates.noindex/HaploUI.build/Debug-iphonesimulator/HaploUI.build/Objects-normal/arm64/HaploTheme.swiftconstvalues",
+    "dependencies" : "/Users/jaredsopenclaw/code/haplollc/HaploUI/build/Build/Intermediates.noindex/HaploUI.build/Debug-iphonesimulator/HaploUI.build/Objects-normal/arm64/HaploTheme.d",
+    "diagnostics" : "/Users/jaredsopenclaw/code/haplollc/HaploUI/build/Build/Intermediates.noindex/HaploUI.build/Debug-iphonesimulator/HaploUI.build/Objects-normal/arm64/HaploTheme.dia",
+    "index-unit-output-path" : "/HaploUI.build/Debug-iphonesimulator/HaploUI.build/Objects-normal/arm64/HaploTheme.o",
+    "llvm-bc" : "/Users/jaredsopenclaw/code/haplollc/HaploUI/build/Build/Intermediates.noindex/HaploUI.build/Debug-iphonesimulator/HaploUI.build/Objects-normal/arm64/HaploTheme.bc",
+    "object" : "/Users/jaredsopenclaw/code/haplollc/HaploUI/build/Build/Intermediates.noindex/HaploUI.build/Debug-iphonesimulator/HaploUI.build/Objects-normal/arm64/HaploTheme.o",
+    "swift-dependencies" : "/Users/jaredsopenclaw/code/haplollc/HaploUI/build/Build/Intermediates.noindex/HaploUI.build/Debug-iphonesimulator/HaploUI.build/Objects-normal/arm64/HaploTheme.swiftdeps",
+    "swiftmodule" : "/Users/jaredsopenclaw/code/haplollc/HaploUI/build/Build/Intermediates.noindex/HaploUI.build/Debug-iphonesimulator/HaploUI.build/Objects-normal/arm64/HaploTheme~partial.swiftmodule"
+  }
+}

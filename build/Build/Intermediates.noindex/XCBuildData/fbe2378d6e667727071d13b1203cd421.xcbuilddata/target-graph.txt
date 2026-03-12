@@ -1,0 +1,6 @@
+Target dependency graph (3 targets)
+Target 'HaploUIDemo' in project 'HaploUIDemo'
+➜ Explicit dependency on target 'HaploUI' in project 'HaploUI'
+Target 'HaploUI' in project 'HaploUI'
+➜ Explicit dependency on target 'HaploUI' in project 'HaploUI'
+Target 'HaploUI' in project 'HaploUI' (no dependencies)

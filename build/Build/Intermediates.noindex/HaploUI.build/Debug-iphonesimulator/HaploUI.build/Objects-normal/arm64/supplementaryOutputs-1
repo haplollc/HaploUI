@@ -1,0 +1,23 @@
+{
+  "/Users/jaredsopenclaw/code/haplollc/HaploUI/Sources/HaploUI/Catalog/ButtonsCatalog.swift" : {
+    "const-values" : "/Users/jaredsopenclaw/code/haplollc/HaploUI/build/Build/Intermediates.noindex/HaploUI.build/Debug-iphonesimulator/HaploUI.build/Objects-normal/arm64/ButtonsCatalog.swiftconstvalues",
+    "dependencies" : "/Users/jaredsopenclaw/code/haplollc/HaploUI/build/Build/Intermediates.noindex/HaploUI.build/Debug-iphonesimulator/HaploUI.build/Objects-normal/arm64/ButtonsCatalog.d",
+    "diagnostics" : "/Users/jaredsopenclaw/code/haplollc/HaploUI/build/Build/Intermediates.noindex/HaploUI.build/Debug-iphonesimulator/HaploUI.build/Objects-normal/arm64/ButtonsCatalog.dia",
+    "object" : "/Users/jaredsopenclaw/code/haplollc/HaploUI/build/Build/Intermediates.noindex/HaploUI.build/Debug-iphonesimulator/HaploUI.build/Objects-normal/arm64/ButtonsCatalog.o",
+    "swift-dependencies" : "/Users/jaredsopenclaw/code/haplollc/HaploUI/build/Build/Intermediates.noindex/HaploUI.build/Debug-iphonesimulator/HaploUI.build/Objects-normal/arm64/ButtonsCatalog.swiftdeps"
+  },
+  "/Users/jaredsopenclaw/code/haplollc/HaploUI/Sources/HaploUI/Catalog/CardsCatalog.swift" : {
+    "const-values" : "/Users/jaredsopenclaw/code/haplollc/HaploUI/build/Build/Intermediates.noindex/HaploUI.build/Debug-iphonesimulator/HaploUI.build/Objects-normal/arm64/CardsCatalog.swiftconstvalues",
+    "dependencies" : "/Users/jaredsopenclaw/code/haplollc/HaploUI/build/Build/Intermediates.noindex/HaploUI.build/Debug-iphonesimulator/HaploUI.build/Objects-normal/arm64/CardsCatalog.d",
+    "diagnostics" : "/Users/jaredsopenclaw/code/haplollc/HaploUI/build/Build/Intermediates.noindex/HaploUI.build/Debug-iphonesimulator/HaploUI.build/Objects-normal/arm64/CardsCatalog.dia",
+    "object" : "/Users/jaredsopenclaw/code/haplollc/HaploUI/build/Build/Intermediates.noindex/HaploUI.build/Debug-iphonesimulator/HaploUI.build/Objects-normal/arm64/CardsCatalog.o",
+    "swift-dependencies" : "/Users/jaredsopenclaw/code/haplollc/HaploUI/build/Build/Intermediates.noindex/HaploUI.build/Debug-iphonesimulator/HaploUI.build/Objects-normal/arm64/CardsCatalog.swiftdeps"
+  },
+  "/Users/jaredsopenclaw/code/haplollc/HaploUI/Sources/HaploUI/Catalog/ComponentCatalog.swift" : {
+    "const-values" : "/Users/jaredsopenclaw/code/haplollc/HaploUI/build/Build/Intermediates.noindex/HaploUI.build/Debug-iphonesimulator/HaploUI.build/Objects-normal/arm64/ComponentCatalog.swiftconstvalues",
+    "dependencies" : "/Users/jaredsopenclaw/code/haplollc/HaploUI/build/Build/Intermediates.noindex/HaploUI.build/Debug-iphonesimulator/HaploUI.build/Objects-normal/arm64/ComponentCatalog.d",
+    "diagnostics" : "/Users/jaredsopenclaw/code/haplollc/HaploUI/build/Build/Intermediates.noindex/HaploUI.build/Debug-iphonesimulator/HaploUI.build/Objects-normal/arm64/ComponentCatalog.dia",
+    "object" : "/Users/jaredsopenclaw/code/haplollc/HaploUI/build/Build/Intermediates.noindex/HaploUI.build/Debug-iphonesimulator/HaploUI.build/Objects-normal/arm64/ComponentCatalog.o",
+    "swift-dependencies" : "/Users/jaredsopenclaw/code/haplollc/HaploUI/build/Build/Intermediates.noindex/HaploUI.build/Debug-iphonesimulator/HaploUI.build/Objects-normal/arm64/ComponentCatalog.swiftdeps"
+  }
+}

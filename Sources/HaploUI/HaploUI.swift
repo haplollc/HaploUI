@@ -8,10 +8,8 @@ import SwiftUI
 public typealias Theme = HaploTheme
 
 // Buttons
-public typealias Button = HaploButton
+// Note: Don't alias Button or ButtonStyle to avoid conflicts with SwiftUI
 public typealias IconButton = HaploIconButton
-public typealias ButtonStyle = HaploButtonStyle
-public typealias ButtonSize = HaploButtonSize
 
 // Sheets
 public typealias Sheet = HaploSheet
@@ -19,25 +17,22 @@ public typealias ActionSheet = HaploActionSheet
 public typealias ConfirmationSheet = HaploConfirmationSheet
 
 // Sliders
-public typealias Slider = HaploSlider
+// Note: Don't alias Slider/Stepper to avoid conflicts with SwiftUI
 public typealias RangeSlider = HaploRangeSlider
 
 // Steppers
-public typealias Stepper = HaploStepper
 public typealias CompactStepper = HaploCompactStepper
 public typealias WheelStepper = HaploWheelStepper
 
 // Text
-public typealias TextStyle = HaploTextStyle
-public typealias Label = HaploLabel
+// Note: Don't alias Label to avoid conflicts with SwiftUI
 public typealias Badge = HaploBadge
 public typealias Chip = HaploChip
 
 // Inputs
-public typealias TextField = HaploTextField
+// Note: Don't alias TextField/Toggle to avoid conflicts with SwiftUI
 public typealias TextArea = HaploTextArea
 public typealias SearchField = HaploSearchField
-public typealias Toggle = HaploToggle
 
 // Cards
 public typealias Card = HaploCard

@@ -1,0 +1,23 @@
+{
+  "/Users/jaredsopenclaw/code/haplollc/HaploUI/Sources/HaploUI/Components/Buttons/HaploButton.swift" : {
+    "const-values" : "/Users/jaredsopenclaw/code/haplollc/HaploUI/build/Build/Intermediates.noindex/HaploUI.build/Debug-iphonesimulator/HaploUI.build/Objects-normal/arm64/HaploButton.swiftconstvalues",
+    "dependencies" : "/Users/jaredsopenclaw/code/haplollc/HaploUI/build/Build/Intermediates.noindex/HaploUI.build/Debug-iphonesimulator/HaploUI.build/Objects-normal/arm64/HaploButton.d",
+    "diagnostics" : "/Users/jaredsopenclaw/code/haplollc/HaploUI/build/Build/Intermediates.noindex/HaploUI.build/Debug-iphonesimulator/HaploUI.build/Objects-normal/arm64/HaploButton.dia",
+    "object" : "/Users/jaredsopenclaw/code/haplollc/HaploUI/build/Build/Intermediates.noindex/HaploUI.build/Debug-iphonesimulator/HaploUI.build/Objects-normal/arm64/HaploButton.o",
+    "swift-dependencies" : "/Users/jaredsopenclaw/code/haplollc/HaploUI/build/Build/Intermediates.noindex/HaploUI.build/Debug-iphonesimulator/HaploUI.build/Objects-normal/arm64/HaploButton.swiftdeps"
+  },
+  "/Users/jaredsopenclaw/code/haplollc/HaploUI/Sources/HaploUI/Components/Cards/HaploCard.swift" : {
+    "const-values" : "/Users/jaredsopenclaw/code/haplollc/HaploUI/build/Build/Intermediates.noindex/HaploUI.build/Debug-iphonesimulator/HaploUI.build/Objects-normal/arm64/HaploCard.swiftconstvalues",
+    "dependencies" : "/Users/jaredsopenclaw/code/haplollc/HaploUI/build/Build/Intermediates.noindex/HaploUI.build/Debug-iphonesimulator/HaploUI.build/Objects-normal/arm64/HaploCard.d",
+    "diagnostics" : "/Users/jaredsopenclaw/code/haplollc/HaploUI/build/Build/Intermediates.noindex/HaploUI.build/Debug-iphonesimulator/HaploUI.build/Objects-normal/arm64/HaploCard.dia",
+    "object" : "/Users/jaredsopenclaw/code/haplollc/HaploUI/build/Build/Intermediates.noindex/HaploUI.build/Debug-iphonesimulator/HaploUI.build/Objects-normal/arm64/HaploCard.o",
+    "swift-dependencies" : "/Users/jaredsopenclaw/code/haplollc/HaploUI/build/Build/Intermediates.noindex/HaploUI.build/Debug-iphonesimulator/HaploUI.build/Objects-normal/arm64/HaploCard.swiftdeps"
+  },
+  "/Users/jaredsopenclaw/code/haplollc/HaploUI/Sources/HaploUI/Components/Controls/HaploDurationPicker.swift" : {
+    "const-values" : "/Users/jaredsopenclaw/code/haplollc/HaploUI/build/Build/Intermediates.noindex/HaploUI.build/Debug-iphonesimulator/HaploUI.build/Objects-normal/arm64/HaploDurationPicker.swiftconstvalues",
+    "dependencies" : "/Users/jaredsopenclaw/code/haplollc/HaploUI/build/Build/Intermediates.noindex/HaploUI.build/Debug-iphonesimulator/HaploUI.build/Objects-normal/arm64/HaploDurationPicker.d",
+    "diagnostics" : "/Users/jaredsopenclaw/code/haplollc/HaploUI/build/Build/Intermediates.noindex/HaploUI.build/Debug-iphonesimulator/HaploUI.build/Objects-normal/arm64/HaploDurationPicker.dia",
+    "object" : "/Users/jaredsopenclaw/code/haplollc/HaploUI/build/Build/Intermediates.noindex/HaploUI.build/Debug-iphonesimulator/HaploUI.build/Objects-normal/arm64/HaploDurationPicker.o",
+    "swift-dependencies" : "/Users/jaredsopenclaw/code/haplollc/HaploUI/build/Build/Intermediates.noindex/HaploUI.build/Debug-iphonesimulator/HaploUI.build/Objects-normal/arm64/HaploDurationPicker.swiftdeps"
+  }
+}

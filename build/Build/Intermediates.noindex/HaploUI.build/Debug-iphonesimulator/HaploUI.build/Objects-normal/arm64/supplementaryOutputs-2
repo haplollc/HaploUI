@@ -1,0 +1,23 @@
+{
+  "/Users/jaredsopenclaw/code/haplollc/HaploUI/Sources/HaploUI/Catalog/ControlsCatalog.swift" : {
+    "const-values" : "/Users/jaredsopenclaw/code/haplollc/HaploUI/build/Build/Intermediates.noindex/HaploUI.build/Debug-iphonesimulator/HaploUI.build/Objects-normal/arm64/ControlsCatalog.swiftconstvalues",
+    "dependencies" : "/Users/jaredsopenclaw/code/haplollc/HaploUI/build/Build/Intermediates.noindex/HaploUI.build/Debug-iphonesimulator/HaploUI.build/Objects-normal/arm64/ControlsCatalog.d",
+    "diagnostics" : "/Users/jaredsopenclaw/code/haplollc/HaploUI/build/Build/Intermediates.noindex/HaploUI.build/Debug-iphonesimulator/HaploUI.build/Objects-normal/arm64/ControlsCatalog.dia",
+    "object" : "/Users/jaredsopenclaw/code/haplollc/HaploUI/build/Build/Intermediates.noindex/HaploUI.build/Debug-iphonesimulator/HaploUI.build/Objects-normal/arm64/ControlsCatalog.o",
+    "swift-dependencies" : "/Users/jaredsopenclaw/code/haplollc/HaploUI/build/Build/Intermediates.noindex/HaploUI.build/Debug-iphonesimulator/HaploUI.build/Objects-normal/arm64/ControlsCatalog.swiftdeps"
+  },
+  "/Users/jaredsopenclaw/code/haplollc/HaploUI/Sources/HaploUI/Catalog/EffectsCatalog.swift" : {
+    "const-values" : "/Users/jaredsopenclaw/code/haplollc/HaploUI/build/Build/Intermediates.noindex/HaploUI.build/Debug-iphonesimulator/HaploUI.build/Objects-normal/arm64/EffectsCatalog.swiftconstvalues",
+    "dependencies" : "/Users/jaredsopenclaw/code/haplollc/HaploUI/build/Build/Intermediates.noindex/HaploUI.build/Debug-iphonesimulator/HaploUI.build/Objects-normal/arm64/EffectsCatalog.d",
+    "diagnostics" : "/Users/jaredsopenclaw/code/haplollc/HaploUI/build/Build/Intermediates.noindex/HaploUI.build/Debug-iphonesimulator/HaploUI.build/Objects-normal/arm64/EffectsCatalog.dia",
+    "object" : "/Users/jaredsopenclaw/code/haplollc/HaploUI/build/Build/Intermediates.noindex/HaploUI.build/Debug-iphonesimulator/HaploUI.build/Objects-normal/arm64/EffectsCatalog.o",
+    "swift-dependencies" : "/Users/jaredsopenclaw/code/haplollc/HaploUI/build/Build/Intermediates.noindex/HaploUI.build/Debug-iphonesimulator/HaploUI.build/Objects-normal/arm64/EffectsCatalog.swiftdeps"
+  },
+  "/Users/jaredsopenclaw/code/haplollc/HaploUI/Sources/HaploUI/Catalog/InputsCatalog.swift" : {
+    "const-values" : "/Users/jaredsopenclaw/code/haplollc/HaploUI/build/Build/Intermediates.noindex/HaploUI.build/Debug-iphonesimulator/HaploUI.build/Objects-normal/arm64/InputsCatalog.swiftconstvalues",
+    "dependencies" : "/Users/jaredsopenclaw/code/haplollc/HaploUI/build/Build/Intermediates.noindex/HaploUI.build/Debug-iphonesimulator/HaploUI.build/Objects-normal/arm64/InputsCatalog.d",
+    "diagnostics" : "/Users/jaredsopenclaw/code/haplollc/HaploUI/build/Build/Intermediates.noindex/HaploUI.build/Debug-iphonesimulator/HaploUI.build/Objects-normal/arm64/InputsCatalog.dia",
+    "object" : "/Users/jaredsopenclaw/code/haplollc/HaploUI/build/Build/Intermediates.noindex/HaploUI.build/Debug-iphonesimulator/HaploUI.build/Objects-normal/arm64/InputsCatalog.o",
+    "swift-dependencies" : "/Users/jaredsopenclaw/code/haplollc/HaploUI/build/Build/Intermediates.noindex/HaploUI.build/Debug-iphonesimulator/HaploUI.build/Objects-normal/arm64/InputsCatalog.swiftdeps"
+  }
+}

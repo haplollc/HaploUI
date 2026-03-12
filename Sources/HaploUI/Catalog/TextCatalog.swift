@@ -49,7 +49,7 @@ public struct TextCatalog: View {
                     HStack(spacing: HaploTheme.Spacing.md) {
                         HaploBadge("New", size: .small)
                         HaploBadge("Featured", size: .medium)
-                        HaploBadge("Popular", size: .large, color: HaploTheme.Colors.secondary)
+                        HaploBadge("Popular", color: HaploTheme.Colors.secondary, size: .large)
                     }
                     
                     HStack(spacing: HaploTheme.Spacing.md) {

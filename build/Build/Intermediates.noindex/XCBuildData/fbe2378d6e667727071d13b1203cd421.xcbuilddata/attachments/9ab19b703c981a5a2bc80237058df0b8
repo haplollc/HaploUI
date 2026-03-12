@@ -1,0 +1,4 @@
+module HaploUI {
+header "HaploUI-Swift.h"
+export *
+}

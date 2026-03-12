@@ -1,0 +1,27 @@
+{
+  "object" : {
+    "artifacts" : [
+
+    ],
+    "dependencies" : [
+      {
+        "basedOn" : null,
+        "packageRef" : {
+          "identity" : "haploui",
+          "kind" : "fileSystem",
+          "location" : "/Users/jaredsopenclaw/code/haplollc/HaploUI",
+          "name" : "HaploUI"
+        },
+        "state" : {
+          "name" : "fileSystem",
+          "path" : "/Users/jaredsopenclaw/code/haplollc/HaploUI"
+        },
+        "subpath" : "haploui"
+      }
+    ],
+    "prebuilts" : [
+
+    ]
+  },
+  "version" : 7
+}
