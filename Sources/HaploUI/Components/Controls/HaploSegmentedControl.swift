@@ -53,7 +53,7 @@ public struct HaploSegmentedControl<T: Hashable>: View {
         }
         .buttonStyle(PlainButtonStyle())
         #if os(iOS)
-        .haptic(.selection)
+        .hapticSelection()
         #endif
     }
     
@@ -149,7 +149,7 @@ public struct HaploIconSegmentedControl<T: Hashable>: View {
         }
         .buttonStyle(PlainButtonStyle())
         #if os(iOS)
-        .haptic(.selection)
+        .hapticSelection()
         #endif
     }
     

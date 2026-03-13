@@ -1,0 +1,229 @@
+{
+  "": {
+    "swift-dependencies": "/Users/jaredsopenclaw/code/haplollc/HaploUI/.build/arm64-apple-macosx/debug/HaploUI.build/master.swiftdeps"
+  },
+  "/Users/jaredsopenclaw/code/haplollc/HaploUI/Sources/HaploUI/Catalog/ButtonsCatalog.swift": {
+    "dependencies": "/Users/jaredsopenclaw/code/haplollc/HaploUI/.build/arm64-apple-macosx/debug/HaploUI.build/ButtonsCatalog.d",
+    "object": "/Users/jaredsopenclaw/code/haplollc/HaploUI/.build/arm64-apple-macosx/debug/HaploUI.build/ButtonsCatalog.swift.o",
+    "swiftmodule": "/Users/jaredsopenclaw/code/haplollc/HaploUI/.build/arm64-apple-macosx/debug/HaploUI.build/ButtonsCatalog~partial.swiftmodule",
+    "swift-dependencies": "/Users/jaredsopenclaw/code/haplollc/HaploUI/.build/arm64-apple-macosx/debug/HaploUI.build/ButtonsCatalog.swiftdeps",
+    "diagnostics": "/Users/jaredsopenclaw/code/haplollc/HaploUI/.build/arm64-apple-macosx/debug/HaploUI.build/ButtonsCatalog.dia"
+  },
+  "/Users/jaredsopenclaw/code/haplollc/HaploUI/Sources/HaploUI/Catalog/CardsCatalog.swift": {
+    "dependencies": "/Users/jaredsopenclaw/code/haplollc/HaploUI/.build/arm64-apple-macosx/debug/HaploUI.build/CardsCatalog.d",
+    "object": "/Users/jaredsopenclaw/code/haplollc/HaploUI/.build/arm64-apple-macosx/debug/HaploUI.build/CardsCatalog.swift.o",
+    "swiftmodule": "/Users/jaredsopenclaw/code/haplollc/HaploUI/.build/arm64-apple-macosx/debug/HaploUI.build/CardsCatalog~partial.swiftmodule",
+    "swift-dependencies": "/Users/jaredsopenclaw/code/haplollc/HaploUI/.build/arm64-apple-macosx/debug/HaploUI.build/CardsCatalog.swiftdeps",
+    "diagnostics": "/Users/jaredsopenclaw/code/haplollc/HaploUI/.build/arm64-apple-macosx/debug/HaploUI.build/CardsCatalog.dia"
+  },
+  "/Users/jaredsopenclaw/code/haplollc/HaploUI/Sources/HaploUI/Catalog/ChatCatalog.swift": {
+    "dependencies": "/Users/jaredsopenclaw/code/haplollc/HaploUI/.build/arm64-apple-macosx/debug/HaploUI.build/ChatCatalog.d",
+    "object": "/Users/jaredsopenclaw/code/haplollc/HaploUI/.build/arm64-apple-macosx/debug/HaploUI.build/ChatCatalog.swift.o",
+    "swiftmodule": "/Users/jaredsopenclaw/code/haplollc/HaploUI/.build/arm64-apple-macosx/debug/HaploUI.build/ChatCatalog~partial.swiftmodule",
+    "swift-dependencies": "/Users/jaredsopenclaw/code/haplollc/HaploUI/.build/arm64-apple-macosx/debug/HaploUI.build/ChatCatalog.swiftdeps",
+    "diagnostics": "/Users/jaredsopenclaw/code/haplollc/HaploUI/.build/arm64-apple-macosx/debug/HaploUI.build/ChatCatalog.dia"
+  },
+  "/Users/jaredsopenclaw/code/haplollc/HaploUI/Sources/HaploUI/Catalog/ComponentCatalog.swift": {
+    "dependencies": "/Users/jaredsopenclaw/code/haplollc/HaploUI/.build/arm64-apple-macosx/debug/HaploUI.build/ComponentCatalog.d",
+    "object": "/Users/jaredsopenclaw/code/haplollc/HaploUI/.build/arm64-apple-macosx/debug/HaploUI.build/ComponentCatalog.swift.o",
+    "swiftmodule": "/Users/jaredsopenclaw/code/haplollc/HaploUI/.build/arm64-apple-macosx/debug/HaploUI.build/ComponentCatalog~partial.swiftmodule",
+    "swift-dependencies": "/Users/jaredsopenclaw/code/haplollc/HaploUI/.build/arm64-apple-macosx/debug/HaploUI.build/ComponentCatalog.swiftdeps",
+    "diagnostics": "/Users/jaredsopenclaw/code/haplollc/HaploUI/.build/arm64-apple-macosx/debug/HaploUI.build/ComponentCatalog.dia"
+  },
+  "/Users/jaredsopenclaw/code/haplollc/HaploUI/Sources/HaploUI/Catalog/ControlsCatalog.swift": {
+    "dependencies": "/Users/jaredsopenclaw/code/haplollc/HaploUI/.build/arm64-apple-macosx/debug/HaploUI.build/ControlsCatalog.d",
+    "object": "/Users/jaredsopenclaw/code/haplollc/HaploUI/.build/arm64-apple-macosx/debug/HaploUI.build/ControlsCatalog.swift.o",
+    "swiftmodule": "/Users/jaredsopenclaw/code/haplollc/HaploUI/.build/arm64-apple-macosx/debug/HaploUI.build/ControlsCatalog~partial.swiftmodule",
+    "swift-dependencies": "/Users/jaredsopenclaw/code/haplollc/HaploUI/.build/arm64-apple-macosx/debug/HaploUI.build/ControlsCatalog.swiftdeps",
+    "diagnostics": "/Users/jaredsopenclaw/code/haplollc/HaploUI/.build/arm64-apple-macosx/debug/HaploUI.build/ControlsCatalog.dia"
+  },
+  "/Users/jaredsopenclaw/code/haplollc/HaploUI/Sources/HaploUI/Catalog/EffectsCatalog.swift": {
+    "dependencies": "/Users/jaredsopenclaw/code/haplollc/HaploUI/.build/arm64-apple-macosx/debug/HaploUI.build/EffectsCatalog.d",
+    "object": "/Users/jaredsopenclaw/code/haplollc/HaploUI/.build/arm64-apple-macosx/debug/HaploUI.build/EffectsCatalog.swift.o",
+    "swiftmodule": "/Users/jaredsopenclaw/code/haplollc/HaploUI/.build/arm64-apple-macosx/debug/HaploUI.build/EffectsCatalog~partial.swiftmodule",
+    "swift-dependencies": "/Users/jaredsopenclaw/code/haplollc/HaploUI/.build/arm64-apple-macosx/debug/HaploUI.build/EffectsCatalog.swiftdeps",
+    "diagnostics": "/Users/jaredsopenclaw/code/haplollc/HaploUI/.build/arm64-apple-macosx/debug/HaploUI.build/EffectsCatalog.dia"
+  },
+  "/Users/jaredsopenclaw/code/haplollc/HaploUI/Sources/HaploUI/Catalog/InputsCatalog.swift": {
+    "dependencies": "/Users/jaredsopenclaw/code/haplollc/HaploUI/.build/arm64-apple-macosx/debug/HaploUI.build/InputsCatalog.d",
+    "object": "/Users/jaredsopenclaw/code/haplollc/HaploUI/.build/arm64-apple-macosx/debug/HaploUI.build/InputsCatalog.swift.o",
+    "swiftmodule": "/Users/jaredsopenclaw/code/haplollc/HaploUI/.build/arm64-apple-macosx/debug/HaploUI.build/InputsCatalog~partial.swiftmodule",
+    "swift-dependencies": "/Users/jaredsopenclaw/code/haplollc/HaploUI/.build/arm64-apple-macosx/debug/HaploUI.build/InputsCatalog.swiftdeps",
+    "diagnostics": "/Users/jaredsopenclaw/code/haplollc/HaploUI/.build/arm64-apple-macosx/debug/HaploUI.build/InputsCatalog.dia"
+  },
+  "/Users/jaredsopenclaw/code/haplollc/HaploUI/Sources/HaploUI/Catalog/ProgressCatalog.swift": {
+    "dependencies": "/Users/jaredsopenclaw/code/haplollc/HaploUI/.build/arm64-apple-macosx/debug/HaploUI.build/ProgressCatalog.d",
+    "object": "/Users/jaredsopenclaw/code/haplollc/HaploUI/.build/arm64-apple-macosx/debug/HaploUI.build/ProgressCatalog.swift.o",
+    "swiftmodule": "/Users/jaredsopenclaw/code/haplollc/HaploUI/.build/arm64-apple-macosx/debug/HaploUI.build/ProgressCatalog~partial.swiftmodule",
+    "swift-dependencies": "/Users/jaredsopenclaw/code/haplollc/HaploUI/.build/arm64-apple-macosx/debug/HaploUI.build/ProgressCatalog.swiftdeps",
+    "diagnostics": "/Users/jaredsopenclaw/code/haplollc/HaploUI/.build/arm64-apple-macosx/debug/HaploUI.build/ProgressCatalog.dia"
+  },
+  "/Users/jaredsopenclaw/code/haplollc/HaploUI/Sources/HaploUI/Catalog/SheetsCatalog.swift": {
+    "dependencies": "/Users/jaredsopenclaw/code/haplollc/HaploUI/.build/arm64-apple-macosx/debug/HaploUI.build/SheetsCatalog.d",
+    "object": "/Users/jaredsopenclaw/code/haplollc/HaploUI/.build/arm64-apple-macosx/debug/HaploUI.build/SheetsCatalog.swift.o",
+    "swiftmodule": "/Users/jaredsopenclaw/code/haplollc/HaploUI/.build/arm64-apple-macosx/debug/HaploUI.build/SheetsCatalog~partial.swiftmodule",
+    "swift-dependencies": "/Users/jaredsopenclaw/code/haplollc/HaploUI/.build/arm64-apple-macosx/debug/HaploUI.build/SheetsCatalog.swiftdeps",
+    "diagnostics": "/Users/jaredsopenclaw/code/haplollc/HaploUI/.build/arm64-apple-macosx/debug/HaploUI.build/SheetsCatalog.dia"
+  },
+  "/Users/jaredsopenclaw/code/haplollc/HaploUI/Sources/HaploUI/Catalog/SlidersCatalog.swift": {
+    "dependencies": "/Users/jaredsopenclaw/code/haplollc/HaploUI/.build/arm64-apple-macosx/debug/HaploUI.build/SlidersCatalog.d",
+    "object": "/Users/jaredsopenclaw/code/haplollc/HaploUI/.build/arm64-apple-macosx/debug/HaploUI.build/SlidersCatalog.swift.o",
+    "swiftmodule": "/Users/jaredsopenclaw/code/haplollc/HaploUI/.build/arm64-apple-macosx/debug/HaploUI.build/SlidersCatalog~partial.swiftmodule",
+    "swift-dependencies": "/Users/jaredsopenclaw/code/haplollc/HaploUI/.build/arm64-apple-macosx/debug/HaploUI.build/SlidersCatalog.swiftdeps",
+    "diagnostics": "/Users/jaredsopenclaw/code/haplollc/HaploUI/.build/arm64-apple-macosx/debug/HaploUI.build/SlidersCatalog.dia"
+  },
+  "/Users/jaredsopenclaw/code/haplollc/HaploUI/Sources/HaploUI/Catalog/SteppersCatalog.swift": {
+    "dependencies": "/Users/jaredsopenclaw/code/haplollc/HaploUI/.build/arm64-apple-macosx/debug/HaploUI.build/SteppersCatalog.d",
+    "object": "/Users/jaredsopenclaw/code/haplollc/HaploUI/.build/arm64-apple-macosx/debug/HaploUI.build/SteppersCatalog.swift.o",
+    "swiftmodule": "/Users/jaredsopenclaw/code/haplollc/HaploUI/.build/arm64-apple-macosx/debug/HaploUI.build/SteppersCatalog~partial.swiftmodule",
+    "swift-dependencies": "/Users/jaredsopenclaw/code/haplollc/HaploUI/.build/arm64-apple-macosx/debug/HaploUI.build/SteppersCatalog.swiftdeps",
+    "diagnostics": "/Users/jaredsopenclaw/code/haplollc/HaploUI/.build/arm64-apple-macosx/debug/HaploUI.build/SteppersCatalog.dia"
+  },
+  "/Users/jaredsopenclaw/code/haplollc/HaploUI/Sources/HaploUI/Catalog/TextCatalog.swift": {
+    "dependencies": "/Users/jaredsopenclaw/code/haplollc/HaploUI/.build/arm64-apple-macosx/debug/HaploUI.build/TextCatalog.d",
+    "object": "/Users/jaredsopenclaw/code/haplollc/HaploUI/.build/arm64-apple-macosx/debug/HaploUI.build/TextCatalog.swift.o",
+    "swiftmodule": "/Users/jaredsopenclaw/code/haplollc/HaploUI/.build/arm64-apple-macosx/debug/HaploUI.build/TextCatalog~partial.swiftmodule",
+    "swift-dependencies": "/Users/jaredsopenclaw/code/haplollc/HaploUI/.build/arm64-apple-macosx/debug/HaploUI.build/TextCatalog.swiftdeps",
+    "diagnostics": "/Users/jaredsopenclaw/code/haplollc/HaploUI/.build/arm64-apple-macosx/debug/HaploUI.build/TextCatalog.dia"
+  },
+  "/Users/jaredsopenclaw/code/haplollc/HaploUI/Sources/HaploUI/Catalog/ThemeCatalogs.swift": {
+    "dependencies": "/Users/jaredsopenclaw/code/haplollc/HaploUI/.build/arm64-apple-macosx/debug/HaploUI.build/ThemeCatalogs.d",
+    "object": "/Users/jaredsopenclaw/code/haplollc/HaploUI/.build/arm64-apple-macosx/debug/HaploUI.build/ThemeCatalogs.swift.o",
+    "swiftmodule": "/Users/jaredsopenclaw/code/haplollc/HaploUI/.build/arm64-apple-macosx/debug/HaploUI.build/ThemeCatalogs~partial.swiftmodule",
+    "swift-dependencies": "/Users/jaredsopenclaw/code/haplollc/HaploUI/.build/arm64-apple-macosx/debug/HaploUI.build/ThemeCatalogs.swiftdeps",
+    "diagnostics": "/Users/jaredsopenclaw/code/haplollc/HaploUI/.build/arm64-apple-macosx/debug/HaploUI.build/ThemeCatalogs.dia"
+  },
+  "/Users/jaredsopenclaw/code/haplollc/HaploUI/Sources/HaploUI/Components/Buttons/HaploButton.swift": {
+    "dependencies": "/Users/jaredsopenclaw/code/haplollc/HaploUI/.build/arm64-apple-macosx/debug/HaploUI.build/HaploButton.d",
+    "object": "/Users/jaredsopenclaw/code/haplollc/HaploUI/.build/arm64-apple-macosx/debug/HaploUI.build/HaploButton.swift.o",
+    "swiftmodule": "/Users/jaredsopenclaw/code/haplollc/HaploUI/.build/arm64-apple-macosx/debug/HaploUI.build/HaploButton~partial.swiftmodule",
+    "swift-dependencies": "/Users/jaredsopenclaw/code/haplollc/HaploUI/.build/arm64-apple-macosx/debug/HaploUI.build/HaploButton.swiftdeps",
+    "diagnostics": "/Users/jaredsopenclaw/code/haplollc/HaploUI/.build/arm64-apple-macosx/debug/HaploUI.build/HaploButton.dia"
+  },
+  "/Users/jaredsopenclaw/code/haplollc/HaploUI/Sources/HaploUI/Components/Cards/HaploCard.swift": {
+    "dependencies": "/Users/jaredsopenclaw/code/haplollc/HaploUI/.build/arm64-apple-macosx/debug/HaploUI.build/HaploCard.d",
+    "object": "/Users/jaredsopenclaw/code/haplollc/HaploUI/.build/arm64-apple-macosx/debug/HaploUI.build/HaploCard.swift.o",
+    "swiftmodule": "/Users/jaredsopenclaw/code/haplollc/HaploUI/.build/arm64-apple-macosx/debug/HaploUI.build/HaploCard~partial.swiftmodule",
+    "swift-dependencies": "/Users/jaredsopenclaw/code/haplollc/HaploUI/.build/arm64-apple-macosx/debug/HaploUI.build/HaploCard.swiftdeps",
+    "diagnostics": "/Users/jaredsopenclaw/code/haplollc/HaploUI/.build/arm64-apple-macosx/debug/HaploUI.build/HaploCard.dia"
+  },
+  "/Users/jaredsopenclaw/code/haplollc/HaploUI/Sources/HaploUI/Components/Celebrations/HaploConfetti.swift": {
+    "dependencies": "/Users/jaredsopenclaw/code/haplollc/HaploUI/.build/arm64-apple-macosx/debug/HaploUI.build/HaploConfetti.d",
+    "object": "/Users/jaredsopenclaw/code/haplollc/HaploUI/.build/arm64-apple-macosx/debug/HaploUI.build/HaploConfetti.swift.o",
+    "swiftmodule": "/Users/jaredsopenclaw/code/haplollc/HaploUI/.build/arm64-apple-macosx/debug/HaploUI.build/HaploConfetti~partial.swiftmodule",
+    "swift-dependencies": "/Users/jaredsopenclaw/code/haplollc/HaploUI/.build/arm64-apple-macosx/debug/HaploUI.build/HaploConfetti.swiftdeps",
+    "diagnostics": "/Users/jaredsopenclaw/code/haplollc/HaploUI/.build/arm64-apple-macosx/debug/HaploUI.build/HaploConfetti.dia"
+  },
+  "/Users/jaredsopenclaw/code/haplollc/HaploUI/Sources/HaploUI/Components/Chat/HaploChatInputBar.swift": {
+    "dependencies": "/Users/jaredsopenclaw/code/haplollc/HaploUI/.build/arm64-apple-macosx/debug/HaploUI.build/HaploChatInputBar.d",
+    "object": "/Users/jaredsopenclaw/code/haplollc/HaploUI/.build/arm64-apple-macosx/debug/HaploUI.build/HaploChatInputBar.swift.o",
+    "swiftmodule": "/Users/jaredsopenclaw/code/haplollc/HaploUI/.build/arm64-apple-macosx/debug/HaploUI.build/HaploChatInputBar~partial.swiftmodule",
+    "swift-dependencies": "/Users/jaredsopenclaw/code/haplollc/HaploUI/.build/arm64-apple-macosx/debug/HaploUI.build/HaploChatInputBar.swiftdeps",
+    "diagnostics": "/Users/jaredsopenclaw/code/haplollc/HaploUI/.build/arm64-apple-macosx/debug/HaploUI.build/HaploChatInputBar.dia"
+  },
+  "/Users/jaredsopenclaw/code/haplollc/HaploUI/Sources/HaploUI/Components/Chat/HaploMessageBubble.swift": {
+    "dependencies": "/Users/jaredsopenclaw/code/haplollc/HaploUI/.build/arm64-apple-macosx/debug/HaploUI.build/HaploMessageBubble.d",
+    "object": "/Users/jaredsopenclaw/code/haplollc/HaploUI/.build/arm64-apple-macosx/debug/HaploUI.build/HaploMessageBubble.swift.o",
+    "swiftmodule": "/Users/jaredsopenclaw/code/haplollc/HaploUI/.build/arm64-apple-macosx/debug/HaploUI.build/HaploMessageBubble~partial.swiftmodule",
+    "swift-dependencies": "/Users/jaredsopenclaw/code/haplollc/HaploUI/.build/arm64-apple-macosx/debug/HaploUI.build/HaploMessageBubble.swiftdeps",
+    "diagnostics": "/Users/jaredsopenclaw/code/haplollc/HaploUI/.build/arm64-apple-macosx/debug/HaploUI.build/HaploMessageBubble.dia"
+  },
+  "/Users/jaredsopenclaw/code/haplollc/HaploUI/Sources/HaploUI/Components/Controls/HaploDurationPicker.swift": {
+    "dependencies": "/Users/jaredsopenclaw/code/haplollc/HaploUI/.build/arm64-apple-macosx/debug/HaploUI.build/HaploDurationPicker.d",
+    "object": "/Users/jaredsopenclaw/code/haplollc/HaploUI/.build/arm64-apple-macosx/debug/HaploUI.build/HaploDurationPicker.swift.o",
+    "swiftmodule": "/Users/jaredsopenclaw/code/haplollc/HaploUI/.build/arm64-apple-macosx/debug/HaploUI.build/HaploDurationPicker~partial.swiftmodule",
+    "swift-dependencies": "/Users/jaredsopenclaw/code/haplollc/HaploUI/.build/arm64-apple-macosx/debug/HaploUI.build/HaploDurationPicker.swiftdeps",
+    "diagnostics": "/Users/jaredsopenclaw/code/haplollc/HaploUI/.build/arm64-apple-macosx/debug/HaploUI.build/HaploDurationPicker.dia"
+  },
+  "/Users/jaredsopenclaw/code/haplollc/HaploUI/Sources/HaploUI/Components/Controls/HaploSegmentedControl.swift": {
+    "dependencies": "/Users/jaredsopenclaw/code/haplollc/HaploUI/.build/arm64-apple-macosx/debug/HaploUI.build/HaploSegmentedControl.d",
+    "object": "/Users/jaredsopenclaw/code/haplollc/HaploUI/.build/arm64-apple-macosx/debug/HaploUI.build/HaploSegmentedControl.swift.o",
+    "swiftmodule": "/Users/jaredsopenclaw/code/haplollc/HaploUI/.build/arm64-apple-macosx/debug/HaploUI.build/HaploSegmentedControl~partial.swiftmodule",
+    "swift-dependencies": "/Users/jaredsopenclaw/code/haplollc/HaploUI/.build/arm64-apple-macosx/debug/HaploUI.build/HaploSegmentedControl.swiftdeps",
+    "diagnostics": "/Users/jaredsopenclaw/code/haplollc/HaploUI/.build/arm64-apple-macosx/debug/HaploUI.build/HaploSegmentedControl.dia"
+  },
+  "/Users/jaredsopenclaw/code/haplollc/HaploUI/Sources/HaploUI/Components/Inputs/HaploTextField.swift": {
+    "dependencies": "/Users/jaredsopenclaw/code/haplollc/HaploUI/.build/arm64-apple-macosx/debug/HaploUI.build/HaploTextField.d",
+    "object": "/Users/jaredsopenclaw/code/haplollc/HaploUI/.build/arm64-apple-macosx/debug/HaploUI.build/HaploTextField.swift.o",
+    "swiftmodule": "/Users/jaredsopenclaw/code/haplollc/HaploUI/.build/arm64-apple-macosx/debug/HaploUI.build/HaploTextField~partial.swiftmodule",
+    "swift-dependencies": "/Users/jaredsopenclaw/code/haplollc/HaploUI/.build/arm64-apple-macosx/debug/HaploUI.build/HaploTextField.swiftdeps",
+    "diagnostics": "/Users/jaredsopenclaw/code/haplollc/HaploUI/.build/arm64-apple-macosx/debug/HaploUI.build/HaploTextField.dia"
+  },
+  "/Users/jaredsopenclaw/code/haplollc/HaploUI/Sources/HaploUI/Components/Progress/HaploProgress.swift": {
+    "dependencies": "/Users/jaredsopenclaw/code/haplollc/HaploUI/.build/arm64-apple-macosx/debug/HaploUI.build/HaploProgress.d",
+    "object": "/Users/jaredsopenclaw/code/haplollc/HaploUI/.build/arm64-apple-macosx/debug/HaploUI.build/HaploProgress.swift.o",
+    "swiftmodule": "/Users/jaredsopenclaw/code/haplollc/HaploUI/.build/arm64-apple-macosx/debug/HaploUI.build/HaploProgress~partial.swiftmodule",
+    "swift-dependencies": "/Users/jaredsopenclaw/code/haplollc/HaploUI/.build/arm64-apple-macosx/debug/HaploUI.build/HaploProgress.swiftdeps",
+    "diagnostics": "/Users/jaredsopenclaw/code/haplollc/HaploUI/.build/arm64-apple-macosx/debug/HaploUI.build/HaploProgress.dia"
+  },
+  "/Users/jaredsopenclaw/code/haplollc/HaploUI/Sources/HaploUI/Components/Sheets/HaploSheet.swift": {
+    "dependencies": "/Users/jaredsopenclaw/code/haplollc/HaploUI/.build/arm64-apple-macosx/debug/HaploUI.build/HaploSheet.d",
+    "object": "/Users/jaredsopenclaw/code/haplollc/HaploUI/.build/arm64-apple-macosx/debug/HaploUI.build/HaploSheet.swift.o",
+    "swiftmodule": "/Users/jaredsopenclaw/code/haplollc/HaploUI/.build/arm64-apple-macosx/debug/HaploUI.build/HaploSheet~partial.swiftmodule",
+    "swift-dependencies": "/Users/jaredsopenclaw/code/haplollc/HaploUI/.build/arm64-apple-macosx/debug/HaploUI.build/HaploSheet.swiftdeps",
+    "diagnostics": "/Users/jaredsopenclaw/code/haplollc/HaploUI/.build/arm64-apple-macosx/debug/HaploUI.build/HaploSheet.dia"
+  },
+  "/Users/jaredsopenclaw/code/haplollc/HaploUI/Sources/HaploUI/Components/Sliders/HaploSlider.swift": {
+    "dependencies": "/Users/jaredsopenclaw/code/haplollc/HaploUI/.build/arm64-apple-macosx/debug/HaploUI.build/HaploSlider.d",
+    "object": "/Users/jaredsopenclaw/code/haplollc/HaploUI/.build/arm64-apple-macosx/debug/HaploUI.build/HaploSlider.swift.o",
+    "swiftmodule": "/Users/jaredsopenclaw/code/haplollc/HaploUI/.build/arm64-apple-macosx/debug/HaploUI.build/HaploSlider~partial.swiftmodule",
+    "swift-dependencies": "/Users/jaredsopenclaw/code/haplollc/HaploUI/.build/arm64-apple-macosx/debug/HaploUI.build/HaploSlider.swiftdeps",
+    "diagnostics": "/Users/jaredsopenclaw/code/haplollc/HaploUI/.build/arm64-apple-macosx/debug/HaploUI.build/HaploSlider.dia"
+  },
+  "/Users/jaredsopenclaw/code/haplollc/HaploUI/Sources/HaploUI/Components/Steppers/HaploStepper.swift": {
+    "dependencies": "/Users/jaredsopenclaw/code/haplollc/HaploUI/.build/arm64-apple-macosx/debug/HaploUI.build/HaploStepper.d",
+    "object": "/Users/jaredsopenclaw/code/haplollc/HaploUI/.build/arm64-apple-macosx/debug/HaploUI.build/HaploStepper.swift.o",
+    "swiftmodule": "/Users/jaredsopenclaw/code/haplollc/HaploUI/.build/arm64-apple-macosx/debug/HaploUI.build/HaploStepper~partial.swiftmodule",
+    "swift-dependencies": "/Users/jaredsopenclaw/code/haplollc/HaploUI/.build/arm64-apple-macosx/debug/HaploUI.build/HaploStepper.swiftdeps",
+    "diagnostics": "/Users/jaredsopenclaw/code/haplollc/HaploUI/.build/arm64-apple-macosx/debug/HaploUI.build/HaploStepper.dia"
+  },
+  "/Users/jaredsopenclaw/code/haplollc/HaploUI/Sources/HaploUI/Components/Text/HaploText.swift": {
+    "dependencies": "/Users/jaredsopenclaw/code/haplollc/HaploUI/.build/arm64-apple-macosx/debug/HaploUI.build/HaploText.d",
+    "object": "/Users/jaredsopenclaw/code/haplollc/HaploUI/.build/arm64-apple-macosx/debug/HaploUI.build/HaploText.swift.o",
+    "swiftmodule": "/Users/jaredsopenclaw/code/haplollc/HaploUI/.build/arm64-apple-macosx/debug/HaploUI.build/HaploText~partial.swiftmodule",
+    "swift-dependencies": "/Users/jaredsopenclaw/code/haplollc/HaploUI/.build/arm64-apple-macosx/debug/HaploUI.build/HaploText.swiftdeps",
+    "diagnostics": "/Users/jaredsopenclaw/code/haplollc/HaploUI/.build/arm64-apple-macosx/debug/HaploUI.build/HaploText.dia"
+  },
+  "/Users/jaredsopenclaw/code/haplollc/HaploUI/Sources/HaploUI/HaploUI.swift": {
+    "dependencies": "/Users/jaredsopenclaw/code/haplollc/HaploUI/.build/arm64-apple-macosx/debug/HaploUI.build/HaploUI.d",
+    "object": "/Users/jaredsopenclaw/code/haplollc/HaploUI/.build/arm64-apple-macosx/debug/HaploUI.build/HaploUI.swift.o",
+    "swiftmodule": "/Users/jaredsopenclaw/code/haplollc/HaploUI/.build/arm64-apple-macosx/debug/HaploUI.build/HaploUI~partial.swiftmodule",
+    "swift-dependencies": "/Users/jaredsopenclaw/code/haplollc/HaploUI/.build/arm64-apple-macosx/debug/HaploUI.build/HaploUI.swiftdeps",
+    "diagnostics": "/Users/jaredsopenclaw/code/haplollc/HaploUI/.build/arm64-apple-macosx/debug/HaploUI.build/HaploUI.dia"
+  },
+  "/Users/jaredsopenclaw/code/haplollc/HaploUI/Sources/HaploUI/Theme/HaploColors.swift": {
+    "dependencies": "/Users/jaredsopenclaw/code/haplollc/HaploUI/.build/arm64-apple-macosx/debug/HaploUI.build/HaploColors.d",
+    "object": "/Users/jaredsopenclaw/code/haplollc/HaploUI/.build/arm64-apple-macosx/debug/HaploUI.build/HaploColors.swift.o",
+    "swiftmodule": "/Users/jaredsopenclaw/code/haplollc/HaploUI/.build/arm64-apple-macosx/debug/HaploUI.build/HaploColors~partial.swiftmodule",
+    "swift-dependencies": "/Users/jaredsopenclaw/code/haplollc/HaploUI/.build/arm64-apple-macosx/debug/HaploUI.build/HaploColors.swiftdeps",
+    "diagnostics": "/Users/jaredsopenclaw/code/haplollc/HaploUI/.build/arm64-apple-macosx/debug/HaploUI.build/HaploColors.dia"
+  },
+  "/Users/jaredsopenclaw/code/haplollc/HaploUI/Sources/HaploUI/Theme/HaploEffects.swift": {
+    "dependencies": "/Users/jaredsopenclaw/code/haplollc/HaploUI/.build/arm64-apple-macosx/debug/HaploUI.build/HaploEffects.d",
+    "object": "/Users/jaredsopenclaw/code/haplollc/HaploUI/.build/arm64-apple-macosx/debug/HaploUI.build/HaploEffects.swift.o",
+    "swiftmodule": "/Users/jaredsopenclaw/code/haplollc/HaploUI/.build/arm64-apple-macosx/debug/HaploUI.build/HaploEffects~partial.swiftmodule",
+    "swift-dependencies": "/Users/jaredsopenclaw/code/haplollc/HaploUI/.build/arm64-apple-macosx/debug/HaploUI.build/HaploEffects.swiftdeps",
+    "diagnostics": "/Users/jaredsopenclaw/code/haplollc/HaploUI/.build/arm64-apple-macosx/debug/HaploUI.build/HaploEffects.dia"
+  },
+  "/Users/jaredsopenclaw/code/haplollc/HaploUI/Sources/HaploUI/Theme/HaploFonts.swift": {
+    "dependencies": "/Users/jaredsopenclaw/code/haplollc/HaploUI/.build/arm64-apple-macosx/debug/HaploUI.build/HaploFonts.d",
+    "object": "/Users/jaredsopenclaw/code/haplollc/HaploUI/.build/arm64-apple-macosx/debug/HaploUI.build/HaploFonts.swift.o",
+    "swiftmodule": "/Users/jaredsopenclaw/code/haplollc/HaploUI/.build/arm64-apple-macosx/debug/HaploUI.build/HaploFonts~partial.swiftmodule",
+    "swift-dependencies": "/Users/jaredsopenclaw/code/haplollc/HaploUI/.build/arm64-apple-macosx/debug/HaploUI.build/HaploFonts.swiftdeps",
+    "diagnostics": "/Users/jaredsopenclaw/code/haplollc/HaploUI/.build/arm64-apple-macosx/debug/HaploUI.build/HaploFonts.dia"
+  },
+  "/Users/jaredsopenclaw/code/haplollc/HaploUI/Sources/HaploUI/Theme/HaploTheme.swift": {
+    "dependencies": "/Users/jaredsopenclaw/code/haplollc/HaploUI/.build/arm64-apple-macosx/debug/HaploUI.build/HaploTheme.d",
+    "object": "/Users/jaredsopenclaw/code/haplollc/HaploUI/.build/arm64-apple-macosx/debug/HaploUI.build/HaploTheme.swift.o",
+    "swiftmodule": "/Users/jaredsopenclaw/code/haplollc/HaploUI/.build/arm64-apple-macosx/debug/HaploUI.build/HaploTheme~partial.swiftmodule",
+    "swift-dependencies": "/Users/jaredsopenclaw/code/haplollc/HaploUI/.build/arm64-apple-macosx/debug/HaploUI.build/HaploTheme.swiftdeps",
+    "diagnostics": "/Users/jaredsopenclaw/code/haplollc/HaploUI/.build/arm64-apple-macosx/debug/HaploUI.build/HaploTheme.dia"
+  },
+  "/Users/jaredsopenclaw/code/haplollc/HaploUI/.build/arm64-apple-macosx/debug/HaploUI.build/DerivedSources/resource_bundle_accessor.swift": {
+    "dependencies": "/Users/jaredsopenclaw/code/haplollc/HaploUI/.build/arm64-apple-macosx/debug/HaploUI.build/resource_bundle_accessor.d",
+    "object": "/Users/jaredsopenclaw/code/haplollc/HaploUI/.build/arm64-apple-macosx/debug/HaploUI.build/resource_bundle_accessor.swift.o",
+    "swiftmodule": "/Users/jaredsopenclaw/code/haplollc/HaploUI/.build/arm64-apple-macosx/debug/HaploUI.build/resource_bundle_accessor~partial.swiftmodule",
+    "swift-dependencies": "/Users/jaredsopenclaw/code/haplollc/HaploUI/.build/arm64-apple-macosx/debug/HaploUI.build/resource_bundle_accessor.swiftdeps",
+    "diagnostics": "/Users/jaredsopenclaw/code/haplollc/HaploUI/.build/arm64-apple-macosx/debug/HaploUI.build/resource_bundle_accessor.dia"
+  }
+}

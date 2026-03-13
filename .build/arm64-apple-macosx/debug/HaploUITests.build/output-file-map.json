@@ -1,0 +1,12 @@
+{
+  "": {
+    "swift-dependencies": "/Users/jaredsopenclaw/code/haplollc/HaploUI/.build/arm64-apple-macosx/debug/HaploUITests.build/master.swiftdeps"
+  },
+  "/Users/jaredsopenclaw/code/haplollc/HaploUI/Sources/HaploUITests/HaploUITests.swift": {
+    "dependencies": "/Users/jaredsopenclaw/code/haplollc/HaploUI/.build/arm64-apple-macosx/debug/HaploUITests.build/HaploUITests.d",
+    "object": "/Users/jaredsopenclaw/code/haplollc/HaploUI/.build/arm64-apple-macosx/debug/HaploUITests.build/HaploUITests.swift.o",
+    "swiftmodule": "/Users/jaredsopenclaw/code/haplollc/HaploUI/.build/arm64-apple-macosx/debug/HaploUITests.build/HaploUITests~partial.swiftmodule",
+    "swift-dependencies": "/Users/jaredsopenclaw/code/haplollc/HaploUI/.build/arm64-apple-macosx/debug/HaploUITests.build/HaploUITests.swiftdeps",
+    "diagnostics": "/Users/jaredsopenclaw/code/haplollc/HaploUI/.build/arm64-apple-macosx/debug/HaploUITests.build/HaploUITests.dia"
+  }
+}
