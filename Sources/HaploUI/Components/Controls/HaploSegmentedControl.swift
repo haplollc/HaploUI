@@ -1,3 +1,10 @@
+//
+//  HaploSegmentedControl.swift
+//  HaploUI
+//
+//  Segmented control from Chalk's CustomSegmentedControl.
+//
+
 import SwiftUI
 
 // MARK: - Segmented Control
@@ -22,11 +29,11 @@ public struct HaploSegmentedControl<T: Hashable>: View {
     public var body: some View {
         HStack(spacing: 0) {
             ForEach(options, id: \.self) { option in
-                Button {
+                Button(action: {
                     withAnimation(.spring(response: 0.3, dampingFraction: 0.7)) {
                         selection = option
                     }
-                } label: {
+                }) {
                     Text(optionLabels(option))
                         .font(.system(size: 15, weight: selection == option ? .semibold : .regular, design: .rounded))
                         .foregroundColor(selection == option ? HaploTheme.Colors.background : HaploTheme.Colors.label)
@@ -44,6 +51,9 @@ public struct HaploSegmentedControl<T: Hashable>: View {
                         )
                 }
                 .buttonStyle(PlainButtonStyle())
+                #if os(iOS)
+                .haptic(.selection)
+                #endif
             }
         }
         .padding(4)
@@ -72,5 +82,62 @@ public extension HaploSegmentedControl where T == String {
 public extension HaploSegmentedControl where T == Int {
     init(options: [Int], labels: [String], selection: Binding<Int>) {
         self.init(options: options, selection: selection) { labels[options.firstIndex(of: $0) ?? 0] }
+    }
+}
+
+// MARK: - Icon Segmented Control
+
+/// A segmented control with icons instead of text.
+public struct HaploIconSegmentedControl<T: Hashable>: View {
+    let options: [T]
+    let optionIcons: (T) -> String
+    @Binding var selection: T
+    
+    @Namespace private var animation
+    
+    public init(
+        options: [T],
+        selection: Binding<T>,
+        optionIcons: @escaping (T) -> String
+    ) {
+        self.options = options
+        self._selection = selection
+        self.optionIcons = optionIcons
+    }
+    
+    public var body: some View {
+        HStack(spacing: 0) {
+            ForEach(options, id: \.self) { option in
+                Button(action: {
+                    withAnimation(.spring(response: 0.3, dampingFraction: 0.7)) {
+                        selection = option
+                    }
+                }) {
+                    Image(systemName: optionIcons(option))
+                        .font(.system(size: 16, weight: selection == option ? .semibold : .regular))
+                        .foregroundColor(selection == option ? HaploTheme.Colors.background : HaploTheme.Colors.label)
+                        .frame(width: 44, height: 32)
+                        .background(
+                            ZStack {
+                                if selection == option {
+                                    Capsule()
+                                        .fill(HaploTheme.Colors.label)
+                                        .matchedGeometryEffect(id: "iconPill", in: animation)
+                                }
+                            }
+                        )
+                }
+                .buttonStyle(PlainButtonStyle())
+                #if os(iOS)
+                .haptic(.selection)
+                #endif
+            }
+        }
+        .padding(4)
+        .background(
+            Capsule()
+                .strokeBorder(HaploTheme.Colors.label.opacity(0.2), lineWidth: 1)
+        )
+        .clipShape(Capsule())
     }
 }

@@ -10,119 +10,153 @@ public struct SteppersCatalog: View {
     public init() {}
     
     public var body: some View {
-        ScrollView {
-            VStack(alignment: .leading, spacing: HaploTheme.Spacing.xl) {
-                
-                CatalogSection("Standard Stepper") {
-                    HaploStepper(value: $value1, in: 0...10, label: "Quantity")
-                }
-                
-                CatalogSection("With Custom Step") {
-                    HaploStepper(
-                        value: $value2,
-                        in: 0...100,
-                        step: 5,
-                        label: "Minutes",
-                        valueFormatter: { "\($0) min" }
-                    )
-                }
-                
-                CatalogSection("Bordered Stepper (from Barrier)") {
-                    VStack(spacing: HaploTheme.Spacing.md) {
-                        HaploBorderedStepper(
-                            value: $borderedValue,
-                            displayText: $borderedText,
-                            accessibilityLabelPrefix: "Duration",
-                            stepperColor: .accentColor,
-                            textColor: .text1
-                        )
-                        .onChange(of: borderedValue) { _, newValue in
-                            borderedText = "\(newValue) hours"
-                        }
-                        
-                        Text("Features: Haptic feedback, accessibility, Dynamic Type scaling")
+        ZStack(alignment: .top) {
+            Color.background1.ignoresSafeArea()
+            
+            ScrollView {
+                VStack(spacing: 16) {
+                    CatalogSection("Standard Stepper") {
+                        Text("Basic increment/decrement control")
                             .font(.haploCaption())
-                            .foregroundColor(.text3)
-                    }
-                }
-                
-                CatalogSection("Bordered Stepper Variants") {
-                    VStack(spacing: HaploTheme.Spacing.md) {
-                        HaploBorderedStepper(
-                            value: .constant(5),
-                            displayText: .constant("5 items"),
-                            stepperColor: .green
-                        )
+                            .foregroundStyle(Color.text3)
+                            .frame(maxWidth: .infinity, alignment: .leading)
                         
-                        HaploBorderedStepper(
-                            value: .constant(2),
-                            displayText: .constant("2 sessions"),
-                            stepperColor: .purple
-                        )
-                        
-                        HaploBorderedStepper(
-                            value: .constant(10),
-                            displayText: .constant("10 min"),
-                            stepperColor: .orange
-                        )
+                        HaploStepper(value: $value1, in: 0...10, label: "Quantity")
                     }
-                }
-                
-                CatalogSection("Compact Stepper") {
-                    HStack {
-                        Text("Sets")
-                            .font(.haploBody())
-                        Spacer()
-                        HaploCompactStepper(value: $value1, in: 1...20)
-                    }
-                }
-                
-                CatalogSection("Compact Stepper Colors") {
-                    VStack(spacing: HaploTheme.Spacing.md) {
-                        HStack {
-                            Text("Default")
-                                .font(.haploBody())
-                            Spacer()
-                            HaploCompactStepper(value: $value1, in: 1...20)
-                        }
+                    
+                    CatalogSection("With Custom Step") {
+                        Text("Jump by custom increments")
+                            .font(.haploCaption())
+                            .foregroundStyle(Color.text3)
+                            .frame(maxWidth: .infinity, alignment: .leading)
                         
-                        HStack {
-                            Text("Green")
-                                .font(.haploBody())
-                            Spacer()
-                            HaploCompactStepper(value: $value2, in: 1...20, color: .green)
-                        }
-                        
-                        HStack {
-                            Text("Orange")
-                                .font(.haploBody())
-                            Spacer()
-                            HaploCompactStepper(value: $value3, in: 1...100, step: 5, color: .orange)
-                        }
-                    }
-                }
-                
-                CatalogSection("Wheel Stepper") {
-                    HaploWheelStepper(value: $value3, in: 1...60, label: "Timer")
-                }
-                
-                CatalogSection("Multiple Steppers") {
-                    VStack(spacing: HaploTheme.Spacing.md) {
-                        HaploStepper(value: $value1, in: 1...10, label: "Sets")
-                        HaploStepper(value: $value2, in: 1...20, label: "Reps")
                         HaploStepper(
-                            value: $value3,
-                            in: 0...500,
+                            value: $value2,
+                            in: 0...100,
                             step: 5,
-                            label: "Weight (lbs)"
+                            label: "Minutes",
+                            valueFormatter: { "\($0) min" }
                         )
                     }
+                    
+                    CatalogSection("Bordered Stepper") {
+                        Text("From Barrier - with haptics & accessibility")
+                            .font(.haploCaption())
+                            .foregroundStyle(Color.text3)
+                            .frame(maxWidth: .infinity, alignment: .leading)
+                        
+                        VStack(spacing: 12) {
+                            HaploBorderedStepper(
+                                value: $borderedValue,
+                                displayText: $borderedText,
+                                accessibilityLabelPrefix: "Duration",
+                                stepperColor: .accentColor,
+                                textColor: .text1
+                            )
+                            .onChange(of: borderedValue) { _, newValue in
+                                borderedText = "\(newValue) hours"
+                            }
+                        }
+                    }
+                    
+                    CatalogSection("Bordered Variants") {
+                        Text("Color customization options")
+                            .font(.haploCaption())
+                            .foregroundStyle(Color.text3)
+                            .frame(maxWidth: .infinity, alignment: .leading)
+                        
+                        VStack(spacing: 12) {
+                            HaploBorderedStepper(
+                                value: .constant(5),
+                                displayText: .constant("5 items"),
+                                stepperColor: .green
+                            )
+                            
+                            HaploBorderedStepper(
+                                value: .constant(2),
+                                displayText: .constant("2 sessions"),
+                                stepperColor: .purple
+                            )
+                            
+                            HaploBorderedStepper(
+                                value: .constant(10),
+                                displayText: .constant("10 min"),
+                                stepperColor: .orange
+                            )
+                        }
+                    }
+                    
+                    CatalogSection("Compact Stepper") {
+                        Text("Minimal inline stepper")
+                            .font(.haploCaption())
+                            .foregroundStyle(Color.text3)
+                            .frame(maxWidth: .infinity, alignment: .leading)
+                        
+                        VStack(spacing: 12) {
+                            HStack {
+                                Text("Sets")
+                                    .font(.haploBody())
+                                    .foregroundStyle(Color.text1)
+                                Spacer()
+                                HaploCompactStepper(value: $value1, in: 1...20)
+                            }
+                            
+                            HStack {
+                                Text("Reps")
+                                    .font(.haploBody())
+                                    .foregroundStyle(Color.text1)
+                                Spacer()
+                                HaploCompactStepper(value: $value2, in: 1...20, color: .green)
+                            }
+                            
+                            HStack {
+                                Text("Weight")
+                                    .font(.haploBody())
+                                    .foregroundStyle(Color.text1)
+                                Spacer()
+                                HaploCompactStepper(value: $value3, in: 1...100, step: 5, color: .orange)
+                            }
+                        }
+                    }
+                    
+                    CatalogSection("Wheel Stepper") {
+                        Text("Picker-style selection")
+                            .font(.haploCaption())
+                            .foregroundStyle(Color.text3)
+                            .frame(maxWidth: .infinity, alignment: .leading)
+                        
+                        HaploWheelStepper(value: $value3, in: 1...60, label: "Timer")
+                    }
+                    
+                    CatalogSection("Exercise Set") {
+                        Text("Real-world usage example")
+                            .font(.haploCaption())
+                            .foregroundStyle(Color.text3)
+                            .frame(maxWidth: .infinity, alignment: .leading)
+                        
+                        VStack(spacing: 12) {
+                            HaploStepper(value: $value1, in: 1...10, label: "Sets")
+                            HaploStepper(value: $value2, in: 1...20, label: "Reps")
+                            HaploStepper(
+                                value: $value3,
+                                in: 0...500,
+                                step: 5,
+                                label: "Weight (lbs)"
+                            )
+                        }
+                    }
+                    
+                    Spacer().frame(height: 80)
                 }
+                .padding(.horizontal)
+                .padding(.top, 8)
             }
-            .padding(HaploTheme.Spacing.lg)
+            .scrollDismissesKeyboard(.interactively)
         }
-        .background(Color.background1)
         .navigationTitle("Steppers")
+        #if os(iOS)
+        .navigationBarTitleDisplayMode(.large)
+        #endif
     }
 }
 

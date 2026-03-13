@@ -6,80 +6,147 @@ public struct ButtonsCatalog: View {
     public init() {}
     
     public var body: some View {
-        ScrollView {
-            VStack(alignment: .leading, spacing: HaploTheme.Spacing.xl) {
-                
-                // Button Styles
-                CatalogSection("Button Styles") {
-                    VStack(spacing: HaploTheme.Spacing.md) {
-                        HaploButton("Primary", style: .primary) {}
-                        HaploButton("Secondary", style: .secondary) {}
-                        HaploButton("Tertiary", style: .tertiary) {}
-                        HaploButton("Destructive", style: .destructive) {}
-                        HaploButton("Ghost", style: .ghost) {}
-                        HaploButton("Outline", style: .outline) {}
-                    }
-                }
-                
-                // Button Sizes
-                CatalogSection("Button Sizes") {
-                    VStack(spacing: HaploTheme.Spacing.md) {
-                        HaploButton("Small", size: .small) {}
-                        HaploButton("Medium", size: .medium) {}
-                        HaploButton("Large", size: .large) {}
-                    }
-                }
-                
-                // With Icons
-                CatalogSection("With Icons") {
-                    VStack(spacing: HaploTheme.Spacing.md) {
-                        HaploButton("Add Item", icon: "plus") {}
-                        HaploButton("Download", icon: "arrow.down.circle") {}
-                        HaploButton("Share", icon: "square.and.arrow.up", style: .secondary) {}
-                        HaploButton("Delete", icon: "trash", style: .destructive) {}
-                    }
-                }
-                
-                // Full Width
-                CatalogSection("Full Width") {
-                    HaploButton("Continue", icon: "arrow.right", isFullWidth: true) {}
-                }
-                
-                // Loading State
-                CatalogSection("Loading State") {
-                    HStack {
-                        HaploButton("Submit", isLoading: isLoading) {}
+        ZStack(alignment: .top) {
+            Color.background1.ignoresSafeArea()
+            
+            ScrollView {
+                VStack(spacing: 16) {
+                    CatalogSection("Glass Icon Buttons") {
+                        Text("Frosted glass circles for toolbars")
+                            .font(.haploCaption())
+                            .foregroundStyle(Color.text3)
+                            .frame(maxWidth: .infinity, alignment: .leading)
                         
-                        Button(isLoading ? "Stop" : "Start") {
-                            isLoading.toggle()
+                        HStack(spacing: 12) {
+                            HaploGlassIconButton(systemName: "brain") {}
+                            HaploGlassIconButton(systemName: "heart.fill") {}
+                            HaploGlassIconButton(systemName: "star.fill") {}
+                            HaploGlassIconButton(systemName: "bookmark.fill") {}
+                            Spacer()
                         }
-                        .buttonStyle(.bordered)
+                        
+                        Text("With color tints")
+                            .font(.haploCaption())
+                            .foregroundStyle(Color.text3)
+                            .frame(maxWidth: .infinity, alignment: .leading)
+                            .padding(.top, 8)
+                        
+                        HStack(spacing: 12) {
+                            HaploGlassIconButton(systemName: "heart.fill", tint: .red) {}
+                            HaploGlassIconButton(systemName: "star.fill", tint: .yellow) {}
+                            HaploGlassIconButton(systemName: "leaf.fill", tint: .green) {}
+                            Spacer()
+                        }
                     }
-                }
-                
-                // Icon Buttons
-                CatalogSection("Icon Buttons") {
-                    HStack(spacing: HaploTheme.Spacing.md) {
-                        HaploIconButton(icon: "heart.fill", style: .primary) {}
-                        HaploIconButton(icon: "bookmark.fill", style: .secondary) {}
-                        HaploIconButton(icon: "ellipsis", style: .tertiary) {}
-                        HaploIconButton(icon: "xmark", style: .ghost) {}
+                    
+                    CatalogSection("Unified Buttons") {
+                        Text("Consistent button styles across the app")
+                            .font(.haploCaption())
+                            .foregroundStyle(Color.text3)
+                            .frame(maxWidth: .infinity, alignment: .leading)
+                        
+                        VStack(spacing: 12) {
+                            HaploButton("Primary", style: .primary) {}
+                            HaploButton("Secondary", style: .secondary) {}
+                            HaploButton("Tertiary", style: .tertiary) {}
+                            HaploButton("Destructive", style: .destructive) {}
+                            HaploButton("Outline", style: .outline) {}
+                        }
                     }
-                }
-                
-                // Icon Button Sizes
-                CatalogSection("Icon Button Sizes") {
-                    HStack(spacing: HaploTheme.Spacing.md) {
-                        HaploIconButton(icon: "plus", size: .small) {}
-                        HaploIconButton(icon: "plus", size: .medium) {}
-                        HaploIconButton(icon: "plus", size: .large) {}
+                    
+                    CatalogSection("Button Sizes") {
+                        Text("Adapts to different UI contexts")
+                            .font(.haploCaption())
+                            .foregroundStyle(Color.text3)
+                            .frame(maxWidth: .infinity, alignment: .leading)
+                        
+                        VStack(spacing: 12) {
+                            HaploButton("Small", size: .small) {}
+                            HaploButton("Medium", size: .medium) {}
+                            HaploButton("Large", size: .large) {}
+                        }
                     }
+                    
+                    CatalogSection("With Icons") {
+                        Text("Icons enhance visual hierarchy")
+                            .font(.haploCaption())
+                            .foregroundStyle(Color.text3)
+                            .frame(maxWidth: .infinity, alignment: .leading)
+                        
+                        VStack(spacing: 12) {
+                            HaploButton("Add Item", icon: "plus") {}
+                            HaploButton("Download", icon: "arrow.down.circle") {}
+                            HaploButton("Share", icon: "square.and.arrow.up", style: .secondary) {}
+                            HaploButton("Delete", icon: "trash", style: .destructive) {}
+                        }
+                    }
+                    
+                    CatalogSection("Full Width") {
+                        Text("Spans the container for primary actions")
+                            .font(.haploCaption())
+                            .foregroundStyle(Color.text3)
+                            .frame(maxWidth: .infinity, alignment: .leading)
+                        
+                        HaploButton("Continue", icon: "arrow.right", isFullWidth: true) {}
+                    }
+                    
+                    CatalogSection("Loading State") {
+                        Text("Shows progress during async operations")
+                            .font(.haploCaption())
+                            .foregroundStyle(Color.text3)
+                            .frame(maxWidth: .infinity, alignment: .leading)
+                        
+                        HStack(spacing: 16) {
+                            HaploButton("Submit", isLoading: isLoading) {}
+                            
+                            Button(isLoading ? "Stop" : "Start") {
+                                withAnimation(.spring(response: 0.3)) {
+                                    isLoading.toggle()
+                                }
+                            }
+                            .buttonStyle(.bordered)
+                        }
+                    }
+                    
+                    CatalogSection("Icon Buttons") {
+                        Text("Compact buttons for toolbars")
+                            .font(.haploCaption())
+                            .foregroundStyle(Color.text3)
+                            .frame(maxWidth: .infinity, alignment: .leading)
+                        
+                        HStack(spacing: 16) {
+                            HaploIconButton(icon: "heart.fill", style: .primary) {}
+                            HaploIconButton(icon: "bookmark.fill", style: .secondary) {}
+                            HaploIconButton(icon: "ellipsis", style: .tertiary) {}
+                            HaploIconButton(icon: "xmark", style: .ghost) {}
+                            Spacer()
+                        }
+                    }
+                    
+                    CatalogSection("Capsule Buttons") {
+                        Text("Glass capsule style from Chalk")
+                            .font(.haploCaption())
+                            .foregroundStyle(Color.text3)
+                            .frame(maxWidth: .infinity, alignment: .leading)
+                        
+                        HStack(spacing: 12) {
+                            HaploCapsuleButton("Filter") {}
+                            HaploCapsuleButton("Sort", systemImage: "arrow.up.arrow.down") {}
+                            Spacer()
+                        }
+                    }
+                    
+                    Spacer().frame(height: 80)
                 }
+                .padding(.horizontal)
+                .padding(.top, 8)
             }
-            .padding(HaploTheme.Spacing.lg)
+            .scrollDismissesKeyboard(.interactively)
         }
-        .background(HaploTheme.Colors.background)
         .navigationTitle("Buttons")
+        #if os(iOS)
+        .navigationBarTitleDisplayMode(.large)
+        #endif
     }
 }
 

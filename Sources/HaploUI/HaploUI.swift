@@ -36,6 +36,16 @@ public typealias ConfettiContainer = HaploConfettiContainer
 
 // Note: Don't alias Button or ButtonStyle to avoid conflicts with SwiftUI
 public typealias IconButton = HaploIconButton
+public typealias CapsuleButton = HaploCapsuleButton
+public typealias PrimaryButton = HaploPrimaryButton
+public typealias SecondaryButton = HaploSecondaryButton
+public typealias TertiaryButton = HaploTertiaryButton
+public typealias DestructiveButton = HaploDestructiveButton
+
+// MARK: - Controls
+
+public typealias SegmentedControl = HaploSegmentedControl
+public typealias IconSegmentedControl = HaploIconSegmentedControl
 
 // MARK: - Sheets
 
@@ -64,8 +74,12 @@ public typealias Chip = HaploChip
 // MARK: - Inputs
 
 // Note: Don't alias TextField/Toggle to avoid conflicts with SwiftUI
+public typealias RoundedTextField = HaploTextField
+public typealias LabeledTextField = HaploLabeledTextField
+// Note: Don't alias SecureField to avoid conflicts with SwiftUI
 public typealias TextArea = HaploTextArea
 public typealias SearchField = HaploSearchField
+// Note: Don't alias Toggle to avoid conflicts with SwiftUI
 
 // MARK: - Cards
 

@@ -3,7 +3,7 @@ import SwiftUI
 public struct InputsCatalog: View {
     @State private var text = ""
     @State private var password = ""
-    @State private var email = "invalid-email"
+    @State private var email = "test@example.com"
     @State private var notes = ""
     @State private var search = ""
     @State private var toggle1 = true
@@ -12,82 +12,127 @@ public struct InputsCatalog: View {
     public init() {}
     
     public var body: some View {
-        ScrollView {
-            VStack(alignment: .leading, spacing: HaploTheme.Spacing.xl) {
-                
-                CatalogSection("Text Field") {
-                    HaploTextField(
-                        text: $text,
-                        placeholder: "Enter your name",
-                        label: "Name"
-                    )
-                }
-                
-                CatalogSection("With Icon") {
-                    HaploTextField(
-                        text: $email,
-                        placeholder: "you@example.com",
-                        label: "Email",
-                        icon: "envelope"
-                    )
-                }
-                
-                CatalogSection("Password Field") {
-                    HaploTextField(
-                        text: $password,
-                        placeholder: "Enter password",
-                        label: "Password",
-                        icon: "lock",
-                        isSecure: true
-                    )
-                }
-                
-                CatalogSection("With Error") {
-                    HaploTextField(
-                        text: $email,
-                        placeholder: "you@example.com",
-                        label: "Email",
-                        icon: "envelope",
-                        errorMessage: "Please enter a valid email address"
-                    )
-                }
-                
-                CatalogSection("Text Area") {
-                    HaploTextArea(
-                        text: $notes,
-                        placeholder: "Write your notes here...",
-                        label: "Notes"
-                    )
-                }
-                
-                CatalogSection("Search Field") {
-                    HaploSearchField(text: $search, placeholder: "Search workouts")
-                }
-                
-                CatalogSection("Toggles") {
-                    VStack(spacing: HaploTheme.Spacing.md) {
-                        HaploToggle(isOn: $toggle1, label: "Enable Notifications")
+        ZStack(alignment: .top) {
+            Color.background1.ignoresSafeArea()
+            
+            ScrollView {
+                VStack(spacing: 16) {
+                    CatalogSection("Text Field") {
+                        Text("Basic text input with placeholder")
+                            .font(.haploCaption())
+                            .foregroundStyle(Color.text3)
+                            .frame(maxWidth: .infinity, alignment: .leading)
                         
-                        HaploToggle(
-                            isOn: $toggle2,
-                            label: "Dark Mode",
-                            subtitle: "Use dark theme throughout the app",
-                            icon: "moon.fill"
-                        )
-                        
-                        HaploToggle(
-                            isOn: $toggle1,
-                            label: "Location Services",
-                            subtitle: "Allow access to your location",
-                            icon: "location.fill"
+                        HaploTextField(
+                            text: $text,
+                            placeholder: "Enter your name"
                         )
                     }
+                    
+                    CatalogSection("Labeled Text Field") {
+                        Text("Text field with floating label")
+                            .font(.haploCaption())
+                            .foregroundStyle(Color.text3)
+                            .frame(maxWidth: .infinity, alignment: .leading)
+                        
+                        HaploLabeledTextField(
+                            text: $email,
+                            label: "Email",
+                            placeholder: "you@example.com",
+                            icon: "envelope"
+                        )
+                    }
+                    
+                    CatalogSection("Password Field") {
+                        Text("Secure text entry with toggle")
+                            .font(.haploCaption())
+                            .foregroundStyle(Color.text3)
+                            .frame(maxWidth: .infinity, alignment: .leading)
+                        
+                        HaploSecureField(
+                            text: $password,
+                            label: "Password",
+                            placeholder: "Enter password"
+                        )
+                    }
+                    
+                    CatalogSection("Rotating Placeholders") {
+                        Text("Cycle through example prompts")
+                            .font(.haploCaption())
+                            .foregroundStyle(Color.text3)
+                            .frame(maxWidth: .infinity, alignment: .leading)
+                        
+                        HaploTextField(
+                            text: $text,
+                            placeholders: ["Run 5 miles", "Do 20 pushups", "Stretch for 10 minutes"]
+                        )
+                    }
+                    
+                    CatalogSection("Text Area") {
+                        Text("Multi-line text input")
+                            .font(.haploCaption())
+                            .foregroundStyle(Color.text3)
+                            .frame(maxWidth: .infinity, alignment: .leading)
+                        
+                        HaploTextArea(
+                            text: $notes,
+                            placeholder: "Write your notes here..."
+                        )
+                    }
+                    
+                    CatalogSection("Search Field") {
+                        Text("Inline search with clear button")
+                            .font(.haploCaption())
+                            .foregroundStyle(Color.text3)
+                            .frame(maxWidth: .infinity, alignment: .leading)
+                        
+                        HaploSearchField(text: $search, placeholder: "Search workouts")
+                    }
+                    
+                    CatalogSection("Toggles") {
+                        Text("On/off switches with labels")
+                            .font(.haploCaption())
+                            .foregroundStyle(Color.text3)
+                            .frame(maxWidth: .infinity, alignment: .leading)
+                        
+                        VStack(spacing: 0) {
+                            HaploToggle(isOn: $toggle1, label: "Enable Notifications")
+                            
+                            Divider()
+                                .padding(.leading, 16)
+                            
+                            HaploToggle(
+                                isOn: $toggle2,
+                                label: "Dark Mode",
+                                subtitle: "Use dark theme throughout the app",
+                                icon: "moon.fill"
+                            )
+                            
+                            Divider()
+                                .padding(.leading, 16)
+                            
+                            HaploToggle(
+                                isOn: $toggle1,
+                                label: "Location Services",
+                                subtitle: "Allow access to your location",
+                                icon: "location.fill"
+                            )
+                        }
+                        .background(Color.background3)
+                        .clipShape(RoundedRectangle(cornerRadius: 12))
+                    }
+                    
+                    Spacer().frame(height: 80)
                 }
+                .padding(.horizontal)
+                .padding(.top, 8)
             }
-            .padding(HaploTheme.Spacing.lg)
+            .scrollDismissesKeyboard(.interactively)
         }
-        .background(HaploTheme.Colors.background)
         .navigationTitle("Inputs")
+        #if os(iOS)
+        .navigationBarTitleDisplayMode(.large)
+        #endif
     }
 }
 

@@ -68,7 +68,7 @@ public struct HaploSheet<Content: View>: View {
                     Spacer()
                     
                     if showCloseButton {
-                        HaploIconButton(icon: "xmark", size: .small) {
+                        HaploGlassIconButton(systemName: "xmark", size: 28, iconSize: 12) {
                             onDismiss?()
                         }
                     }
@@ -190,7 +190,7 @@ public struct HaploConfirmationSheet: View {
     let title: String
     let message: String
     let confirmTitle: String
-    let confirmStyle: HaploButtonStyle
+    let isDestructive: Bool
     let cancelTitle: String
     let onConfirm: () -> Void
     let onCancel: () -> Void
@@ -199,7 +199,7 @@ public struct HaploConfirmationSheet: View {
         title: String,
         message: String,
         confirmTitle: String = "Confirm",
-        confirmStyle: HaploButtonStyle = .primary,
+        confirmStyle: ConfirmStyle = .primary,
         cancelTitle: String = "Cancel",
         onConfirm: @escaping () -> Void,
         onCancel: @escaping () -> Void
@@ -207,10 +207,15 @@ public struct HaploConfirmationSheet: View {
         self.title = title
         self.message = message
         self.confirmTitle = confirmTitle
-        self.confirmStyle = confirmStyle
+        self.isDestructive = confirmStyle == .destructive
         self.cancelTitle = cancelTitle
         self.onConfirm = onConfirm
         self.onCancel = onCancel
+    }
+    
+    public enum ConfirmStyle {
+        case primary
+        case destructive
     }
     
     public var body: some View {
@@ -236,12 +241,18 @@ public struct HaploConfirmationSheet: View {
             
             // Buttons
             HStack(spacing: HaploTheme.Spacing.md) {
-                HaploButton(cancelTitle, style: .tertiary, isFullWidth: true) {
+                HaploSecondaryButton(cancelTitle) {
                     onCancel()
                 }
                 
-                HaploButton(confirmTitle, style: confirmStyle, isFullWidth: true) {
-                    onConfirm()
+                if isDestructive {
+                    HaploDestructiveButton(confirmTitle) {
+                        onConfirm()
+                    }
+                } else {
+                    HaploPrimaryButton(confirmTitle) {
+                        onConfirm()
+                    }
                 }
             }
             .padding(.horizontal, HaploTheme.Spacing.lg)
