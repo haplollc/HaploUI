@@ -30,7 +30,7 @@ public struct ComponentCatalog: View {
                     NavigationLink {
                         SteppersCatalog()
                     } label: {
-                        CatalogRow(icon: "plusminus", title: "Steppers", count: 3)
+                        CatalogRow(icon: "plusminus", title: "Steppers", count: 4)
                     }
                     
                     NavigationLink {
@@ -62,13 +62,19 @@ public struct ComponentCatalog: View {
                     } label: {
                         CatalogRow(icon: "circle.dotted", title: "Progress", count: 5)
                     }
+                    
+                    NavigationLink {
+                        ChatCatalog()
+                    } label: {
+                        CatalogRow(icon: "bubble.left.and.bubble.right", title: "Chat", count: 8)
+                    }
                 }
                 
                 Section("Effects") {
                     NavigationLink {
                         EffectsCatalog()
                     } label: {
-                        CatalogRow(icon: "sparkles", title: "Effects & Haptics", count: 6)
+                        CatalogRow(icon: "sparkles", title: "Effects & Haptics", count: 10)
                     }
                 }
                 
@@ -76,7 +82,7 @@ public struct ComponentCatalog: View {
                     NavigationLink {
                         ColorsCatalog()
                     } label: {
-                        CatalogRow(icon: "paintpalette", title: "Colors", count: 10)
+                        CatalogRow(icon: "paintpalette", title: "Colors", count: 14)
                     }
                     
                     NavigationLink {
@@ -112,16 +118,16 @@ struct CatalogRow: View {
                 .frame(width: 32)
             
             Text(title)
-                .font(HaploTheme.Typography.body)
+                .font(.haploBody())
             
             Spacer()
             
             Text("\(count)")
-                .font(HaploTheme.Typography.caption)
-                .foregroundColor(HaploTheme.Colors.secondaryLabel)
+                .font(.haploCaption())
+                .foregroundColor(.text2)
                 .padding(.horizontal, 8)
                 .padding(.vertical, 4)
-                .background(HaploTheme.Colors.secondaryBackground)
+                .background(Color.background2)
                 .clipShape(Capsule())
         }
     }
@@ -141,8 +147,8 @@ struct CatalogSection<Content: View>: View {
     var body: some View {
         VStack(alignment: .leading, spacing: HaploTheme.Spacing.md) {
             Text(title)
-                .font(HaploTheme.Typography.headline)
-                .foregroundColor(HaploTheme.Colors.secondaryLabel)
+                .font(.haploHeadline())
+                .foregroundColor(.text2)
             
             content
         }

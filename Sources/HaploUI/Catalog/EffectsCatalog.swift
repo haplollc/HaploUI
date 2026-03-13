@@ -1,6 +1,8 @@
 import SwiftUI
 
 public struct EffectsCatalog: View {
+    @State private var showConfetti = false
+    
     public init() {}
     
     public var body: some View {
@@ -40,30 +42,38 @@ public struct EffectsCatalog: View {
                 CatalogSection("Glass Card") {
                     VStack(alignment: .leading, spacing: HaploTheme.Spacing.sm) {
                         Text("Glass Card")
-                            .font(HaploTheme.Typography.headline)
+                            .font(.haploHeadline())
                         Text("Content with a frosted glass effect background.")
-                            .font(HaploTheme.Typography.body)
-                            .foregroundColor(HaploTheme.Colors.secondaryLabel)
+                            .font(.haploBody())
+                            .foregroundColor(.text2)
                     }
                     .padding(HaploTheme.Spacing.lg)
                     .frame(maxWidth: .infinity, alignment: .leading)
                     .glassCard()
                 }
                 
-                CatalogSection("Shimmer Effect") {
+                CatalogSection("Shimmer View (from Chalk)") {
                     VStack(spacing: HaploTheme.Spacing.md) {
-                        Text("Loading content...")
-                            .font(HaploTheme.Typography.headline)
-                            .shimmer()
+                        // Full shimmer placeholder
+                        HaploShimmerView()
+                            .frame(height: 80)
+                            .clipShape(RoundedRectangle(cornerRadius: 12))
                         
-                        HStack {
-                            HaploSkeleton(width: 60, height: 60, cornerRadius: 30)
-                            VStack(alignment: .leading, spacing: 8) {
-                                HaploSkeleton(width: 150, height: 16)
-                                HaploSkeleton(width: 100, height: 12)
-                            }
-                        }
+                        // Shimmer text
+                        HaploShimmerText("Loading content...")
+                            .font(.haploHeadline())
+                        
+                        // Map shimmer placeholder
+                        HaploMapShimmer()
+                            .frame(height: 120)
+                            .clipShape(RoundedRectangle(cornerRadius: 12))
                     }
+                }
+                
+                CatalogSection("Shimmer Modifier") {
+                    Text("Shimmer text effect")
+                        .font(.haploTitle2(.bold))
+                        .shimmer()
                 }
                 
                 CatalogSection("Skeleton Loading") {
@@ -82,6 +92,53 @@ public struct EffectsCatalog: View {
                     }
                 }
                 
+                CatalogSection("Blink Effect (from Haplo Invest)") {
+                    VStack(spacing: HaploTheme.Spacing.sm) {
+                        Text("Loading placeholder")
+                            .blinking()
+                        
+                        HStack(spacing: 12) {
+                            RoundedRectangle(cornerRadius: 8)
+                                .fill(Color.secondary.opacity(0.3))
+                                .frame(width: 60, height: 60)
+                                .blinking(duration: 0.5)
+                            
+                            VStack(alignment: .leading, spacing: 4) {
+                                Text("Title here")
+                                    .blinking()
+                                Text("Subtitle text")
+                                    .font(.caption)
+                                    .blinking(duration: 1.0)
+                            }
+                        }
+                    }
+                }
+                
+                CatalogSection("Card Style (from Chalk)") {
+                    VStack(alignment: .leading, spacing: 8) {
+                        Text("Card Title")
+                            .font(.haploHeadline(.bold))
+                        Text("This card uses the cardStyle modifier with default shadow.")
+                            .font(.haploBody())
+                            .foregroundColor(.text2)
+                    }
+                    .padding()
+                    .frame(maxWidth: .infinity, alignment: .leading)
+                    .cardStyle()
+                }
+                
+                CatalogSection("Confetti Celebration") {
+                    VStack(spacing: HaploTheme.Spacing.md) {
+                        Text("Tap to celebrate!")
+                            .font(.haploBody())
+                        
+                        HaploButton("🎉 Show Confetti", style: .primary) {
+                            showConfetti = true
+                        }
+                    }
+                }
+                
+                #if os(iOS)
                 CatalogSection("Haptic Feedback") {
                     VStack(spacing: HaploTheme.Spacing.md) {
                         HaploButton("Light Impact", style: .tertiary) {}
@@ -103,6 +160,7 @@ public struct EffectsCatalog: View {
                             .hapticNotification(.error)
                     }
                 }
+                #endif
             }
             .padding(HaploTheme.Spacing.lg)
         }
@@ -116,6 +174,7 @@ public struct EffectsCatalog: View {
                 endPoint: .bottomTrailing
             )
         )
+        .confetti(isActive: $showConfetti)
         .navigationTitle("Effects")
     }
 }

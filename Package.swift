@@ -17,7 +17,10 @@ let package = Package(
         .target(
             name: "HaploUI",
             dependencies: [],
-            path: "Sources/HaploUI"
+            path: "Sources/HaploUI",
+            resources: [
+                .process("Resources")
+            ]
         ),
         .testTarget(
             name: "HaploUITests",

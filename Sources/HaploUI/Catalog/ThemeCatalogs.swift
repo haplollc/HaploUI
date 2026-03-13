@@ -9,41 +9,54 @@ public struct ColorsCatalog: View {
         ScrollView {
             VStack(alignment: .leading, spacing: HaploTheme.Spacing.xl) {
                 
-                CatalogSection("Primary Colors") {
+                CatalogSection("Semantic Text Colors (from Barrier)") {
+                    VStack(spacing: HaploTheme.Spacing.sm) {
+                        ColorRow("text1 - Primary", color: .text1)
+                        ColorRow("text2 - Secondary", color: .text2)
+                        ColorRow("text3 - Tertiary", color: .text3)
+                    }
+                }
+                
+                CatalogSection("Semantic Background Colors") {
+                    VStack(spacing: HaploTheme.Spacing.sm) {
+                        ColorRow("background1 - Primary", color: .background1)
+                        ColorRow("background2 - Secondary", color: .background2)
+                        ColorRow("background3 - Tertiary", color: .background3)
+                    }
+                }
+                
+                CatalogSection("Utility Colors") {
+                    VStack(spacing: HaploTheme.Spacing.sm) {
+                        ColorRow("Shadow", color: .shadow)
+                    }
+                }
+                
+                CatalogSection("Goblin Mode Theme") {
+                    VStack(spacing: HaploTheme.Spacing.sm) {
+                        ColorRow("goblinText1", color: .goblinText1)
+                        ColorRow("goblinText2", color: .goblinText2)
+                        ColorRow("goblinText3", color: .goblinText3)
+                        ColorRow("goblinBackground1", color: .goblinBackground1)
+                        ColorRow("goblinBackground2", color: .goblinBackground2)
+                        ColorRow("goblinBackground3", color: .goblinBackground3)
+                        ColorRow("goblinAccent", color: .goblinAccent)
+                    }
+                }
+                
+                CatalogSection("Theme Constants") {
                     VStack(spacing: HaploTheme.Spacing.sm) {
                         ColorRow("Primary", color: HaploTheme.Colors.primary)
                         ColorRow("Secondary", color: HaploTheme.Colors.secondary)
                         ColorRow("Accent", color: HaploTheme.Colors.accent)
-                    }
-                }
-                
-                CatalogSection("Semantic Colors") {
-                    VStack(spacing: HaploTheme.Spacing.sm) {
                         ColorRow("Success", color: HaploTheme.Colors.success)
                         ColorRow("Warning", color: HaploTheme.Colors.warning)
                         ColorRow("Error", color: HaploTheme.Colors.error)
                     }
                 }
-                
-                CatalogSection("Background Colors") {
-                    VStack(spacing: HaploTheme.Spacing.sm) {
-                        ColorRow("Background", color: HaploTheme.Colors.background)
-                        ColorRow("Secondary BG", color: HaploTheme.Colors.secondaryBackground)
-                        ColorRow("Tertiary BG", color: HaploTheme.Colors.tertiaryBackground)
-                    }
-                }
-                
-                CatalogSection("Label Colors") {
-                    VStack(spacing: HaploTheme.Spacing.sm) {
-                        ColorRow("Label", color: HaploTheme.Colors.label)
-                        ColorRow("Secondary Label", color: HaploTheme.Colors.secondaryLabel)
-                        ColorRow("Tertiary Label", color: HaploTheme.Colors.tertiaryLabel)
-                    }
-                }
             }
             .padding(HaploTheme.Spacing.lg)
         }
-        .background(HaploTheme.Colors.background)
+        .background(Color.background1)
         .navigationTitle("Colors")
     }
 }
@@ -68,12 +81,12 @@ struct ColorRow: View {
                 )
             
             Text(name)
-                .font(HaploTheme.Typography.body)
+                .font(.haploBody())
             
             Spacer()
         }
         .padding(HaploTheme.Spacing.sm)
-        .background(HaploTheme.Colors.secondaryBackground)
+        .background(Color.background2)
         .clipShape(RoundedRectangle(cornerRadius: HaploTheme.CornerRadius.md))
     }
 }
@@ -87,25 +100,44 @@ public struct TypographyCatalog: View {
         ScrollView {
             VStack(alignment: .leading, spacing: HaploTheme.Spacing.xl) {
                 
-                CatalogSection("Typography Scale") {
+                CatalogSection("Dynamic Type Fonts (from Barrier)") {
                     VStack(alignment: .leading, spacing: HaploTheme.Spacing.md) {
-                        TypographyRow("Large Title", font: HaploTheme.Typography.largeTitle)
-                        TypographyRow("Title", font: HaploTheme.Typography.title)
-                        TypographyRow("Title 2", font: HaploTheme.Typography.title2)
-                        TypographyRow("Title 3", font: HaploTheme.Typography.title3)
-                        TypographyRow("Headline", font: HaploTheme.Typography.headline)
-                        TypographyRow("Body", font: HaploTheme.Typography.body)
-                        TypographyRow("Callout", font: HaploTheme.Typography.callout)
-                        TypographyRow("Subheadline", font: HaploTheme.Typography.subheadline)
-                        TypographyRow("Footnote", font: HaploTheme.Typography.footnote)
-                        TypographyRow("Caption", font: HaploTheme.Typography.caption)
-                        TypographyRow("Caption 2", font: HaploTheme.Typography.caption2)
+                        TypographyRow("haploLargeTitle", font: .haploLargeTitle())
+                        TypographyRow("haploTitle", font: .haploTitle())
+                        TypographyRow("haploTitle2", font: .haploTitle2())
+                        TypographyRow("haploTitle3", font: .haploTitle3())
+                        TypographyRow("haploHeadline", font: .haploHeadline())
+                        TypographyRow("haploBody", font: .haploBody())
+                        TypographyRow("haploCallout", font: .haploCallout())
+                        TypographyRow("haploSubheadline", font: .haploSubheadline())
+                        TypographyRow("haploFootnote", font: .haploFootnote())
+                        TypographyRow("haploCaption", font: .haploCaption())
+                        TypographyRow("haploCaption2", font: .haploCaption2())
+                    }
+                }
+                
+                CatalogSection("Font Weights") {
+                    VStack(alignment: .leading, spacing: HaploTheme.Spacing.md) {
+                        TypographyRow("Body Light", font: .haploBody(.light))
+                        TypographyRow("Body Regular", font: .haploBody(.regular))
+                        TypographyRow("Body Medium", font: .haploBody(.medium))
+                        TypographyRow("Body Semibold", font: .haploBody(.semibold))
+                        TypographyRow("Body Bold", font: .haploBody(.bold))
+                    }
+                }
+                
+                CatalogSection("Special Fonts") {
+                    VStack(alignment: .leading, spacing: HaploTheme.Spacing.md) {
+                        TypographyRow("Monospaced", font: .haploMono())
+                        TypographyRow("Rounded", font: .haploRounded())
+                        TypographyRow("Serif", font: .haploSerif())
+                        TypographyRow("Fixed (16pt)", font: .haploFixed(16))
                     }
                 }
             }
             .padding(HaploTheme.Spacing.lg)
         }
-        .background(HaploTheme.Colors.background)
+        .background(Color.background1)
         .navigationTitle("Typography")
     }
 }
@@ -122,14 +154,15 @@ struct TypographyRow: View {
     var body: some View {
         VStack(alignment: .leading, spacing: HaploTheme.Spacing.xxs) {
             Text(name)
+                .font(.haploCaption())
+                .foregroundColor(.text3)
+            Text("The quick brown fox")
                 .font(font)
-            Text("The quick brown fox jumps over the lazy dog")
-                .font(font)
-                .foregroundColor(HaploTheme.Colors.secondaryLabel)
+                .foregroundColor(.text1)
         }
         .padding(HaploTheme.Spacing.md)
         .frame(maxWidth: .infinity, alignment: .leading)
-        .background(HaploTheme.Colors.secondaryBackground)
+        .background(Color.background2)
         .clipShape(RoundedRectangle(cornerRadius: HaploTheme.CornerRadius.md))
     }
 }
@@ -167,7 +200,7 @@ public struct SpacingCatalog: View {
             }
             .padding(HaploTheme.Spacing.lg)
         }
-        .background(HaploTheme.Colors.background)
+        .background(Color.background1)
         .navigationTitle("Spacing")
     }
 }
@@ -184,12 +217,12 @@ struct SpacingRow: View {
     var body: some View {
         HStack {
             Text(name)
-                .font(HaploTheme.Typography.body)
+                .font(.haploBody())
                 .frame(width: 50, alignment: .leading)
             
             Text("\(Int(value))pt")
-                .font(HaploTheme.Typography.caption)
-                .foregroundColor(HaploTheme.Colors.secondaryLabel)
+                .font(.haploCaption())
+                .foregroundColor(.text2)
                 .frame(width: 40)
             
             Rectangle()
@@ -199,7 +232,7 @@ struct SpacingRow: View {
             Spacer()
         }
         .padding(HaploTheme.Spacing.sm)
-        .background(HaploTheme.Colors.secondaryBackground)
+        .background(Color.background2)
         .clipShape(RoundedRectangle(cornerRadius: HaploTheme.CornerRadius.md))
     }
 }
@@ -216,12 +249,12 @@ struct RadiusRow: View {
     var body: some View {
         HStack {
             Text(name)
-                .font(HaploTheme.Typography.body)
+                .font(.haploBody())
                 .frame(width: 50, alignment: .leading)
             
             Text("\(Int(value))pt")
-                .font(HaploTheme.Typography.caption)
-                .foregroundColor(HaploTheme.Colors.secondaryLabel)
+                .font(.haploCaption())
+                .foregroundColor(.text2)
                 .frame(width: 40)
             
             RoundedRectangle(cornerRadius: value)
@@ -231,7 +264,7 @@ struct RadiusRow: View {
             Spacer()
         }
         .padding(HaploTheme.Spacing.sm)
-        .background(HaploTheme.Colors.secondaryBackground)
+        .background(Color.background2)
         .clipShape(RoundedRectangle(cornerRadius: HaploTheme.CornerRadius.md))
     }
 }
