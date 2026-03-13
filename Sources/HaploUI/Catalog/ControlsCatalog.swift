@@ -9,46 +9,75 @@ public struct ControlsCatalog: View {
     public init() {}
     
     public var body: some View {
-        ScrollView {
-            VStack(alignment: .leading, spacing: HaploTheme.Spacing.xl) {
-                
-                CatalogSection("Segmented Control") {
-                    VStack(spacing: HaploTheme.Spacing.lg) {
-                        HaploSegmentedControl(
-                            options: ["Option 1", "Option 2", "Option 3"],
-                            selection: $selectedSegment
-                        )
+        ZStack(alignment: .top) {
+            Color.background1.ignoresSafeArea()
+            
+            ScrollView {
+                VStack(spacing: 16) {
+                    CatalogSection("Segmented Control") {
+                        Text("Switch between related views or options")
+                            .font(.haploCaption())
+                            .foregroundStyle(Color.text3)
+                            .frame(maxWidth: .infinity, alignment: .leading)
                         
-                        HaploSegmentedControl(
-                            options: ["Day", "Week", "Month"],
-                            selection: .constant("Week")
-                        )
+                        VStack(spacing: 16) {
+                            HaploSegmentedControl(
+                                options: ["Option 1", "Option 2", "Option 3"],
+                                selection: $selectedSegment
+                            )
+                            
+                            HaploSegmentedControl(
+                                options: ["Day", "Week", "Month"],
+                                selection: .constant("Week")
+                            )
+                        }
                     }
-                }
-                
-                CatalogSection("Duration Picker") {
-                    HaploDurationPicker(totalSeconds: $duration)
+                    
+                    CatalogSection("Duration Picker") {
+                        Text("Hours, minutes, and seconds selection")
+                            .font(.haploCaption())
+                            .foregroundStyle(Color.text3)
+                            .frame(maxWidth: .infinity, alignment: .leading)
+                        
+                        HaploDurationPicker(totalSeconds: $duration)
+                            .frame(height: 120)
+                    }
+                    
+                    CatalogSection("Minutes Only") {
+                        Text("Simplified for minute-based inputs")
+                            .font(.haploCaption())
+                            .foregroundStyle(Color.text3)
+                            .frame(maxWidth: .infinity, alignment: .leading)
+                        
+                        HaploDurationPicker(
+                            totalSeconds: $duration,
+                            showHours: false,
+                            showSeconds: false
+                        )
                         .frame(height: 120)
+                    }
+                    
+                    CatalogSection("Time Picker") {
+                        Text("Hour and minute selection")
+                            .font(.haploCaption())
+                            .foregroundStyle(Color.text3)
+                            .frame(maxWidth: .infinity, alignment: .leading)
+                        
+                        HaploTimePicker(hour: $hour, minute: $minute)
+                            .frame(height: 120)
+                    }
+                    
+                    Spacer().frame(height: 80)
                 }
-                
-                CatalogSection("Duration (Minutes Only)") {
-                    HaploDurationPicker(
-                        totalSeconds: $duration,
-                        showHours: false,
-                        showSeconds: false
-                    )
-                    .frame(height: 120)
-                }
-                
-                CatalogSection("Time Picker") {
-                    HaploTimePicker(hour: $hour, minute: $minute)
-                        .frame(height: 120)
-                }
+                .padding(.horizontal)
+                .padding(.top, 8)
             }
-            .padding(HaploTheme.Spacing.lg)
+            .scrollDismissesKeyboard(.interactively)
         }
-        .background(HaploTheme.Colors.background)
         .navigationTitle("Controls")
+        #if os(iOS)
+        .navigationBarTitleDisplayMode(.large)
+        #endif
     }
 }
 

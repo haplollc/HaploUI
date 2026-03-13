@@ -8,81 +8,119 @@ public struct SheetsCatalog: View {
     public init() {}
     
     public var body: some View {
-        ScrollView {
-            VStack(alignment: .leading, spacing: HaploTheme.Spacing.xl) {
-                
-                CatalogSection("Standard Sheet") {
-                    HaploButton("Show Sheet", style: .primary) {
-                        showSheet = true
-                    }
-                }
-                
-                CatalogSection("Action Sheet") {
-                    HaploButton("Show Action Sheet", style: .secondary) {
-                        showActionSheet = true
-                    }
-                }
-                
-                CatalogSection("Confirmation Sheet") {
-                    HaploButton("Show Confirmation", style: .destructive) {
-                        showConfirmation = true
-                    }
-                }
-                
-                // Inline preview
-                CatalogSection("Sheet Preview (Inline)") {
-                    VStack(spacing: 0) {
-                        HaploSheet(
-                            title: "Sheet Title",
-                            subtitle: "Optional subtitle text"
-                        ) {
-                            VStack(spacing: HaploTheme.Spacing.md) {
-                                Text("Sheet content goes here")
-                                    .font(HaploTheme.Typography.body)
-                                    .foregroundColor(HaploTheme.Colors.secondaryLabel)
-                                    .padding()
-                            }
+        ZStack(alignment: .top) {
+            Color.background1.ignoresSafeArea()
+            
+            ScrollView {
+                VStack(spacing: 16) {
+                    CatalogSection("Standard Sheet") {
+                        Text("Modal content presentation")
+                            .font(.haploCaption())
+                            .foregroundStyle(Color.text3)
+                            .frame(maxWidth: .infinity, alignment: .leading)
+                        
+                        HaploPrimaryButton("Show Sheet") {
+                            showSheet = true
                         }
                     }
-                    .clipShape(RoundedRectangle(cornerRadius: HaploTheme.CornerRadius.lg))
-                    .haploShadow(HaploTheme.Shadows.lg)
-                }
-                
-                CatalogSection("Action Sheet Preview (Inline)") {
-                    VStack(spacing: 0) {
-                        HaploActionSheet(
-                            title: "Select Action",
-                            message: "Choose what you'd like to do",
-                            actions: [
-                                .init(title: "Edit", icon: "pencil") {},
-                                .init(title: "Duplicate", icon: "doc.on.doc") {},
-                                .init(title: "Delete", icon: "trash", style: .destructive) {},
-                            ]
-                        )
+                    
+                    CatalogSection("Action Sheet") {
+                        Text("Multiple options for user selection")
+                            .font(.haploCaption())
+                            .foregroundStyle(Color.text3)
+                            .frame(maxWidth: .infinity, alignment: .leading)
+                        
+                        HaploSecondaryButton("Show Action Sheet") {
+                            showActionSheet = true
+                        }
                     }
-                    .clipShape(RoundedRectangle(cornerRadius: HaploTheme.CornerRadius.lg))
-                    .haploShadow(HaploTheme.Shadows.lg)
-                }
-                
-                CatalogSection("Confirmation Sheet Preview (Inline)") {
-                    VStack(spacing: 0) {
-                        HaploConfirmationSheet(
-                            title: "Delete Item?",
-                            message: "This action cannot be undone. Are you sure you want to continue?",
-                            confirmTitle: "Delete",
-                            confirmStyle: .destructive,
-                            onConfirm: {},
-                            onCancel: {}
-                        )
+                    
+                    CatalogSection("Confirmation Sheet") {
+                        Text("Confirm destructive or important actions")
+                            .font(.haploCaption())
+                            .foregroundStyle(Color.text3)
+                            .frame(maxWidth: .infinity, alignment: .leading)
+                        
+                        HaploDestructiveButton("Show Confirmation") {
+                            showConfirmation = true
+                        }
                     }
-                    .clipShape(RoundedRectangle(cornerRadius: HaploTheme.CornerRadius.lg))
-                    .haploShadow(HaploTheme.Shadows.lg)
+                    
+                    CatalogSection("Sheet Preview") {
+                        Text("How sheets appear when presented")
+                            .font(.haploCaption())
+                            .foregroundStyle(Color.text3)
+                            .frame(maxWidth: .infinity, alignment: .leading)
+                        
+                        VStack(spacing: 0) {
+                            HaploSheet(
+                                title: "Sheet Title",
+                                subtitle: "Optional subtitle text"
+                            ) {
+                                VStack(spacing: 12) {
+                                    Text("Sheet content goes here. This can contain any SwiftUI view.")
+                                        .font(.haploBody())
+                                        .foregroundStyle(Color.text2)
+                                        .padding()
+                                }
+                            }
+                        }
+                        .clipShape(RoundedRectangle(cornerRadius: 16))
+                        .haploShadow(HaploTheme.Shadows.lg)
+                    }
+                    
+                    CatalogSection("Action Sheet Preview") {
+                        Text("List of contextual actions")
+                            .font(.haploCaption())
+                            .foregroundStyle(Color.text3)
+                            .frame(maxWidth: .infinity, alignment: .leading)
+                        
+                        VStack(spacing: 0) {
+                            HaploActionSheet(
+                                title: "Select Action",
+                                message: "Choose what you'd like to do",
+                                actions: [
+                                    .init(title: "Edit", icon: "pencil") {},
+                                    .init(title: "Duplicate", icon: "doc.on.doc") {},
+                                    .init(title: "Delete", icon: "trash", style: .destructive) {},
+                                ]
+                            )
+                        }
+                        .clipShape(RoundedRectangle(cornerRadius: 16))
+                        .haploShadow(HaploTheme.Shadows.lg)
+                    }
+                    
+                    CatalogSection("Confirmation Preview") {
+                        Text("Binary choice for critical decisions")
+                            .font(.haploCaption())
+                            .foregroundStyle(Color.text3)
+                            .frame(maxWidth: .infinity, alignment: .leading)
+                        
+                        VStack(spacing: 0) {
+                            HaploConfirmationSheet(
+                                title: "Delete Item?",
+                                message: "This action cannot be undone. Are you sure you want to continue?",
+                                confirmTitle: "Delete",
+                                confirmStyle: .destructive,
+                                onConfirm: {},
+                                onCancel: {}
+                            )
+                        }
+                        .clipShape(RoundedRectangle(cornerRadius: 16))
+                        .haploShadow(HaploTheme.Shadows.lg)
+                    }
+                    
+                    Spacer().frame(height: 80)
                 }
+                .padding(.horizontal)
+                .padding(.top, 8)
             }
-            .padding(HaploTheme.Spacing.lg)
+            .scrollDismissesKeyboard(.interactively)
         }
-        .background(HaploTheme.Colors.background)
         .navigationTitle("Sheets")
+        #if os(iOS)
+        .navigationBarTitleDisplayMode(.large)
+        #endif
         .sheet(isPresented: $showSheet) {
             HaploSheet(
                 title: "Sheet Title",

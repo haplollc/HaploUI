@@ -9,57 +9,93 @@ public struct SlidersCatalog: View {
     public init() {}
     
     public var body: some View {
-        ScrollView {
-            VStack(alignment: .leading, spacing: HaploTheme.Spacing.xl) {
-                
-                CatalogSection("Basic Slider") {
-                    HaploSlider(value: $value1, in: 0...100, label: "Volume")
-                }
-                
-                CatalogSection("With Step") {
-                    HaploSlider(
-                        value: $value2,
-                        in: 0...100,
-                        step: 5,
-                        label: "Brightness",
-                        valueFormatter: { "\(Int($0))%" }
-                    )
-                }
-                
-                CatalogSection("Custom Colors") {
-                    HaploSlider(
-                        value: $value1,
-                        in: 0...100,
-                        label: "Progress",
-                        accentColor: HaploTheme.Colors.success
-                    )
+        ZStack(alignment: .top) {
+            Color.background1.ignoresSafeArea()
+            
+            ScrollView {
+                VStack(spacing: 16) {
+                    CatalogSection("Basic Slider") {
+                        Text("Simple single-value selection")
+                            .font(.haploCaption())
+                            .foregroundStyle(Color.text3)
+                            .frame(maxWidth: .infinity, alignment: .leading)
+                        
+                        HaploSlider(value: $value1, in: 0...100, label: "Volume")
+                    }
                     
-                    HaploSlider(
-                        value: $value2,
-                        in: 0...100,
-                        label: "Warning Level",
-                        accentColor: HaploTheme.Colors.warning
-                    )
+                    CatalogSection("With Step") {
+                        Text("Discrete increments for precise control")
+                            .font(.haploCaption())
+                            .foregroundStyle(Color.text3)
+                            .frame(maxWidth: .infinity, alignment: .leading)
+                        
+                        HaploSlider(
+                            value: $value2,
+                            in: 0...100,
+                            step: 5,
+                            label: "Brightness",
+                            valueFormatter: { "\(Int($0))%" }
+                        )
+                    }
+                    
+                    CatalogSection("Custom Colors") {
+                        Text("Match your app's color scheme")
+                            .font(.haploCaption())
+                            .foregroundStyle(Color.text3)
+                            .frame(maxWidth: .infinity, alignment: .leading)
+                        
+                        VStack(spacing: 16) {
+                            HaploSlider(
+                                value: $value1,
+                                in: 0...100,
+                                label: "Progress",
+                                accentColor: HaploTheme.Colors.success
+                            )
+                            
+                            HaploSlider(
+                                value: $value2,
+                                in: 0...100,
+                                label: "Warning Level",
+                                accentColor: HaploTheme.Colors.warning
+                            )
+                        }
+                    }
+                    
+                    CatalogSection("Range Slider") {
+                        Text("Select a range with two handles")
+                            .font(.haploCaption())
+                            .foregroundStyle(Color.text3)
+                            .frame(maxWidth: .infinity, alignment: .leading)
+                        
+                        HaploRangeSlider(
+                            lowerValue: $lowerValue,
+                            upperValue: $upperValue,
+                            in: 0...100,
+                            label: "Price Range",
+                            valueFormatter: { "$\(Int($0)) - $\(Int($1))" }
+                        )
+                    }
+                    
+                    CatalogSection("Without Label") {
+                        Text("Minimal style for inline use")
+                            .font(.haploCaption())
+                            .foregroundStyle(Color.text3)
+                            .frame(maxWidth: .infinity, alignment: .leading)
+                        
+                        HaploSlider(value: $value1, in: 0...100)
+                    }
+                    
+                    Spacer().frame(height: 80)
                 }
-                
-                CatalogSection("Range Slider") {
-                    HaploRangeSlider(
-                        lowerValue: $lowerValue,
-                        upperValue: $upperValue,
-                        in: 0...100,
-                        label: "Price Range",
-                        valueFormatter: { "$\(Int($0)) - $\(Int($1))" }
-                    )
-                }
-                
-                CatalogSection("Without Label") {
-                    HaploSlider(value: $value1, in: 0...100)
-                }
+                .padding(.horizontal)
+                .padding(.top, 8)
             }
-            .padding(HaploTheme.Spacing.lg)
+            .scrollDismissesKeyboard(.interactively)
         }
-        .background(HaploTheme.Colors.background)
         .navigationTitle("Sliders")
+        #if os(iOS)
+        .navigationBarTitleDisplayMode(.large)
+        #endif
     }
 }
 
