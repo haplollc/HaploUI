@@ -1,4 +1,9 @@
 import SwiftUI
+#if os(iOS)
+import UIKit
+#elseif os(macOS)
+import AppKit
+#endif
 
 // MARK: - Theme
 
@@ -14,6 +19,7 @@ public struct HaploTheme {
         public static let warning = Color.yellow
         public static let error = Color.red
         
+        #if os(iOS)
         public static let background = Color(uiColor: .systemBackground)
         public static let secondaryBackground = Color(uiColor: .secondarySystemBackground)
         public static let tertiaryBackground = Color(uiColor: .tertiarySystemBackground)
@@ -21,6 +27,15 @@ public struct HaploTheme {
         public static let label = Color(uiColor: .label)
         public static let secondaryLabel = Color(uiColor: .secondaryLabel)
         public static let tertiaryLabel = Color(uiColor: .tertiaryLabel)
+        #elseif os(macOS)
+        public static let background = Color(nsColor: .windowBackgroundColor)
+        public static let secondaryBackground = Color(nsColor: .controlBackgroundColor)
+        public static let tertiaryBackground = Color(nsColor: .textBackgroundColor)
+        
+        public static let label = Color(nsColor: .labelColor)
+        public static let secondaryLabel = Color(nsColor: .secondaryLabelColor)
+        public static let tertiaryLabel = Color(nsColor: .tertiaryLabelColor)
+        #endif
     }
     
     // MARK: - Spacing
