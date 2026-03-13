@@ -7,10 +7,217 @@
 
 import SwiftUI
 
-// MARK: - Icon Button (Glass Circle)
+// MARK: - Button Style Enum
+
+public enum HaploButtonStyle {
+    case primary
+    case secondary
+    case tertiary
+    case destructive
+    case ghost
+    case outline
+}
+
+// MARK: - Button Size Enum
+
+public enum HaploButtonSize {
+    case small
+    case medium
+    case large
+    
+    var verticalPadding: CGFloat {
+        switch self {
+        case .small: return 8
+        case .medium: return 12
+        case .large: return 16
+        }
+    }
+    
+    var horizontalPadding: CGFloat {
+        switch self {
+        case .small: return 12
+        case .medium: return 16
+        case .large: return 24
+        }
+    }
+    
+    var fontSize: CGFloat {
+        switch self {
+        case .small: return 13
+        case .medium: return 15
+        case .large: return 17
+        }
+    }
+}
+
+// MARK: - Unified HaploButton
+
+/// A unified button component with multiple styles and sizes.
+public struct HaploButton: View {
+    let title: String
+    let icon: String?
+    let style: HaploButtonStyle
+    let size: HaploButtonSize
+    let isFullWidth: Bool
+    let isLoading: Bool
+    let action: () -> Void
+    
+    public init(
+        _ title: String,
+        icon: String? = nil,
+        style: HaploButtonStyle = .primary,
+        size: HaploButtonSize = .medium,
+        isFullWidth: Bool = false,
+        isLoading: Bool = false,
+        action: @escaping () -> Void
+    ) {
+        self.title = title
+        self.icon = icon
+        self.style = style
+        self.size = size
+        self.isFullWidth = isFullWidth
+        self.isLoading = isLoading
+        self.action = action
+    }
+    
+    public var body: some View {
+        Button(action: action) {
+            HStack(spacing: 8) {
+                if isLoading {
+                    ProgressView()
+                        .scaleEffect(0.8)
+                        .tint(foregroundColor)
+                } else if let icon {
+                    Image(systemName: icon)
+                        .font(.system(size: size.fontSize - 2, weight: .medium))
+                }
+                Text(title)
+                    .font(.system(size: size.fontSize, weight: .semibold))
+            }
+            .foregroundColor(foregroundColor)
+            .padding(.vertical, size.verticalPadding)
+            .padding(.horizontal, size.horizontalPadding)
+            .frame(maxWidth: isFullWidth ? .infinity : nil)
+            .background(backgroundView)
+        }
+        .buttonStyle(HaploButtonPressStyle())
+        .disabled(isLoading)
+    }
+    
+    private var foregroundColor: Color {
+        switch style {
+        case .primary, .destructive:
+            return .white
+        case .secondary, .outline:
+            return Color.text1
+        case .tertiary, .ghost:
+            return HaploTheme.Colors.primary
+        }
+    }
+    
+    @ViewBuilder
+    private var backgroundView: some View {
+        switch style {
+        case .primary:
+            Capsule().fill(HaploTheme.Colors.primary)
+        case .secondary:
+            Capsule().fill(Color.background3)
+        case .tertiary:
+            Capsule().fill(Color.clear)
+        case .destructive:
+            Capsule().fill(HaploTheme.Colors.error)
+        case .ghost:
+            Capsule().fill(Color.clear)
+        case .outline:
+            Capsule().strokeBorder(Color.text3, lineWidth: 1)
+        }
+    }
+}
+
+// MARK: - Unified HaploIconButton
+
+/// A unified icon button component with multiple styles and sizes.
+public struct HaploIconButton: View {
+    let icon: String
+    let style: HaploButtonStyle
+    let size: HaploButtonSize
+    let action: () -> Void
+    
+    public init(
+        icon: String,
+        style: HaploButtonStyle = .primary,
+        size: HaploButtonSize = .medium,
+        action: @escaping () -> Void
+    ) {
+        self.icon = icon
+        self.style = style
+        self.size = size
+        self.action = action
+    }
+    
+    private var buttonSize: CGFloat {
+        switch size {
+        case .small: return 32
+        case .medium: return 40
+        case .large: return 48
+        }
+    }
+    
+    private var iconSize: CGFloat {
+        switch size {
+        case .small: return 14
+        case .medium: return 18
+        case .large: return 22
+        }
+    }
+    
+    public var body: some View {
+        Button(action: action) {
+            Image(systemName: icon)
+                .font(.system(size: iconSize, weight: .medium))
+                .foregroundColor(foregroundColor)
+                .frame(width: buttonSize, height: buttonSize)
+                .background(backgroundView)
+                .clipShape(Circle())
+        }
+        .buttonStyle(HaploButtonPressStyle())
+    }
+    
+    private var foregroundColor: Color {
+        switch style {
+        case .primary, .destructive:
+            return .white
+        case .secondary, .outline:
+            return Color.text1
+        case .tertiary, .ghost:
+            return HaploTheme.Colors.primary
+        }
+    }
+    
+    @ViewBuilder
+    private var backgroundView: some View {
+        switch style {
+        case .primary:
+            HaploTheme.Colors.primary
+        case .secondary:
+            Color.background3
+        case .tertiary:
+            Color.background2
+        case .destructive:
+            HaploTheme.Colors.error
+        case .ghost:
+            Color.clear
+        case .outline:
+            Color.clear
+        }
+    }
+}
+
+// MARK: - Glass Icon Button (Legacy)
 
 /// A glass circle icon button, matching Chalk's `.glassCircle()` pattern.
-public struct HaploIconButton: View {
+/// Use for sheets and legacy glass-style UI.
+public struct HaploGlassIconButton: View {
     let systemName: String
     let action: () -> Void
     var tint: Color?
@@ -42,6 +249,9 @@ public struct HaploIconButton: View {
         .buttonStyle(.plain)
     }
 }
+
+// Type alias for backward compatibility with HaploSheet
+public typealias HaploSheetIconButton = HaploGlassIconButton
 
 // MARK: - Capsule Button (Glass Capsule)
 

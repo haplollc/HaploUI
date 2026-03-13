@@ -68,7 +68,7 @@ public struct HaploSheet<Content: View>: View {
                     Spacer()
                     
                     if showCloseButton {
-                        HaploIconButton(systemName: "xmark", size: 28, iconSize: 12) {
+                        HaploGlassIconButton(systemName: "xmark", size: 28, iconSize: 12) {
                             onDismiss?()
                         }
                     }
