@@ -27,41 +27,58 @@ public struct HaploSegmentedControl<T: Hashable>: View {
     }
     
     public var body: some View {
+        segmentedContent
+            .padding(4)
+            .background(outlineBackground)
+            .clipShape(Capsule())
+    }
+    
+    private var segmentedContent: some View {
         HStack(spacing: 0) {
             ForEach(options, id: \.self) { option in
-                Button(action: {
-                    withAnimation(.spring(response: 0.3, dampingFraction: 0.7)) {
-                        selection = option
-                    }
-                }) {
-                    Text(optionLabels(option))
-                        .font(.system(size: 15, weight: selection == option ? .semibold : .regular, design: .rounded))
-                        .foregroundColor(selection == option ? HaploTheme.Colors.background : HaploTheme.Colors.label)
-                        .frame(maxWidth: .infinity)
-                        .padding(.horizontal, 16)
-                        .padding(.vertical, 8)
-                        .background(
-                            ZStack {
-                                if selection == option {
-                                    Capsule()
-                                        .fill(HaploTheme.Colors.label)
-                                        .matchedGeometryEffect(id: "pill", in: animation)
-                                }
-                            }
-                        )
-                }
-                .buttonStyle(PlainButtonStyle())
-                #if os(iOS)
-                .haptic(.selection)
-                #endif
+                segmentButton(for: option)
             }
         }
-        .padding(4)
-        .background(
+    }
+    
+    private func segmentButton(for option: T) -> some View {
+        let isSelected = selection == option
+        
+        return Button(action: {
+            withAnimation(.spring(response: 0.3, dampingFraction: 0.7)) {
+                selection = option
+            }
+        }) {
+            segmentLabel(for: option, isSelected: isSelected)
+        }
+        .buttonStyle(PlainButtonStyle())
+        #if os(iOS)
+        .haptic(.selection)
+        #endif
+    }
+    
+    private func segmentLabel(for option: T, isSelected: Bool) -> some View {
+        Text(optionLabels(option))
+            .font(.system(size: 15, weight: isSelected ? .semibold : .regular, design: .rounded))
+            .foregroundColor(isSelected ? HaploTheme.Colors.background : HaploTheme.Colors.label)
+            .frame(maxWidth: .infinity)
+            .padding(.horizontal, 16)
+            .padding(.vertical, 8)
+            .background(segmentBackground(isSelected: isSelected))
+    }
+    
+    @ViewBuilder
+    private func segmentBackground(isSelected: Bool) -> some View {
+        if isSelected {
             Capsule()
-                .strokeBorder(HaploTheme.Colors.label.opacity(0.2), lineWidth: 1)
-        )
-        .clipShape(Capsule())
+                .fill(HaploTheme.Colors.label)
+                .matchedGeometryEffect(id: "pill", in: animation)
+        }
+    }
+    
+    private var outlineBackground: some View {
+        Capsule()
+            .strokeBorder(HaploTheme.Colors.label.opacity(0.2), lineWidth: 1)
     }
 }
 
@@ -106,38 +123,55 @@ public struct HaploIconSegmentedControl<T: Hashable>: View {
     }
     
     public var body: some View {
+        iconSegmentedContent
+            .padding(4)
+            .background(iconOutlineBackground)
+            .clipShape(Capsule())
+    }
+    
+    private var iconSegmentedContent: some View {
         HStack(spacing: 0) {
             ForEach(options, id: \.self) { option in
-                Button(action: {
-                    withAnimation(.spring(response: 0.3, dampingFraction: 0.7)) {
-                        selection = option
-                    }
-                }) {
-                    Image(systemName: optionIcons(option))
-                        .font(.system(size: 16, weight: selection == option ? .semibold : .regular))
-                        .foregroundColor(selection == option ? HaploTheme.Colors.background : HaploTheme.Colors.label)
-                        .frame(width: 44, height: 32)
-                        .background(
-                            ZStack {
-                                if selection == option {
-                                    Capsule()
-                                        .fill(HaploTheme.Colors.label)
-                                        .matchedGeometryEffect(id: "iconPill", in: animation)
-                                }
-                            }
-                        )
-                }
-                .buttonStyle(PlainButtonStyle())
-                #if os(iOS)
-                .haptic(.selection)
-                #endif
+                iconSegmentButton(for: option)
             }
         }
-        .padding(4)
-        .background(
+    }
+    
+    private func iconSegmentButton(for option: T) -> some View {
+        let isSelected = selection == option
+        
+        return Button(action: {
+            withAnimation(.spring(response: 0.3, dampingFraction: 0.7)) {
+                selection = option
+            }
+        }) {
+            iconSegmentLabel(for: option, isSelected: isSelected)
+        }
+        .buttonStyle(PlainButtonStyle())
+        #if os(iOS)
+        .haptic(.selection)
+        #endif
+    }
+    
+    private func iconSegmentLabel(for option: T, isSelected: Bool) -> some View {
+        Image(systemName: optionIcons(option))
+            .font(.system(size: 16, weight: isSelected ? .semibold : .regular))
+            .foregroundColor(isSelected ? HaploTheme.Colors.background : HaploTheme.Colors.label)
+            .frame(width: 44, height: 32)
+            .background(iconSegmentBackground(isSelected: isSelected))
+    }
+    
+    @ViewBuilder
+    private func iconSegmentBackground(isSelected: Bool) -> some View {
+        if isSelected {
             Capsule()
-                .strokeBorder(HaploTheme.Colors.label.opacity(0.2), lineWidth: 1)
-        )
-        .clipShape(Capsule())
+                .fill(HaploTheme.Colors.label)
+                .matchedGeometryEffect(id: "iconPill", in: animation)
+        }
+    }
+    
+    private var iconOutlineBackground: some View {
+        Capsule()
+            .strokeBorder(HaploTheme.Colors.label.opacity(0.2), lineWidth: 1)
     }
 }
