@@ -186,6 +186,25 @@ public struct EffectsCatalog: View {
                         .cardStyle()
                     }
                     
+                    CatalogSection("Siri Orb") {
+                        Text("Audio-reactive glass orb with Metal shader")
+                            .font(.haploCaption())
+                            .foregroundStyle(Color.text3)
+                            .frame(maxWidth: .infinity, alignment: .leading)
+                        
+                        HStack {
+                            Spacer()
+                            HaploSiriOrb.demo(size: 150)
+                                .frame(height: 180)
+                            Spacer()
+                        }
+                        
+                        Text("Speak or make noise to see the orb react")
+                            .font(.haploCaption())
+                            .foregroundStyle(Color.text3)
+                            .frame(maxWidth: .infinity, alignment: .center)
+                    }
+                    
                     CatalogSection("Confetti 🎉") {
                         Text("Celebration animation for achievements")
                             .font(.haploCaption())

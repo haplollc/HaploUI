@@ -19,7 +19,8 @@ let package = Package(
             dependencies: [],
             path: "Sources/HaploUI",
             resources: [
-                .process("Resources")
+                .process("Resources"),
+                .process("Shaders")
             ]
         ),
         .testTarget(

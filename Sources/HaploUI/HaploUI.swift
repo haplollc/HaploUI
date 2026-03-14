@@ -32,6 +32,9 @@ public typealias Skeleton = HaploSkeleton
 public typealias ConfettiPiece = HaploConfettiPiece
 public typealias ConfettiContainer = HaploConfettiContainer
 
+// Siri-style audio-reactive orb (Metal shader)
+public typealias SiriOrb = HaploSiriOrb
+
 // MARK: - Buttons
 
 // Note: Don't alias Button or ButtonStyle to avoid conflicts with SwiftUI
