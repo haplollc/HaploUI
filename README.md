@@ -1,5 +1,7 @@
 # HaploUI
 
+[![Buy Me a Coffee](https://img.shields.io/badge/Buy%20Me%20a%20Coffee-FFDD00?logo=buymeacoffee&logoColor=black)](https://buymeacoffee.com/jcbuilds)
+
 <p align="center">
   <img src="docs/videos/catalog_home.gif" width="280" alt="HaploUI Component Catalog">
 </p>
