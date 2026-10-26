@@ -1,12 +1,16 @@
 # HaploUI
 
-[![Buy Me a Coffee](https://img.shields.io/badge/Buy%20Me%20a%20Coffee-FFDD00?logo=buymeacoffee&logoColor=black)](https://buymeacoffee.com/jcbuilds)
-
 <p align="center">
   <img src="docs/videos/catalog_home.gif" width="280" alt="HaploUI Component Catalog">
 </p>
 
 A beautiful, consistent SwiftUI component library for all Haplo apps. Features animated controls, glass effects, haptic feedback, and a built-in component catalog.
+
+<p align="center">
+  <a href="https://buymeacoffee.com/jcbuilds"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me a Coffee" width="200"></a>
+  <br>
+  <sub>If HaploUI is useful to you, a coffee keeps it going.</sub>
+</p>
 
 ## Installation
 
