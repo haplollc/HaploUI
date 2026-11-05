@@ -8,4 +8,5 @@ Package.resolved
 *.xcworkspace/
 xcuserdata/
 DerivedData/
+build/
 .DS_Store
